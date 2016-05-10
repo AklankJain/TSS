@@ -38,7 +38,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox1.Location = new System.Drawing.Point(344, 280);
+            this.textBox1.Location = new System.Drawing.Point(315, 280);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(160, 20);
             this.textBox1.TabIndex = 0;
@@ -76,7 +76,7 @@
             "4th and below",
             "5th and 6th",
             "7th and above"});
-            this.comboBox1.Location = new System.Drawing.Point(344, 349);
+            this.comboBox1.Location = new System.Drawing.Point(315, 350);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 21);
             this.comboBox1.TabIndex = 4;
