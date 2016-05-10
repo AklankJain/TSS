@@ -10,20 +10,13 @@ using System.Windows.Forms;
 
 namespace CMS
 {
-    public partial class Page1UI : Form
+    public partial class Page2UI : Form
     {
-        public Page1UI()
+        public Page2UI()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Page2UI p2 = new Page2UI();
-            p2.ShowDialog();
         }
     }
 }
