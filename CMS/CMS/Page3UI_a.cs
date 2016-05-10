@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CMS
 {
-    public partial class Page3UI : Form
+    public partial class Page3UI_a : Form
     {
-        public Page3UI()
+        public Page3UI_a()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
