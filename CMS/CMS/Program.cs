@@ -16,7 +16,10 @@ namespace CMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new Page5UI());
+
+
         }
     }
 }
