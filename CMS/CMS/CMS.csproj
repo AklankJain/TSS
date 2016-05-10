@@ -78,6 +78,12 @@
     <Compile Include="Page2UI.Designer.cs">
       <DependentUpon>Page2UI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page5UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page5UI.Designer.cs">
+      <DependentUpon>Page5UI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Page1UI.resx">
@@ -89,11 +95,16 @@
     <EmbeddedResource Include="Page2UI.resx">
       <DependentUpon>Page2UI.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Page3UI_b.resx">
       <DependentUpon>Page3UI_b.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page3UI_c.resx">
       <DependentUpon>Page3UI_c.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page5UI.resx">
+      <DependentUpon>Page5UI.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,6 +141,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\slide ctc-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide ctc-08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\without icon-08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiley 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiley 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiley 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiley 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiley 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide ctc-06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiley 11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
