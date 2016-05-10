@@ -60,13 +60,24 @@
     <Compile Include="Page1UI.Designer.cs">
       <DependentUpon>Page1UI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page2UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page2UI.Designer.cs">
+      <DependentUpon>Page2UI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Page1UI.resx">
       <DependentUpon>Page1UI.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Page3UI.resx">
       <DependentUpon>Page3UI.cs</DependentUpon>
+	</EmbeddedResource>
+    <EmbeddedResource Include="Page2UI.resx">
+      <DependentUpon>Page2UI.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +87,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -90,6 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\without icon-02.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
