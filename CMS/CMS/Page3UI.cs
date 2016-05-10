@@ -10,18 +10,13 @@ using System.Windows.Forms;
 
 namespace CMS
 {
-    public partial class Page1UI : Form
+    public partial class Page3UI : Form
     {
-        public Page1UI()
+        public Page3UI()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
         }
     }
 }

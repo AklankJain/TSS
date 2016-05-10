@@ -31,6 +31,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Page3UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page3UI.Designer.cs">
+      <DependentUpon>Page3UI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page1UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +65,9 @@
     <EmbeddedResource Include="Page1UI.resx">
       <DependentUpon>Page1UI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page3UI.resx">
+      <DependentUpon>Page3UI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -64,6 +77,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
