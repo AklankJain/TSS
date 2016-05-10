@@ -48,11 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page3UI.cs">
+    <Compile Include="Page3UI_a.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Page3UI.Designer.cs">
-      <DependentUpon>Page3UI.cs</DependentUpon>
+    <Compile Include="Page3UI_a.Designer.cs">
+      <DependentUpon>Page3UI_a.cs</DependentUpon>
     </Compile>
     <Compile Include="Page1UI.cs">
       <SubType>Form</SubType>
@@ -71,13 +71,11 @@
     <EmbeddedResource Include="Page1UI.resx">
       <DependentUpon>Page1UI.cs</DependentUpon>
     </EmbeddedResource>
-
-    <EmbeddedResource Include="Page3UI.resx">
-      <DependentUpon>Page3UI.cs</DependentUpon>
-	</EmbeddedResource>
+    <EmbeddedResource Include="Page3UI_a.resx">
+      <DependentUpon>Page3UI_a.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Page2UI.resx">
       <DependentUpon>Page2UI.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
