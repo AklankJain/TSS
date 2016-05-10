@@ -37,9 +37,14 @@
             // 
             // textBox1
             // 
+<<<<<<< HEAD
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox1.Location = new System.Drawing.Point(284, 358);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Location = new System.Drawing.Point(495, 280);
+>>>>>>> b707d93f3cd8309c05868aa882d1056c29443720
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(212, 22);
             this.textBox1.TabIndex = 0;
@@ -73,15 +78,19 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "4th and below",
             "5th and 6th",
             "7th and above"});
+<<<<<<< HEAD
             this.comboBox1.Location = new System.Drawing.Point(284, 442);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.comboBox1.Location = new System.Drawing.Point(495, 349);
+>>>>>>> b707d93f3cd8309c05868aa882d1056c29443720
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 24);
             this.comboBox1.TabIndex = 4;
