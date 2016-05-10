@@ -48,6 +48,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Page3UI_c.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page3UI_c.Designer.cs">
+      <DependentUpon>Page3UI_c.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page3UI_b.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page3UI_b.Designer.cs">
+      <DependentUpon>Page3UI_b.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page3UI_a.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +88,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Page2UI.resx">
       <DependentUpon>Page2UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page3UI_b.resx">
+      <DependentUpon>Page3UI_b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page3UI_c.resx">
+      <DependentUpon>Page3UI_c.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
