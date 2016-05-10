@@ -93,6 +93,16 @@ namespace CMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap slide_ctc_061 {
+            get {
+                object obj = ResourceManager.GetObject("slide ctc-061", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap slide_ctc_08 {
             get {
                 object obj = ResourceManager.GetObject("slide ctc-08", resourceCulture);
