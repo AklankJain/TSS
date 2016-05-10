@@ -63,6 +63,16 @@ namespace CMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap certificate {
+            get {
+                object obj = ResourceManager.GetObject("certificate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap slide_2 {
             get {
                 object obj = ResourceManager.GetObject("slide 2", resourceCulture);
@@ -186,6 +196,16 @@ namespace CMS.Properties {
         internal static System.Drawing.Bitmap without_icon_02 {
             get {
                 object obj = ResourceManager.GetObject("without icon-02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap without_icon_07 {
+            get {
+                object obj = ResourceManager.GetObject("without icon-07", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
