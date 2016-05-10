@@ -64,7 +64,7 @@
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox4.Font = new System.Drawing.Font("Segoe Marker", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(788, 423);
+            this.textBox4.Location = new System.Drawing.Point(788, 421);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(168, 25);
             this.textBox4.TabIndex = 3;
@@ -90,6 +90,9 @@
             this.button1.AutoSize = true;
             this.button1.BackgroundImage = global::CMS.Properties.Resources.slide_ctc_11;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(900, 650);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
