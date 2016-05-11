@@ -54,7 +54,7 @@
     </Compile>
     <Compile Include="Page8UI.Designer.cs">
       <DependentUpon>Page8UI.cs</DependentUpon>
-
+  </Compile>
     <Compile Include="Page0UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,9 +129,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Page5UI.resx">
       <DependentUpon>Page5UI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Page7UI.resx">
-      <DependentUpon>Page7UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page7UI.resx">
       <DependentUpon>Page7UI.cs</DependentUpon>
