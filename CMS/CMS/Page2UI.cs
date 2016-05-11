@@ -42,7 +42,7 @@ namespace CMS
                             
                                 MessageBox.Show("Enter your class");
                             {
-                                
+                                name = textBox1.Text;
                                 if (comboBox1.SelectedItem == "4th and below")
                                 {
                                     this.Visible = false;

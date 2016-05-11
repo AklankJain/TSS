@@ -24,14 +24,10 @@ namespace CMS
         }
         private void button1_Click(object sender, EventArgs e)
         {
-<<<<<<< .merge_file_a07340
-           
-=======
             this.Visible = false;
             Page7UI page7 = new Page7UI();
             page7.label1.Text = Page2UI.name;
             page7.Show();
->>>>>>> .merge_file_a08352
         }
     }
 }
