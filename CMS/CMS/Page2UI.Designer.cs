@@ -73,6 +73,7 @@
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox1.DisplayMember = "cb1,cb2,cb3";
             this.comboBox1.Font = new System.Drawing.Font("Segoe Marker", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -83,7 +84,11 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 26);
             this.comboBox1.TabIndex = 4;
+<<<<<<< .merge_file_a07220
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+=======
+            this.comboBox1.ValueMember = "cb1,cb2,cb3";
+>>>>>>> .merge_file_a04180
             // 
             // button1
             // 
@@ -126,11 +131,12 @@
 
         }
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.TextBox textBox1;
     }
 }
