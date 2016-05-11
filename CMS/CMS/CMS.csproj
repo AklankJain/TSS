@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Page6UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page6UI.Designer.cs">
+      <DependentUpon>Page6UI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page8UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Page6UI.resx">
+      <DependentUpon>Page6UI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Page8UI.resx">
       <DependentUpon>Page8UI.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +221,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\slide 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changedone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
