@@ -54,8 +54,13 @@ namespace CMS
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox3.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                textBox3.Text = textBox3.Text.Remove((textBox3.Text.Length - 1), 1);
+            }
         }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -67,6 +72,10 @@ namespace CMS
                     else{
                         if (string.IsNullOrEmpty(textBox3.Text))
                             MessageBox.Show("Enter contact no.");
+                        else if(textBox3.TextLength<10)
+                        {
+                            MessageBox.Show("Enter valid contact no.");
+                        }
                         else
                         {
                             this.Visible = false;
