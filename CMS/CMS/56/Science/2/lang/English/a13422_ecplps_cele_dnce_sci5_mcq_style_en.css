@@ -1,0 +1,144 @@
+/*
+ Malaysia Medical Project
+*/
+subHeading{
+	/*font-family:Arial;*/
+	color:#000000;
+	font-size:16px;
+	text-align:center;
+	font-family:font_1;
+}
+subTitle{
+	/*font-family:Arial;*/
+	color:#000000;
+	font-size:16px;
+	text-align:center;
+	font-family:font_1;
+}
+title{
+	color:#452109;
+	font-size:60px;
+	text-align:center;
+	display:inline;
+	font-family:font_title_english;
+}
+diagram,label,label_1,label_2,label_3,label_4,label_5,label_6,label_7,label_8,label_9,label_10{
+	color:#990000;
+	font-size:16px;
+	text-align:center;
+	display:inline;
+	font-family:font_1;
+}
+
+content,txt_1,txt_2,txt_3,txt_4,txt_5,txt_6,txt_7,txt_8,txt_9,txt_10,txt_11,txt_12,txt_13,txt_14,txt_15{
+	color:#000000;
+	font-size:16px;
+	text-align:center;
+	display:inline;
+	font-family:font_1;
+}
+
+/* for instruction texts */
+instruct{
+	font-family:font_1;
+	color:#990000;
+	font-size:16px;
+	text-align:center;
+	display:inline;
+}
+/* for MCQ options button and questions */
+opt{
+	font-family:font_1;
+	color:#000000;
+	font-size:16px;
+	text-align:left;
+	display:inline;
+}
+qus,qusFormat{
+	font-family:font_1;
+	color:#000000;
+	font-size:16px;
+	text-align:left;
+	display:inline;
+}
+option{
+	font-family:font_1;
+	color:#000000;
+	font-size:16px;
+	text-align:left;
+	display:inline;
+}
+/* Please use <spcl> tag for special charactors,  font used :Arial*/
+spcl{
+	font-size:18px;
+	font-family:font_symbols_1;
+	display:inline;
+}
+sub{
+	font-family:subScript;
+	display:inline;
+}
+sup{
+	font-family:superScript;
+	display:inline;
+}
+
+/* for instruction texts */
+
+/* all input texts should follow this format */
+
+/*  all high light styles should be name "hL1,hL2,.."  */
+hL0{
+	color:#990000;
+	display:inline;
+}
+hL1{
+	color:#990000;
+	display:inline;
+}
+hL2{
+	color:#990000;
+	display:inline;
+}
+/*------*/
+hL0{
+	color:#990000;
+	display:inline;
+}
+h1{
+	font-size:22px;
+	display:inline;
+}
+
+white{
+	color:#ffffff;
+	display:inline;
+}
+bl{
+	color:#000000;
+	display:inline;
+}
+
+/* ------Standard alignment tags------ */
+/* --------Text alignment styles  -----------*/
+alignR{
+	text-align:right;
+	display:inline;
+}
+alignL{
+	text-align:left;
+	display:inline;
+}
+alignC{
+	text-align:center;
+	display:inline;
+}
+alignJ{
+	text-align:justify
+	display:inline;
+}
+/*------------------- not for text-------------*/
+instrBullet{
+	bulletPath:bullet;
+	/*bulletPath:bullet_2;//*/
+}

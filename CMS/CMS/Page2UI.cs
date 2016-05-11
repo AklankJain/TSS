@@ -24,12 +24,10 @@ namespace CMS
         {
             if (string.IsNullOrEmpty(textBox1.Text))
                 MessageBox.Show("Enter your name");
-
             else
             {
                 if (string.IsNullOrEmpty(textBox2.Text))
                     MessageBox.Show("Enter school name");
-
                 else
                 {
                     if (string.IsNullOrEmpty(textBox3.Text))
@@ -41,9 +39,10 @@ namespace CMS
                         else
                         {
                             if (comboBox1.SelectedItem == null)
-                                MessageBox.Show("Select class");
-                            else
+                            
+                                MessageBox.Show("Enter your class");
                             {
+                                
                                 if (comboBox1.SelectedItem == "4th and below")
                                 {
                                     this.Visible = false;
@@ -69,6 +68,12 @@ namespace CMS
 
                 }
             }
+        
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -77,6 +82,21 @@ namespace CMS
             name = textBox1.Text;
             Page3UI_a pg3a = new Page3UI_a();
             pg3a.Show();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
