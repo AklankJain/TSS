@@ -21,9 +21,60 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            Page3UI_a pg3a = new Page3UI_a();
-            pg3a.Show();
+            if (string.IsNullOrEmpty(textBox1.Text))
+                MessageBox.Show("Enter your name");
+
+            else
+            {
+                if (string.IsNullOrEmpty(textBox2.Text))
+                    MessageBox.Show("Enter school name");
+
+                else
+                {
+                    if (string.IsNullOrEmpty(textBox3.Text))
+                        MessageBox.Show("Enter email id");
+                    else
+                    {
+                        if (string.IsNullOrEmpty(textBox4.Text))
+                            MessageBox.Show("Enter contact no.");
+                        else
+                        {
+                            if (comboBox1.SelectedItem == null)
+                            {
+                                MessageBox.Show("Enter your class");
+                                
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
