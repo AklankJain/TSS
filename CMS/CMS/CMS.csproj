@@ -48,6 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="Page8UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page8UI.Designer.cs">
+      <DependentUpon>Page8UI.cs</DependentUpon>
+
     <Compile Include="Page0UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,8 +105,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Page8UI.resx">
+      <DependentUpon>Page8UI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Page0UI.resx">
       <DependentUpon>Page0UI.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Page1UI.resx">
       <DependentUpon>Page1UI.cs</DependentUpon>
@@ -118,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Page5UI.resx">
       <DependentUpon>Page5UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page7UI.resx">
+      <DependentUpon>Page7UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page7UI.resx">
       <DependentUpon>Page7UI.cs</DependentUpon>
