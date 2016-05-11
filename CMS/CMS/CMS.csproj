@@ -54,7 +54,7 @@
     </Compile>
     <Compile Include="Page8UI.Designer.cs">
       <DependentUpon>Page8UI.cs</DependentUpon>
-
+</Compile>
     <Compile Include="Page0UI.cs">
       <SubType>Form</SubType>
     </Compile>
