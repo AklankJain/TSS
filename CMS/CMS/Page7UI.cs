@@ -29,5 +29,24 @@ namespace CMS
         {
 
         }
+        bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (IsValidEmail(textBox1.Text) == false)
+            {
+                MessageBox.Show("Enter valid email id");
+            }
+        }
     }
 }
