@@ -48,6 +48,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Content3env.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content3env.Designer.cs">
+      <DependentUpon>Content3env.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content3math.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content3math.Designer.cs">
+      <DependentUpon>Content3math.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content3science.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content3science.Designer.cs">
+      <DependentUpon>Content3science.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page6UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,8 +77,10 @@
     </Compile>
     <Compile Include="Page8UI.Designer.cs">
       <DependentUpon>Page8UI.cs</DependentUpon>
-  </Compile>
+    </Compile>
+  </ItemGroup>
 
+  <ItemGroup>
     <Compile Include="Page0UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +131,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
+    <EmbeddedResource Include="Content3env.resx">
+      <DependentUpon>Content3env.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content3math.resx">
+      <DependentUpon>Content3math.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content3science.resx">
+      <DependentUpon>Content3science.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Page6UI.resx">
       <DependentUpon>Page6UI.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +245,23 @@
     <None Include="Resources\certificate.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
     <None Include="Resources\fb.png" />
   </ItemGroup>
   <ItemGroup>
