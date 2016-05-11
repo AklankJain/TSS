@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace CMS
 {
@@ -29,7 +30,7 @@ namespace CMS
         {
 
         }
-        bool IsValidEmail(string email)
+       /*bool IsValidEmail(string email)
         {
             try
             {
@@ -40,6 +41,11 @@ namespace CMS
             {
                 return false;
             }
+        }*/
+        bool IsValidEmail(string email)
+        {
+            bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
+            return isEmail;
         }
         private void button2_Click(object sender, EventArgs e)
         {
