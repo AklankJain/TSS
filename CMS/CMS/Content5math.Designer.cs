@@ -29,22 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Content5math));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.axShockwaveFlash1 = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(1220, 700);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 150);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // axShockwaveFlash1
             // 
@@ -55,17 +43,30 @@
             this.axShockwaveFlash1.Size = new System.Drawing.Size(1063, 800);
             this.axShockwaveFlash1.TabIndex = 1;
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(1220, 700);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 150);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Content5math
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1222, 721);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.axShockwaveFlash1);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
+            this.Name = "Content5math";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();
             this.ResumeLayout(false);
 
@@ -73,7 +74,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
         private AxShockwaveFlashObjects.AxShockwaveFlash axShockwaveFlash1;
+        private System.Windows.Forms.Button button1;
     }
 }

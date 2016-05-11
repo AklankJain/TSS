@@ -10,18 +10,15 @@ using System.Windows.Forms;
 
 namespace CMS
 {
-    public partial class Page3UI_c : Form
+    public partial class Content7Math : Form
     {
-        public Page3UI_c()
+        public Content7Math()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
+            axShockwaveFlash1.Movie = Application.StartupPath + @"\..\..\78\Math\1\main.swf";
+            axShockwaveFlash1.Play();
         }
     }
 }

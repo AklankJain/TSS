@@ -79,6 +79,42 @@
     <Compile Include="Content5_2Math.Designer.cs">
       <DependentUpon>Content5_2Math.cs</DependentUpon>
     </Compile>
+    <Compile Include="Content5Env.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content5Env.Designer.cs">
+      <DependentUpon>Content5Env.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content5Science.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content5Science.Designer.cs">
+      <DependentUpon>Content5Science.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content5Science_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content5Science_2.Designer.cs">
+      <DependentUpon>Content5Science_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content7Math.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content7Math.Designer.cs">
+      <DependentUpon>Content7Math.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content7Math_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content7Math_2.Designer.cs">
+      <DependentUpon>Content7Math_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content7Science.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content7Science.Designer.cs">
+      <DependentUpon>Content7Science.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page6UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,11 +188,29 @@
     <EmbeddedResource Include="Content3science.resx">
       <DependentUpon>Content3science.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Content5Env.resx">
+      <DependentUpon>Content5Env.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Content5math.resx">
       <DependentUpon>Content5math.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Content5Science.resx">
+      <DependentUpon>Content5Science.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Content5_2Math.resx">
       <DependentUpon>Content5_2Math.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content5Science_2.resx">
+      <DependentUpon>Content5Science_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content7Math.resx">
+      <DependentUpon>Content7Math.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content7Math_2.resx">
+      <DependentUpon>Content7Math_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content7Science.resx">
+      <DependentUpon>Content7Science.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page6UI.resx">
       <DependentUpon>Page6UI.cs</DependentUpon>

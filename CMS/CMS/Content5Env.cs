@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace CMS
 {
-    public partial class Page3UI_c : Form
+    public partial class Content5Env : Form
     {
-        public Page3UI_c()
+        public Content5Env()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
+            axShockwaveFlash1.Movie = Application.StartupPath + @"\..\..\56\Env\1\main.swf";
+            axShockwaveFlash1.Play();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void axShockwaveFlash1_Enter(object sender, EventArgs e)
         {
 
         }

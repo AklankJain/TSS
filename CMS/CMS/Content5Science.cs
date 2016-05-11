@@ -10,18 +10,15 @@ using System.Windows.Forms;
 
 namespace CMS
 {
-    public partial class Page3UI_c : Form
+    public partial class Content5Science : Form
     {
-        public Page3UI_c()
+        public Content5Science()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
+            axShockwaveFlash1.Movie = Application.StartupPath + @"\..\..\56\Science\1\main.swf";
+            axShockwaveFlash1.Play();
         }
     }
 }
