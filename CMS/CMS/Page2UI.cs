@@ -18,5 +18,12 @@ namespace CMS
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Page3UI_a pg3a = new Page3UI_a();
+            pg3a.Show();
+        }
     }
 }
