@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeFile1.cs" />
     <Compile Include="Content3env.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +67,18 @@
     <Compile Include="Content3science.Designer.cs">
       <DependentUpon>Content3science.cs</DependentUpon>
     </Compile>
+    <Compile Include="Content5math.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content5math.Designer.cs">
+      <DependentUpon>Content5math.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content5_2Math.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content5_2Math.Designer.cs">
+      <DependentUpon>Content5_2Math.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page6UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,7 +92,6 @@
       <DependentUpon>Page8UI.cs</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="Page0UI.cs">
       <SubType>Form</SubType>
@@ -131,7 +143,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
     <EmbeddedResource Include="Content3env.resx">
       <DependentUpon>Content3env.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +151,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Content3science.resx">
       <DependentUpon>Content3science.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content5math.resx">
+      <DependentUpon>Content5math.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content5_2Math.resx">
+      <DependentUpon>Content5_2Math.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page6UI.resx">
       <DependentUpon>Page6UI.cs</DependentUpon>
@@ -275,6 +292,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\click.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="56\Math\1\main.swf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
