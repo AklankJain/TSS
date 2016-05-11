@@ -118,12 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Page5UI.resx">
       <DependentUpon>Page5UI.cs</DependentUpon>
-<<<<<<< HEAD
     </EmbeddedResource>
     <EmbeddedResource Include="Page7UI.resx">
       <DependentUpon>Page7UI.cs</DependentUpon>
-=======
->>>>>>> 05e7924d59597b422b49dfe6bb61c3aead61eb20
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
