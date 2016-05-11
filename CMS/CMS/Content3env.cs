@@ -10,25 +10,15 @@ using System.Windows.Forms;
 
 namespace CMS
 {
-    public partial class Page6UI : Form
+    public partial class Content3env : Form
     {
-        public Page6UI()
+        public Content3env()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-        }
-
-        private void Page6UI_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private Page2UI page2 = new Page2UI();
-        private Page7UI page7 = new Page7UI();
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
+            axShockwaveFlash1.Movie = @"C:\DellEduFun\34\Env\1\main.swf";
+            axShockwaveFlash1.Play();
         }
     }
 }

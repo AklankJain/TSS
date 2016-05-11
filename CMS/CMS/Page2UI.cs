@@ -45,6 +45,29 @@ namespace CMS
                                 
                             }
 
+                                MessageBox.Show("Select class");
+                            else
+                            {
+                                if (comboBox1.SelectedItem == "4th and below")
+                                {
+                                    this.Visible = false;
+                                    Page3UI_a pg3a = new Page3UI_a();
+                                    pg3a.Show();
+                                }
+                                if (comboBox1.SelectedItem == "5th and 6th")
+                                {
+                                    this.Visible = false;
+                                    Page3UI_b pg3b = new Page3UI_b();
+                                    pg3b.Show();
+                                }
+                                if (comboBox1.SelectedItem == "7th and above")
+                                {
+                                    this.Visible = false;
+                                    Page3UI_c pg3c = new Page3UI_c();
+                                    pg3c.Show();
+                                }
+
+                            }
                         }
                     }
 
@@ -73,6 +96,10 @@ namespace CMS
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

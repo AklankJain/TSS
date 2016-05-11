@@ -16,7 +16,12 @@ namespace CMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new Page2UI());
+=======
+            Application.Run(new Page0UI());
+
+>>>>>>> 80186606740e7ca4ef8f9fafb58f00d91622fc10
         }
     }
 }
