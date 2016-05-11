@@ -78,6 +78,9 @@
     <Compile Include="Page8UI.Designer.cs">
       <DependentUpon>Page8UI.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Include="Page0UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,7 +131,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
+
     <EmbeddedResource Include="Content3env.resx">
       <DependentUpon>Content3env.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,10 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Content3science.resx">
       <DependentUpon>Content3science.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="Page6UI.resx">
       <DependentUpon>Page6UI.cs</DependentUpon>
->>>>>>> 93a7454df2c3e70e588c34f9c365900951cc0a16
     </EmbeddedResource>
     <EmbeddedResource Include="Page8UI.resx">
       <DependentUpon>Page8UI.cs</DependentUpon>
