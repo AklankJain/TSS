@@ -16,8 +16,7 @@ namespace CMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Content7Science());
-
+            Application.Run(new Content3math());
         }
     }
 }
