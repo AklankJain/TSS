@@ -18,9 +18,6 @@ namespace CMS
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Page0UI());
 
-
-
-
         }
     }
 }
