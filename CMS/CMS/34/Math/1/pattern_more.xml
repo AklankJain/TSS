@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+   <mainFile template="template_grad_04" class="class 4 Math" chapter="Patterns and more" music="bgmusic" diffPath="false"/>
+   <subScenes  file_0="pattern_more_00" file_1="pattern_more_01" file_2="pattern_more_02" file_3="pattern_more_03" file_4="pattern_more_04" file_5="pattern_more_05" file_6="pattern_more_06" file_7="pattern_more_07" file_8="pattern_more_08" file_9="pattern_more_09" file_10="pattern_more_10" file_11="pattern_more_11"/>
+</root>

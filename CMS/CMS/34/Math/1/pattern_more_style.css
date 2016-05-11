@@ -1,0 +1,46 @@
+subHeading{
+	color:#000000;
+	font-size:20px;
+	text-align:center;
+	font-family:font_1;
+}
+content,txt_1,txt_2,txt_3,txt_4,txt_5,txt_6,txt_7,txt_8,txt_9,txt_10,txt_11,txt_12,txt_13,txt_14,txt_15{
+	color:#000000;
+	font-size:18px;
+	text-align:center;
+	font-family:font_1;
+}
+instruct_1,instruct_2,instruct_3,instruct_4,instruct,answer,emp{
+	color:#990000;
+	font-size:18px;
+	text-align:center;
+	font-family:font_1;
+}
+alignR{
+	text-align:right;
+}
+alignL{
+	text-align:left;
+}
+white{
+	color:#ffffff;
+}
+size1{
+	font-size:22px;
+}
+.hLight1{
+	color:#990000;
+}
+.hLight2{
+	color:#540101
+}
+.whiteColor{
+	color:#ffffff
+}
+.content{
+	text-align:center;
+	font-family:font_1;
+}
+num{
+	font-size:23px;
+}
