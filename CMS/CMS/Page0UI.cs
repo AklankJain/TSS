@@ -59,9 +59,38 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            Page1UI pg1 = new Page1UI();
-            pg1.Show();
+            if (string.IsNullOrEmpty(textBox1.Text))
+                MessageBox.Show("Enter Store ID");
+                else{
+                    if (string.IsNullOrEmpty(textBox2.Text))
+                    MessageBox.Show("Enter valid ISP");
+                    else{
+                        if (string.IsNullOrEmpty(textBox3.Text))
+                            MessageBox.Show("Enter contact no.");
+                        else
+                        {
+                            this.Visible = false;
+                            Page1UI pg1 = new Page1UI();
+                            pg1.Show();
+                        }
+                       
+                    }
+
+                    
+                }
+           
+
+                
+                
+            
+            
+           /* else
+            {
+                this.Visible = false;
+                Page1UI pg1 = new Page1UI();
+                pg1.Show();
+            }*/
+            
         }
     }
 }
