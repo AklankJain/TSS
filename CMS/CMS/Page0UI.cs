@@ -59,7 +59,9 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Page1UI pg1 = new Page1UI();
+            pg1.Show();
         }
     }
 }
