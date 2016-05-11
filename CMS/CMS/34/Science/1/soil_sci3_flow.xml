@@ -1,0 +1,266 @@
+<animFlow>
+  <animAssets>
+    <template>
+      <path>template_v3.swf</path>
+      <target>mcTemplate</target>
+    </template>
+    <bgMusic>
+      <path>bgmusic_v3.swf</path>
+      <target>mcBgMusic</target>
+    </bgMusic>
+    <extTxt>
+      <path>lang/English/soil_sci3_texts.xml</path>
+      <target>xmlVars</target>
+    </extTxt>
+    <cssSheet>
+      <path>lang/English/soil_sci3_style.css</path>
+      <target>cssStyles</target>
+    </cssSheet>
+    <applicationProperty>
+      <path>skin/appProperty.xml</path>
+      <target>appProperty</target>
+    </applicationProperty>
+  </animAssets>
+  <animInfo>
+    <Class>Class 3</Class>
+    <Subject>Creative Science</Subject>
+    <Title>Soil – The Basics</Title>
+  </animInfo>
+  <animOrder>
+    <main>
+      <file>soil_sci3_main.swf</file>
+    </main>
+    <scenes>
+      <scene name="assets" endOfSubTopic="false">
+        <file>soil_sci3_01.swf</file>
+        <syncs clip="stage">
+					<sync>2,59</sync>
+				</syncs>
+        <activityZone>
+          <zone></zone>
+        </activityZone>
+        <tsSync>
+          <sync>4,48</sync>
+        </tsSync>
+      </scene>
+      <!--audio name="audio">
+					<VO>
+						<file>soil_sci3_01_vo.swf</file>
+						<syncs clip="soundclip_1">
+							<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+						</syncs>
+					</VO>
+				</audio-->
+    </scenes>
+    <scenes>
+      <scene name="assets" endOfSubTopic="false">
+        <file>soil_sci3_02.swf</file>
+        <syncs clip="stage">
+					<sync>2,5</sync><sync>6,56</sync><sync>57,202</sync><sync>203,270</sync><sync>271,351</sync>
+				</syncs>
+        <activityZone>
+          <zone></zone>
+        </activityZone>
+      	<tsSync>
+					<sync>6,55</sync><sync>56,203</sync><sync>204,271</sync><sync>272,350</sync>
+				</tsSync>
+			</scene>
+      <!--audio name="audio">
+				<VO>
+					<file>soil_sci3_02_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+    </scenes>
+    <scenes>
+      <scene name="assets" endOfSubTopic="false">
+        <file>soil_sci3_03.swf</file>
+        <syncs clip="stage">
+					<sync>2,293</sync>
+				</syncs>
+        <activityZone>
+          <zone></zone>
+        </activityZone>
+      	<tsSync>
+					<sync>6,63</sync><sync>64,104</sync><sync>105,146</sync><sync>147,199</sync><sync>200,234</sync><sync>235,292</sync>
+				</tsSync>
+			</scene>
+      <!--audio name="audio">
+				<VO>
+					<file>soil_sci3_03_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+    </scenes>
+    <scenes>
+      <scene name="assets" endOfSubTopic="false">
+        <file>soil_sci3_04.swf</file>
+        <syncs clip="stage">
+					<sync>2,5</sync><sync>6,75</sync><sync>76,199</sync><sync>200,273</sync><sync>274,329</sync><sync>330,447</sync><sync>448,644</sync><sync>645,734</sync>
+				</syncs>
+        <activityZone>
+          <zone></zone>
+        </activityZone>
+      	<tsSync>
+					<sync>5,74</sync><sync>75,198</sync><sync>199,272</sync><sync>273,328</sync><sync>329,446</sync><sync>447,643</sync><sync>644,733</sync>
+				</tsSync>
+			</scene>
+      <!--audio name="audio">
+				<VO>
+					<file>soil_sci3_04_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+    </scenes>
+  <scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>soil_sci3_05.swf</file>
+				<syncs clip="stage">
+					<sync>2,4</sync><sync>5,97</sync><sync>98,204</sync><sync>205,246</sync><sync>247,329</sync><sync>330,439</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>4,96</sync><sync>97,203</sync><sync>204,245</sync><sync>246,328</sync><sync>329,438</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>soil_sci3_05_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes><scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>soil_sci3_06.swf</file>
+				<syncs clip="stage">
+					<sync>2,4</sync><sync>5,52</sync><sync>53,111</sync><sync>112,153</sync><sync>154,229</sync><sync>230,282</sync><sync>283,409</sync><sync>410,506</sync><sync>507,574</sync><sync>575,649</sync><sync>650,730</sync><sync>731,829</sync><sync>830,963</sync><sync>964,1073</sync><sync>1074,1215</sync><sync>1216,1287</sync><sync>1288,1407</sync><sync>1408,1476</sync><sync>1477,1537</sync><sync>1538,1613</sync><sync>1614,1695</sync><sync>1696,1871</sync><sync>1872,2013</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>4,51</sync><sync>52,110</sync><sync>111,152</sync><sync>153,228</sync><sync>229,281</sync><sync>282,408</sync><sync>409,505</sync><sync>506,573</sync><sync>574,648</sync><sync>649,729</sync><sync>730,828</sync><sync>829,962</sync><sync>963,1072</sync><sync>1073,1214</sync><sync>1215,1286</sync><sync>1287,1406</sync><sync>1407,1475</sync><sync>1476,1536</sync><sync>1537,1612</sync><sync>1613,1694</sync><sync>1695,1870</sync><sync>1871,2012</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>soil_sci3_06_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes><scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>soil_sci3_07.swf</file>
+				<syncs clip="stage">
+					<sync>2,4</sync><sync>5,82</sync><sync>83,131</sync><sync>132,220</sync><sync>221,294</sync><sync>295,350</sync><sync>351,421</sync><sync>422,498</sync><sync>499,549</sync><sync>550,662</sync><sync>663,736</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>5,82</sync><sync>83,131</sync><sync>132,220</sync><sync>221,294</sync><sync>295,350</sync><sync>351,421</sync><sync>422,498</sync><sync>499,549</sync><sync>550,662</sync><sync>663,735</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>soil_sci3_07_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes><scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>soil_sci3_08.swf</file>
+				<syncs clip="stage">
+					<sync>2,4</sync><sync>5,80</sync><sync>81,131</sync><sync>132,210</sync><sync>211,378</sync><sync>379,529</sync><sync>530,602</sync><sync>603,702</sync><sync>703,824</sync><sync>825,945</sync><sync>946,1000</sync><sync>1001,1083</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>4,79</sync><sync>80,130</sync><sync>131,209</sync><sync>210,377</sync><sync>378,528</sync><sync>529,601</sync><sync>602,701</sync><sync>702,823</sync><sync>824,944</sync><sync>945,999</sync><sync>1000,1082</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>soil_sci3_08_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes><scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>soil_sci3_09.swf</file>
+				<syncs clip="stage">
+					<sync>2,4</sync><sync>5,92</sync><sync>93,182</sync><sync>183,287</sync><sync>288,384</sync><sync>385,488</sync><sync>489,587</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>4,91</sync><sync>92,181</sync><sync>182,286</sync><sync>287,383</sync><sync>384,487</sync><sync>488,586</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>soil_sci3_09_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes><scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>soil_sci3_10.swf</file>
+				<syncs clip="stage">
+					<sync>2,50</sync><sync>51,72</sync><sync>73,106</sync><sync>107,165</sync><sync>166,237</sync><sync>238,320</sync><sync>321,398</sync><sync>399,502</sync><sync>503,564</sync><sync>565,654</sync><sync>655,672</sync>
+				</syncs>
+				<activityZone>
+					<zone>10</zone>
+				</activityZone>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>soil_sci3_10_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes><scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>soil_sci3_11.swf</file>
+				<syncs clip="stage">
+					<sync>2,4</sync><sync>5,67</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>4,66</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>soil_sci3_11_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes></animOrder>
+</animFlow>

@@ -1,0 +1,174 @@
+/*
+ Malaysia Medical Project
+*/
+subHeading{
+	/*font-family:Arial;*/
+	color:#666600;
+	font-size:22px;
+	text-align:center;
+	font-family:font_1;
+}
+title{
+	color:#000000; font-size:50px; text-align:center;	display:inline; font-family:font_title_english; font-weight:bold;
+}
+diagram,label,label_1,label_2,label_3,label_4,label_5,label_6,label_7,label_8,label_9,label_10{
+	color:#ffffff;
+	font-size:16px;
+	display:inline;
+	font-family:font_1;
+}
+content,txt_1,txt_2,txt_3,txt_4,txt_5,txt_6,txt_7,txt_8,txt_9,txt_10,txt_11,txt_12,txt_13,txt_14,txt_15{
+	color:#000000;
+	font-size:18px;
+	text-align:center;
+	display:inline;
+	font-family:font_1;
+}
+
+f1{
+	font-family:font_1;
+}
+f2{
+	font-family:font_2;
+}
+finalRes{
+	font-family:font_1;
+	color:#000000;
+	font-size:24px;
+	text-align:center;
+	display:inline;
+}
+/* for instruction texts */
+instruct{
+	font-family:font_1;
+	color:#990000;
+	font-size:18px;
+	text-align:center;
+	display:inline;
+}
+/* for MCQ options button and questions */
+opt{
+	font-family:font_1;
+	color:#000000;
+	font-size:18px;
+	text-align:left;
+	display:inline;
+}
+qus,qusFormat{
+	font-family:font_1;
+	color:#000000;
+	font-size:18px;
+	text-align:left;
+	display:inline;
+}
+option{
+	font-family:font_1;
+	color:#000000;
+	font-size:18px;
+	text-align:left;
+	display:inline;
+}
+/* Please use <spcl> tag for special charactors,  font used :Arial*/
+spcl{
+	font-size:18px;
+	font-family:font_symbols_1;
+	display:inline;
+}
+
+/* for instruction texts */
+correctAns{
+	color:#990000;
+	display:inline;
+}
+/* all input texts should follow this format */
+inputTxtFrmt{
+	size:18;
+	font:font_1;
+	align:center;
+}
+/*  all high light styles should be name "hL1,hL2,.."  */
+hL1{
+	color:#990000;
+	display:inline;
+}
+hL2{
+	color:#990000;
+	display:inline;
+}
+h1{
+	font-size:22px;
+	display:inline;
+}
+white{
+	color:#ffffff;
+	display:inline;
+}
+bl{
+	color:#000000;
+	display:inline;
+}
+
+/* ------Standard alignment tags------ */
+/* --------Text alignment styles  -----------*/
+alignR{
+	text-align:right;
+	display:inline;
+}
+alignL{
+	text-align:left;
+	display:inline;
+}
+alignC{
+	text-align:center;
+	display:inline;
+}
+/*------------------- not for text-------------*/
+instrBullet{
+	bulletPath:bullet;
+	/*bulletPath:bullet_2;//*/
+}
+assessMCQOpt{
+	iconPath:radio_bullet2;
+	alignIconTo:L;
+	alignTextTo:RC; 
+	hideBase:true;
+	showHitAreaOn:text-icon;
+	width:500;
+}
+/*------------------- text panels that appear ------------*/
+/*------------ for text component base clips---------------------*/
+txtBG_Pane{
+	basePath:txtBG_Pane;
+	base_Adj_vSpace:10;
+	base_Adj_hSpace:15;
+	base_Adj_ty:2;
+	base_Adj_tx:-1;
+}
+/*  Text panel - base patch - label styles  */
+greenLab{
+	basePath:greenPatch1;
+	base_Adj_vSpace:-3;
+	base_Adj_hSpace:5;
+	base_Adj_ty:2;
+	base_Adj_tx:-1;
+}
+yellowLab{
+	basePath:yellowPatch1;
+	base_Adj_vSpace:1;
+	base_Adj_hSpace:5;
+	base_Adj_ty:2;
+	base_Adj_tx:-1;
+}
+lablTxt{
+	basePath:yellowLPatch;
+	base_Adj_vSpace:5;
+	base_Adj_hSpace:10;
+	base_Adj_ty:2;
+	base_Adj_tx:-1;
+}
+/*--------*/
+glowType_1{
+glowColor:0x00ff00;
+inner:false;
+}
+

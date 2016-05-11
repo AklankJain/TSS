@@ -1,0 +1,279 @@
+<module>
+	<screen>
+		<subHeading>Eclipse - The Celestial Dance</subHeading>
+		<startBtn>I Dare</startBtn>
+		<txt_1><b><hL2><white>Score Sheet</white></hL2></b></txt_1>
+		<submitBtn><content>Submit</content></submitBtn>
+		<resetBtn><content>Reset</content></resetBtn>
+		<finalRes_1>Game Over</finalRes_1>
+		<graphTitle><content><alignL><white>GraphView</white></alignL></content></graphTitle>
+		<graphInstr><content><hL1>Click to enlarge</hL1></content></graphInstr>
+		<title_1><content><hL1><white>Instructions</white></hL1></content></title_1>
+		<title_2><content><alignL>Correct answer</alignL></content></title_2>
+		<title_3><content><alignL>Feedback</alignL></content></title_3>
+		<res_1><content>Try again!</content></res_1>
+		<res_2><content>Well done!</content></res_2>
+		<res_3><content><font size="17">Sorry! Check out the correct answer.</font></content></res_3>		
+		<responses>
+			<res><font size="30"><alignC>Well done!</alignC></font></res>
+			<res><font size="30"><alignC>Good!</alignC></font></res>
+			<res><font size="30"><alignC>Sorry!</alignC></font></res>
+			<res><font size="30"><alignC>Try again</alignC></font></res>
+		</responses>
+		<instrTitle><content><alignC><hL1>Instructions</hL1></alignC></content></instrTitle>
+		<instrPopup dragable = "false" graphicStyle="4" headerMinH="35" titleTopSpace="6"></instrPopup>
+		<instructions>
+			<content style="instrBullet"><alignL>You have twelve questions to answer in this quiz. Click on the correct option.</alignL></content>
+			<content style="instrBullet"><alignL>You get to score 2 points for every correct answer. </alignL></content>
+			<content style="instrBullet"><alignL>No wild guessing!! You lose a point when you take another chance to get it right. And you get only 2 chances.</alignL></content>
+			<content style="instrBullet"><alignL>Click on <hL1>Start</hL1> to begin.</alignL></content>
+		</instructions>
+		<appuScoreFormat><content>Rupees: #num1#</content></appuScoreFormat>
+		<compScoreFormat><content>Rupees: #num1#</content></compScoreFormat>
+		<scorePopFormat><content><font size='17'>#num1#</font></content></scorePopFormat>
+		<qusFormat><content><hL2>Q#num1#:</hL2> #txt1#</content></qusFormat>
+		<qusTitleFormat><font size="20" color="#ffffff">Quick Quiz</font></qusTitleFormat>
+		<MCQCrtAns><content><alignL><hL2>#txt1#</hL2></alignL></content></MCQCrtAns>
+		<mcqCrtJoinStr>, </mcqCrtJoinStr>
+		<totalCrtFormat><content><alignL>Total correct          -    #num1#</alignL></content></totalCrtFormat>
+		<totalInCrtFormat><content><alignL>Total incorrect       -    #num1#</alignL></content></totalInCrtFormat>
+		<timeTakeFormat><content><alignL>Time taken            -    #num1#</alignL></content></timeTakeFormat>
+		<totalSrcFormat><content><alignL>Total percentage   -    #num1#<spcl>%</spcl></alignL></content></totalSrcFormat>
+		<finalScoreFormat><content><alignL>Score                     -    #num1#</alignL></content></finalScoreFormat>
+		<timerFormat><content><font color="#930000" size="14"><alignL><white>Timer: hh:mm:ss</white></alignL></font></content></timerFormat>
+		<scoreFormat><content><alignL><font color="#930000" size="14"><white>Score: #num1#</white></font></alignL></content></scoreFormat>
+		<qusTimeFormat><content>#num1#:#num2#:#num3#</content></qusTimeFormat>
+		<activities>
+			<level shuffle="false" noOfRounds="12">
+				<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# In which of these lunar phases does a solar eclipse take place?</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option>Full moon</option>
+						<option correct="true">New moon</option>
+						<option>Crescent moon</option>
+						<option>Last quarter</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					 <rea ><br/>Know more: <bl>When the Moon comes in between the Earth and the Sun, it blocks the view of the Sun and casts its shadow on the Earth. This is a solar eclipse. A solar eclipse occurs only on a new moon day.</bl></rea>
+					</reasons>
+					</activity>
+					<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# What type of eclipse is this?</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option>Total solar eclipse</option>
+						<option correct="true">Annular solar eclipse</option>
+						<option>Total lunar eclipse</option>
+						<option>Partial lunar eclipse</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					 <rea ><br/>Know more: <bl>Annular solar eclipse occurs when the Moon is on the far side of its orbit with respect to the Earth. At that point, the Moon appears smaller than the Sun and cannot completely cover it. A ring of bright sunlight around the Moon is called annulus.</bl></rea>
+					</reasons>
+					</activity>
+					<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# How many solar eclipses can generally occur in the same calendar month?</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option correct="true">One</option>
+						<option>Four</option>
+						<option>Three</option>
+						<option>Many</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					 <rea ><br/>Know more: <bl>Generally only one solar eclipse occurs in a calendar month. Two solar eclipses can occur in a calendar month that has two new moons.  An historic example of this was the year 1150 AD, wherein a partial solar eclipse was seen on March 1st and another was seen again on March 30th.</bl></rea>
+					</reasons>
+					</activity>
+					<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# What do we see when the Moon is totally in the penumbral shadow of the Earth?</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option>Diamond ring</option>
+						<option correct="true">Total lunar eclipse</option>
+						<option>Dull red disc of the Moon</option>
+						<option>Partial lunar eclipse</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					 <rea ><br/>Know more: <bl>When the Moon is completely in the umbra, it is visible to us as a dull red disc. This happens as some scattered light from the Earth's atmosphere reaches the Moon. When the Moon is partly in the penumbra and partly in the umbra, we see a partial eclipse. Diamond ring is a stage in a total solar eclipse.</bl></rea>
+					</reasons>
+					</activity>
+					<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# How long does a total solar eclipse last?</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option correct="true">A few minutes</option>
+						<option>A few hours</option>
+						<option>A few days</option>
+						<option>A few weeks</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					<rea wordWrap="1"><br/><alignL>Know more: <alignL><img src="mcRes5"/><br/><br/><br/><br/><br/><br/><br/><bl>During a solar eclipse, if the Moon is on the near side of its orbit with respect to the Earth, it appears big and covers the Sun completely. This results in a total solar eclipse. Only the part of the Earth that lies in the umbral region experiences a total solar eclipse.</bl></alignL></alignL></rea>
+					</reasons>
+					</activity>
+					<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# Which of these creates a halo around the Moon during an annular solar eclipse?</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option>Reflected light from the Moon</option>
+						<option correct="true">Sun's corona</option>
+						<option>Reflected light from the Earth</option>
+						<option>Reflected light from the Mercury</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					<rea wordWrap="1"><br/><alignL>Know more: <alignL><img src="mcRes6"/><br/><br/><br/><br/><br/><br/><br/><bl>The corona is the outermost layer of the Sun's atmosphere, which cannot be seen on a normal day. During an annular solar eclipse, it creates a beautiful halo around the Moon.</bl></alignL></alignL></rea>
+					</reasons>
+					</activity>
+					<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# Which of these is a luminous object?</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option>Jupiter</option>
+						<option>Earth</option>
+						<option>Moon</option>
+						<option correct="true">Sun</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					 <rea ><br/>Know more: <bl>An object that has light of its own is called a luminous object. The Sun, being a star has light of its own. Whereas, planets and moons in the solar system do not have light of their own. They are visible to us as they reflect sunlight.</bl></rea>
+					</reasons>
+					</activity>
+					<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# Observe the visual of a solar eclipse. Identify the part marked.</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option correct="true">Umbra</option>
+						<option>Penumbra</option>
+						<option>Corona</option>
+						<option>Antumbra</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					 <rea ><br/>Know more: <bl>During a solar eclipse, the Moon's shadow on the Earth has two parts. The faint outer shadow is called penumbra and the dark inner shadow is called umbra. Only the part of the Earth that lies in the umbral region experiences a total solar eclipse.</bl></rea>
+					</reasons>
+					</activity>
+					<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# The total solar eclipse of 2009 occurred in the month of:</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option>February</option>
+						<option correct="true">July</option>
+						<option>March</option>
+						<option>August</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					 <rea ><br/>Know more: <bl>The solar eclipse of 2009, which occurred on July 22nd, was the longest total solar eclipse of the 21st century. It lasted a maximum of six minutes and 39 seconds off the coast of southeast Asia, causing tourist influx in eastern China, Japan, India and Nepal.</bl></rea>
+					</reasons>
+					</activity>
+						<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# Which of these images shows Baily's beads?</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true" maxRow="2" width='50' height='30' vSpace="10" wordWrap="1" >
+						<option wordWrap="1"><img src="option10_1"/></option>
+						<option correct="true" wordWrap="1"><img src="option10_2"/></option>
+						<option wordWrap="1"><img src="option10_3"/></option>
+						<option wordWrap="1"><img src="option10_4"/></option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click on the correct option</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					  <rea ><br/>  <br/><br/><br/><br/><br/><alignL>Know more: <bl>Baily's beads are seen just before and after totality. They are the beads-like bursts of light that appear as the Sun's light breaks through the deep valleys of the Moon. It derives its name from Francis Baily, the English astronomer, who first drew attention to them.</bl></alignL></rea>
+					</reasons>
+					</activity>
+					<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# The given visual is a stage in a total solar eclipse. What is it called?</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option>Solar corona</option>
+						<option>First contact</option>
+						<option>Totality</option>
+						<option correct="true">Diamond ring</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					 <rea ><br/>Know more: <bl>A few seconds after totality, the Moon moves away and a single large burst of light appears, resulting in a most spectacular sight called "The Diamond Ring". The diamond ring can also be seen a few seconds before totality.</bl></rea>
+					</reasons>
+					</activity>
+					<activity type="MCQ" selectionLimit="1" maxTry="2" submitType="AUTO_SUMBIT">
+					<questions>
+						<qus>#num# In which of these phases of the Moon does a lunar eclipse occur?</qus>
+						<tabl_x/>
+					</questions>
+					<options shuffle="true">
+						<option correct="true">Full moon</option>
+						<option>New moon</option>
+						<option>First quarter</option>
+						<option>Last quarter</option>
+					</options>
+					<answers></answers>
+					<instructions>
+						<instuction><content><alignC><hL1>Click the correct option.</hL1></alignC></content></instuction>
+					</instructions>
+					<reasons>
+					 <rea ><br/>Know more: <bl>When the Earth comes in between the Sun and the Moon, it obstructs the path of light from the Sun and casts its shadow on the Moon. This is a lunar eclipse. A lunar eclipse occurs only on a full moon day.</bl></rea>
+					</reasons>
+					</activity>
+				</level>
+		</activities>
+		</screen>
+	</module>
