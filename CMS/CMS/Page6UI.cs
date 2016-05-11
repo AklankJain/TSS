@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace CMS
 {
-    public partial class Page7UI : Form
+    public partial class Page6UI : Form
     {
-        public Page7UI()
+        public Page6UI()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
 
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void Page6UI_Load(object sender, EventArgs e)
         {
 
         }

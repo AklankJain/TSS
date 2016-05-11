@@ -66,6 +66,12 @@
     <Compile Include="Content3science.Designer.cs">
       <DependentUpon>Content3science.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page6UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page6UI.Designer.cs">
+      <DependentUpon>Page6UI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page8UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="Content3env.resx">
       <DependentUpon>Content3env.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +137,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Content3science.resx">
       <DependentUpon>Content3science.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Page6UI.resx">
+      <DependentUpon>Page6UI.cs</DependentUpon>
+>>>>>>> 93a7454df2c3e70e588c34f9c365900951cc0a16
     </EmbeddedResource>
     <EmbeddedResource Include="Page8UI.resx">
       <DependentUpon>Page8UI.cs</DependentUpon>
@@ -169,6 +180,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -248,6 +260,19 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+    <None Include="Resources\fb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changedone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
