@@ -90,6 +90,12 @@
     <Compile Include="Page5UI.Designer.cs">
       <DependentUpon>Page5UI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page7UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page7UI.Designer.cs">
+      <DependentUpon>Page7UI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Page0UI.resx">
@@ -112,6 +118,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Page5UI.resx">
       <DependentUpon>Page5UI.cs</DependentUpon>
+<<<<<<< HEAD
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page7UI.resx">
+      <DependentUpon>Page7UI.cs</DependentUpon>
+=======
+>>>>>>> 05e7924d59597b422b49dfe6bb61c3aead61eb20
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -175,6 +187,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\smiley 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide ctc-061.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\without icon-07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\certificate.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

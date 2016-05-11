@@ -84,6 +84,7 @@
             // 
             // button4
             // 
+            this.button4.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(135)))), ((int)(((byte)(201)))));
             this.button4.BackgroundImage = global::CMS.Properties.Resources.smiley_6;
@@ -102,7 +103,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::CMS.Properties.Resources.slide_ctc_06;
+            this.BackgroundImage = global::CMS.Properties.Resources.slide_ctc_061;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.button4);
