@@ -1,0 +1,229 @@
+<module>
+	<screen>
+		<index>1</index>
+		<subHeading></subHeading>
+	<transcript>
+	<tr syncSteps="0"></tr>
+	</transcript>
+		<homePopup width="320" height="350" graphicStyle="2" _x="430" _y="140"></homePopup>
+		<title>A Healthy Home</title>
+		<txt_1><alignC>Did You Know?</alignC></txt_1>
+	</screen>
+	<screen>
+		<index>2</index>
+		<subHeading>Introduction</subHeading>
+		<transcript>
+	<tr syncSteps="0">Every living being has a home.</tr>
+	<tr syncSteps="1">We humans make our homes in buildings called houses.</tr>
+	<tr syncSteps="2">All of us need to keep our homes neat and clean for a healthy environment.</tr>
+	<tr syncSteps="3">Is your house a healthy house? Let’s find out.</tr>
+	</transcript>
+		<txt_1 basePath='yellowPanel'><alignL>Human beings make our homes in buildings called  houses. <br>We need to keep our homes neat and clean for a healthy environment. </br></alignL></txt_1>
+		<txt_2 basePath='yellowPanel'><alignC>Is your house a healthy house?</alignC></txt_2>
+	</screen>
+	<screen>
+		<index>3</index>
+		<subHeading>What You Will Learn</subHeading>
+		<transcript>
+	<tr syncSteps="0"></tr>
+	</transcript>
+		<txt_1 basePath='yellowPanel'>At the end of this module, you will be able to:</txt_1>
+		<objectives>
+			<page width="400">
+				<content style="instrBullet"><alignL>Describe what homes are</alignL></content>
+				<content style="instrBullet"><alignL>Recognize various types of houses</alignL></content>
+				<content style="instrBullet"><alignL>Identify the different rooms in a house </alignL></content>
+				<content style="instrBullet"><alignL>List the characteristics of a good house</alignL></content>
+				<content style="instrBullet"><alignL>Keep your house neat and clean</alignL></content>
+			</page>
+		</objectives>
+		</screen>
+	<screen>
+		<index>4</index>
+		<subHeading>What are Homes?</subHeading>
+		<transcript>
+	<tr syncSteps="0">Our home is where we stay with our family.</tr>
+	<tr syncSteps="1">A home provides us shelter and protects us from different weather conditions such as heat, rain and wind.</tr>
+	<tr syncSteps="2">It also keeps us and our things safe from intruders and thieves.</tr>
+	<tr syncSteps="3">In short, it gives us comfort and safety.</tr>
+	</transcript>
+		<txt_1 basePath='yellowPanel'>Our home is where we stay with our family.</txt_1>
+		<txt_2 basePath='yellowPanel'>A home offers us shelter.</txt_2>
+		<txt_3 basePath='yellowPanel'>It gives us comfort and safety.</txt_3>
+		<objectives>
+			<page width="400">
+				<content style="instrBullet"><alignL>Describe what homes are.</alignL></content>
+				<content style="instrBullet"><alignL>Recognize various types of houses.</alignL></content>
+				<content style="instrBullet"><alignL>Identify the different rooms in a house. </alignL></content>
+				<content style="instrBullet"><alignL>List the characteristics of a good house.</alignL></content>
+				<content style="instrBullet"><alignL>Keep your home neat and clean.</alignL></content>
+			</page>
+		</objectives>
+		</screen>
+	<screen>
+		<index>5</index>
+		<subHeading>Types of Houses</subHeading>
+		<transcript>
+	<tr syncSteps="0">Do all houses look alike? No, they don’t.</tr>
+	<tr syncSteps="1">Houses are individual buildings and can be single storied or multi storied. They usually belong to one family.</tr>
+	<tr syncSteps="2">Flats or apartments are large buildings that contain many houses.</tr>
+	<tr syncSteps="3">Some people live in mobile houses or caravans.</tr>
+	<tr syncSteps="4">Did You Know?</tr>
+	<tr syncSteps="5">A wigwam is a domed single-room house made out of arched wooden poles</tr>
+	<tr syncSteps="6">and some roofing material, used by certain Native American tribes.</tr>
+	<tr syncSteps="7">Eskimos live in an Igloo, an Igloo is a house made out of snow or ice blocks.</tr>
+	</transcript>
+		<txt_1 basePath='yellowPanel'><alignL>Do all houses look alike? No, they don’t.</alignL></txt_1>
+		<txt_2 basePath='yellowPanel'><alignL>Houses are individual buildings.<br>They can be:</br><br><ul><li>Single storied</li><li>Multi storied</li></ul></br></alignL></txt_2>
+		<txt_3 basePath='yellowPanel'><alignL>Flats are big buildings that contain many houses.</alignL></txt_3>
+		<txt_4 basePath='yellowPanel'><alignC>Caravan</alignC></txt_4>
+		<txt_5 basePath='yellowPanel'><alignC>Did You Know?</alignC></txt_5>
+		<txt_6 basePath='yellowPanel'><alignL>A wigwam is a domed single-room house made out of arched wooden poles and some roofing material, used by certain Native American tribes.</alignL></txt_6>
+		<txt_7 basePath='yellowPanel'><alignL>Eskimos live in an Igloo, which is a house made out of snow or ice blocks.</alignL></txt_7>
+	</screen>
+	<screen>
+		<index>6</index>
+		<subHeading>Rooms Inside a House</subHeading>
+		<transcript>
+	<tr syncSteps="0">Inside a house there are rooms for sleeping,</tr>
+	<tr syncSteps="1">entertaining guests, cooking, dining, storing and washing...</tr>
+	<tr syncSteps="2">Click on each room in the given picture to learn more about it.</tr>
+	</transcript>
+	<txt_1><alignL>Bedroom: This is where you, your family and guests sleep or take rest.</alignL></txt_1>	
+	<txt_2><alignL>Living or Drawing Room: This is where you welcome and entertain your guests. </alignL></txt_2>
+	<txt_3><alignL>Kitchen: You use this room to cook food and may be, wash dishes.</alignL></txt_3>	
+	<txt_4><alignL>Dining Room: This is the place where you have your breakfast, lunch and dinner with your family.</alignL></txt_4>	
+	<txt_5><alignL>Store Room: This is the space used for storing things. </alignL></txt_5>	
+	<txt_6><alignL>Bathroom: This is the space used for bathing and washing.</alignL></txt_6>	
+	<txt_7><alignC>Bedroom</alignC></txt_7>	
+	<txt_8><alignC>Living Room</alignC></txt_8>	
+	<txt_9><alignC>Kitchen</alignC></txt_9>	
+	<txt_10><alignC>Dining Room</alignC></txt_10>	
+	<txt_11><alignC>Store Room</alignC></txt_11>	
+	<txt_12><alignC>Bathroom</alignC></txt_12>
+	<txt_13><alignC>Click each room in the given picture to learn more about it.</alignC></txt_13>
+	
+	</screen>
+	<screen>
+		<index>7</index>
+		<subHeading>A Good House</subHeading>
+		<transcript>
+	<tr syncSteps="0">A good house must have a healthy atmosphere.</tr>
+	<tr syncSteps="1">Let’s see how we can create a healthy atmosphere in a house.</tr>
+	<tr syncSteps="2">All rooms must be airy and well lit. Sunlight keeps the rooms dry and germs free.</tr>
+	<tr syncSteps="3">Wire netting on doors and windows keeps mosquitoes and flies away.</tr>
+	<tr syncSteps="4">Iron grills protect us from intruders.</tr>
+	<tr syncSteps="5">Houses should have some open space like a courtyard, verandah or balcony where children can play.</tr>
+	<tr syncSteps="6">There should be a proper drainage system that carries dirty water out of the house.</tr>
+	<tr syncSteps="7">Plants and flowers not only look good, but also purify the air.</tr>
+	<tr syncSteps="8">Did You Know?</tr>
+	<tr syncSteps="9">Mosquitoes carry and spread diseases, such as malaria, yellow fever,</tr>
+	<tr syncSteps="10">dengue fever, and encephalitis. Mosquito larvae need water to survive.</tr>
+	<tr syncSteps="11">Even the amount of water needed to fill a coffee cup is enough for eggs to grow and hatch.</tr>
+	</transcript>
+		<txt_1 basePath='yellowPanel'><alignC>A good house must have a healthy atmosphere.</alignC></txt_1>
+		<txt_2 basePath='yellowPanel'>All rooms must be airy and well lit.</txt_2>
+		<txt_3 basePath='yellowPanel'><alignC>Wire netting on doors and windows.</alignC></txt_3>
+		<txt_4 basePath='yellowPanel'><alignC>Iron grills protect us from intruders.</alignC></txt_4>
+		<txt_5 basePath='yellowPanel'><alignC>Open spaces</alignC></txt_5>
+		<txt_6 basePath='yellowPanel'><alignC>Proper drainage system</alignC></txt_6>
+		<txt_7 basePath='yellowPanel'><alignC>Plants and flowers not only look good, but also purify the air.</alignC></txt_7>
+		<txt_8 ><alignC>Did You Know?</alignC></txt_8>
+		<txt_9 basePath='yellowPanel'><alignL><alignJ>Mosquitoes carry and spread diseases, such as malaria, yellow fever, dengue fever and encephalitis. All of these diseases can kill people.<br>Mosquito larvae need water to survive. Even the amount of water needed to fill a coffee cup is enough for mosquito eggs to grow and hatch.</br></alignJ></alignL></txt_9>
+		<txt_11></txt_11>
+		<txt_12></txt_12>
+		<txt_13></txt_13>
+		<txt_14></txt_14>
+	</screen>
+	<screen>
+		<index>8</index>
+		<subHeading>Keeping Your Home Neat and Clean</subHeading>
+		<transcript>
+	<tr syncSteps="0">You can also help to keep the house healthy.</tr>
+	<tr syncSteps="1">Here’s your Healthy Home Checklist. Help your parents to ensure the following:</tr>
+	<tr syncSteps="2">Your house has clean surroundings.</tr>
+	<tr syncSteps="3">The windows are open for some time during the day to let sunlight and air in.</tr>
+	<tr syncSteps="4">There are no wastewater deposits inside or outside the house.</tr>
+	<tr syncSteps="5">The floors of the kitchen and bathroom are kept dry.</tr>
+	<tr syncSteps="6">Washbasins, toilets and bathrooms are washed and cleaned daily.</tr>
+	<tr syncSteps="7">Dustbins are placed away from food, are covered always and cleaned everyday.</tr>
+	<tr syncSteps="8">Garbage is thrown only at proper dumping places.</tr>
+	<tr syncSteps="9">Clean the house everyday.</tr>
+	<tr syncSteps="10">There is a fixed place for keeping things and they are kept back at the same place after use.</tr>
+	<tr syncSteps="11">Did You Know?</tr>
+	<tr syncSteps="12">House flies carry over 100 different kinds of disease causing germs.</tr>
+	</transcript>
+		<txt_1 basePath='yellowPanel'><alignC>Your house has clean surroundings.</alignC></txt_1>
+		<txt_2 basePath='yellowPanel'><alignC>The windows are open for some time during day to let sunlight and air in.</alignC></txt_2>
+		<txt_3 basePath='yellowPanel'><alignC>There are no waste water deposits inside or the outside the house.</alignC></txt_3>
+		<txt_4 basePath='yellowPanel'><alignC>Do not allow water to gather on the floors of the kitchen and bathroom.</alignC></txt_4>
+		<txt_5 basePath='yellowPanel'><alignC>Keep washbasins, toilets and bathrooms washed and cleaned daily.</alignC></txt_5>
+		<txt_6 basePath='yellowPanel'><alignL>Place dustbins away from your food, keep them covered and make sure that they are cleaned everyday.</alignL></txt_6>
+		<txt_7 basePath='yellowPanel'><alignC>Throw garbage only at proper dumping places.</alignC></txt_7>
+		<txt_8 basePath='yellowPanel'><alignC>Clean the house everyday.</alignC></txt_8>
+		<txt_9 basePath='yellowPanel'><alignL>Have a fixed place for keeping things and make sure things are returned to the same place after use.</alignL></txt_9>
+		<txt_10><alignC>Did You Know?</alignC></txt_10>
+		<txt_11 basePath='yellowPanel'><alignL>House flies carry over 100 different kinds of disease causing germs.</alignL></txt_11>
+	</screen>
+	<screen>
+		<index>9</index>
+		<subHeading>Healthy Home Competition</subHeading>
+		<transcript>
+	<tr syncSteps="0">Hello there, Now is your chance to win a prize.</tr>
+	<tr syncSteps="1">We have a healthy home competition for you</tr>
+	<tr syncSteps="2">Here is your assigned virtual house.</tr>
+	<tr syncSteps="3">Your task is to help to make it clean, tidy and healthy.</tr>
+	<tr syncSteps="4">What should you do? Identify the things that are not proper in each scene</tr>
+	<tr syncSteps="5">And click on each to take corrective action.</tr>
+	</transcript>
+		<txt_1 basePath='DynamicPanel1'>Identify the things that are not proper in each scene and click on it to take the corrective action.</txt_1>
+		<txt_2 basePath='yellowPanel'><alignL>Your Task is to help to make it clean, tidy and healthy.<br>Identify the things that are not proper in each scene and click on each to take the corrective action.</br></alignL></txt_2>
+		<txt_3 basePath ='yellowPanel'><alignL><br></br>Plant some green plants around the house. Plants and flowers help in purifying the air.</alignL></txt_3>
+		<txt_4 basePath ='yellowPanel'><alignL><br></br>For a healthy living, keep your surroundings clean.</alignL></txt_4>
+		<txt_5 basePath ='yellowPanel'><alignL><br></br>You are going inside.</alignL></txt_5>
+		<txt_6 basePath ='yellowPanel'><alignL><br></br>Keep your things in order and at fixed places at all times.</alignL></txt_6>
+		<txt_7 basePath ='yellowPanel'><alignL><br></br>Keep your house clean. A clean house is free from germs and diseases.</alignL></txt_7>
+		<txt_8 basePath ='yellowPanel'><alignL><br></br>The rooms of the house should be airy and well lit.</alignL></txt_8>
+		<txt_9 basePath ='yellowPanel'><alignL><br></br>Do not allow water to collect on the floor of the kitchen. It may lead to accidents.</alignL></txt_9>
+		<txt_10 basePath ='yellowPanel'><alignL><br></br>Keep the dustbins at proper places and keep it covered always.</alignL></txt_10>
+		<txt_11 basePath ='yellowPanel'><alignL><br></br>Keep the washbasins clean all the time to keep away the germs that cause diseases.</alignL></txt_11>
+		<txt_12 basePath ='yellowPanel'><alignL><br></br>Keep the windows open as the sunlight keeps the room dry and free of germs.</alignL></txt_12>
+		<txt_13 basePath ='yellowPanel'><alignL><br></br>Always keep your bed neat and tidy.</alignL></txt_13>
+		<txt_14 basePath ='yellowPanel'><alignL><br></br>Keep your house clean. A clean house is free from germs and diseases.</alignL></txt_14>
+		<txt_15 basePath ='yellowPanel'><alignL><br></br><f1>Keep your things at fixed places. This saves time in searching them.</f1></alignL></txt_15>
+		<txt_16 basePath ='yellowPanel'><alignL><br></br><f1>Keep your bathroom dry to prevent accidents and also to keep away the disease-causing germs.</f1></alignL></txt_16>
+		<txt_17 basePath ='yellowPanel'><alignL><br></br><f1>Keep the dustbins covered and clean all the time.</f1></alignL></txt_17>
+		<txt_18 basePath ='yellowPanel'><alignL><br></br><f1>Always keep the toilets clean and covered.</f1></alignL></txt_18>
+		<txt_19 basePath ='yellowPanel'><alignL><br></br><f1>Keep the washbasins clean all the time to keep away the germs that cause diseases.</f1></alignL></txt_19>
+		<txt_20 basePath='DynamicPanel1'><f1>Identify 2 things that are not proper in this scene and click on them to take the corrective action.</f1></txt_20>
+		<txt_21 basePath='DynamicPanel1'><f1>Identify 3 things that are not proper in this scene and click on them to take the corrective action.</f1></txt_21>
+		<txt_22 basePath='DynamicPanel1'><f1>Identify 4 things that are not proper in this scene and click on them to take the corrective action.</f1></txt_22>		
+	</screen>
+	<screen>
+		<index>10</index>
+		<subHeading>Let's Sum Up</subHeading>
+		<transcript>
+	<tr syncSteps="0">Are you ready now to keep your home clean and tidy?</tr>
+	<tr syncSteps="1">Alright! Let’s recap…</tr>
+	<tr syncSteps="2">Our home is the place that provides us shelter and is where we live with our family.</tr>
+	<tr syncSteps="3">Human beings make their homes in buildings called houses.</tr>
+	<tr syncSteps="4">These can be single-storied or multi-storied houses or flats.</tr>
+	<tr syncSteps="5">There could be multiple rooms for sleeping, cooking and washing in a house.</tr>
+	<tr syncSteps="6">We need to create a good atmosphere in our houses.</tr>
+	<tr syncSteps="7">This can be done by keeping it clean and tidy inside as well as outside.</tr>
+	<tr syncSteps="8">Proper care should be taken to ensure the following:</tr>
+	<tr syncSteps="9">A good supply of air and light</tr>
+	<tr syncSteps="10">Waste and garbage disposal</tr>
+	<tr syncSteps="11">Protection against disease-spreading mosquitoes and flies</tr>
+	</transcript>
+		<txt_1><alignC>Our home is the place that provides us shelter and is where we live with our family.</alignC></txt_1>
+		<txt_2><alignL>We make our homes in buildings called houses.</alignL></txt_2>
+		<txt_3><alignL>This can be single storied or multi storied houses or flats.</alignL></txt_3>
+		<txt_4><alignL>There could be multiple rooms for sleeping, cooking, washing, etc. in a house.</alignL></txt_4>
+		<txt_5><alignL>Proper supply of air and light.</alignL></txt_5>
+		<txt_6><alignL>Proper disposal of waste and garbage.</alignL></txt_6>
+		<txt_7><alignL>Protection against disease spreading mosquitoes and flies.</alignL></txt_7>
+		<txt_8><alignL>This can be done by keeping the insides and the surroundings clean and tidy. </alignL></txt_8>
+		<txt_9><alignL>We should create a good atmosphere in our houses.</alignL></txt_9>
+	</screen>
+	</module>

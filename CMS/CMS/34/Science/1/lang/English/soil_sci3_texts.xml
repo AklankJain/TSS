@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<screen>
+    <index>1</index>
+    <subHeading></subHeading>
+    <homePopup width="320" height="350" graphicStyle="2" _x="430" _y="140"></homePopup>
+    <title>Parts of My Body</title>
+    <txt_1>
+      <alignL></alignL>
+    </txt_1>
+    <txt_2>
+      <hL1></hL1>
+    </txt_2>
+  </screen>
+	<screen>
+    <index>2</index>
+    <subHeading>Dirt or Earth</subHeading>
+    <transcript>
+      <tr syncSteps="0">To many of us, soil is just dirt. </tr>
+      <tr syncSteps="1">Something to be washed off from our clothes, our body, our vehicles or the vegetables we eat. </tr>
+      <tr syncSteps="2">However, life on Earth depends on soil.</tr>
+      <tr syncSteps="3">Many scientists study the soil. They are called pedologists.</tr>
+    </transcript>
+    <txt_1 basePath="yellowPanel">Scientists who study the soil are called pedologists.</txt_1>
+  </screen>
+	<screen>
+    <index>3</index>
+    <subHeading>Learning Objectives</subHeading>
+    <transcript>
+      <tr syncSteps="0">At the end of this module, you will be able to:</tr>
+      <tr syncSteps="1">Define what soil is</tr>
+      <tr syncSteps="2">Describe the origin of soil</tr>
+      <tr syncSteps="3">Classify soil based on its composition</tr>
+      <tr syncSteps="4">Describe soil properties </tr>
+      <tr syncSteps="5">List out the important uses of soil</tr>
+      <tr syncSteps="6"></tr>
+      <tr syncSteps="7"></tr>
+    </transcript>
+    <txt_1>At the end of this module, you will be able to:</txt_1>
+    <objectives>
+      <page width="400">
+        <content style="instrBullet">
+          <alignL>Define what soil is</alignL>
+        </content>
+        <content style="instrBullet">
+          <alignL>Describe the origin of soil</alignL>
+        </content>
+        <content style="instrBullet">
+          <alignL>Classify soil based on its composition</alignL>
+        </content>
+        <content style="instrBullet">
+          <alignL>Describe soil properties </alignL>
+        </content>
+        <content style="instrBullet">
+          <alignL>List out the important uses of soil</alignL>
+        </content>
+      </page>
+    </objectives>
+  </screen>
+	<screen>
+    <index>4</index>
+    <subHeading>Origin of Soil</subHeading>
+    <transcript>
+	<tr syncSteps="0">Soil forms the topmost layer of the Earth.</tr>
+	<tr syncSteps="1">Soil is a complex mix of ingredients: minerals, air, water and organic matter.</tr>
+	<tr syncSteps="2">Most of the soil here on Earth has been around for a long time.</tr>
+	<tr syncSteps="3">Soil forms from its "parent material".</tr>
+	<tr syncSteps="4">This can be rocks, dead leaves, broken trees lying on the ground, and dead organisms.</tr>
+	<tr syncSteps="5">Heat, rain, ice, snow, wind, and sunshine help to break the parent material down into smaller and smaller pieces until it becomes soil.</tr>
+	<tr syncSteps="6">It can take hundreds or thousands of years to make a thin layer of soil.</tr>
+	</transcript>
+    <txt_1 basePath="yellowPanel">Soil</txt_1>
+    <txt_2 basePath="yellowPanel">Minerals</txt_2>
+    <txt_3 basePath="yellowPanel">Air</txt_3>
+    <txt_4 basePath="yellowPanel">Water</txt_4>
+    <txt_5 basePath="yellowPanel">Organic matter</txt_5>
+    <txt_6 basePath="yellowPanel">Agents which break down the parent material </txt_6>
+    <txt_7 basePath="yellowPanel">Rock</txt_7>
+    <txt_8 basePath="yellowPanel">Dead leaf</txt_8>
+    <txt_9 basePath="yellowPanel">Broken tree</txt_9>
+    <txt_10 basePath="yellowPanel">Dead organism</txt_10>
+    <txt_11 basePath="yellowPanel">Heat</txt_11>
+    <txt_12 basePath="yellowPanel">Rain</txt_12>
+    <txt_13 basePath="yellowPanel">Ice</txt_13>
+    <txt_14 basePath="yellowPanel">Snow</txt_14>
+    <txt_15 basePath="yellowPanel">Wind</txt_15>
+    <txt_16 basePath="yellowPanel"><content>Sunshine</content></txt_16>
+    <txt_17 basePath="yellowPanel"></txt_17>
+	</screen>
+	<screen>
+    <index>5</index>
+    <subHeading>Composition of Soil</subHeading>
+    <transcript>
+	<tr syncSteps="0">Let us pick a handful of soil from the garden or playground and look at it closely.</tr>
+	<tr syncSteps="1">You will probably see small stones, sticks, leaves and some other tiny particles.</tr>
+	<tr syncSteps="2">Soil has two types of matter.</tr>
+	<tr syncSteps="3">Inorganic matter – the minerals, air and water.</tr>
+	<tr syncSteps="4">Organic matter – Countless organisms and the decaying remains of once-living things.</tr>
+	</transcript>
+		<txt_1 basePath="yellowPanel">Soil</txt_1>
+		<txt_2 basePath="yellowPanel">Inorganic matter</txt_2>
+		<txt_3 basePath="yellowPanel">Minerals, air and water</txt_3>
+		<txt_4 basePath="yellowPanel">Organic matter</txt_4>
+		<txt_5 basePath="yellowPanel">Countless organisms and the decaying<br/>remains of once-living things</txt_5>
+		<glowController_1 style ="glowType_1"></glowController_1>
+	</screen>
+	<screen>
+		<index>6</index>
+		<subHeading>The Inorganic Matter in Soil</subHeading>
+		<transcript>
+	<tr syncSteps="0">The next time you are out in your garden, </tr>
+	<tr syncSteps="1">take some soil in your hand and rub your palms together </tr>
+	<tr syncSteps="2">to feel the texture of the soil.</tr>
+	<tr syncSteps="3">The proportion of minerals or the rock material from which the soil has been formed</tr>
+	<tr syncSteps="4">determines the feel or texture of the soil.</tr>
+	<tr syncSteps="5">The original rock, from which soil crumbles, usually have sand, clay and silt, which are called as rock material. </tr>
+	<tr syncSteps="6">Different samples of soil have different proportions of these three rock materials. </tr>
+	<tr syncSteps="7">This proportion determines the water holding capacity of the soil </tr>
+	<tr syncSteps="8">and also the rate at which the water moves through the soil.</tr>
+	<tr syncSteps="9">The water holding capacity of the soil is known as porosity.</tr>
+	<tr syncSteps="10">The rate at which water moves through the soil is known as the permeability of the soil. </tr>
+	<tr syncSteps="11">Let’s examine that now. There are three plastic bottles with three soil samples, sand, clay and silt.</tr>
+	<tr syncSteps="12">The bottles have fine holes at the bottom. Watch what happens in each case when water is added.</tr>
+	<tr syncSteps="13">Remember, the water holding capacity of the soil, or porosity of soil depends on the number and size of the pores. </tr>
+	<tr syncSteps="14">You can notice that water flows through sand very easily </tr>
+	<tr syncSteps="15">but takes a long time to flow through clay. Clay has very small pores so, water moves through it slowly.</tr>
+	<tr syncSteps="16">Hence, clay has very small pores so water moves through it slowly. Hence clay has low porosity and permeability.</tr>
+	<tr syncSteps="17">Sand has large pores so water moves through it quickly. </tr>
+	<tr syncSteps="18">This means that sand has high porosity and permeability. </tr>
+	<tr syncSteps="19">The porosity and permeability of silt is intermediate. </tr>
+	<tr syncSteps="20">Soils that is best for growing crops are called loam. It has clay, silt and sand in the ratio of 20:40:40.</tr>
+	<tr syncSteps="21">There are many shades of soil, the colour is dependent on the colour of the rock and the proportion in which the rock materials are present.</tr>
+	</transcript>
+		<txt_1 basePath="yellowPanel"><alignL>The proportion of minerals or the rock material from which the<br/>soil has been formed determines the feel or texture of the soil.</alignL></txt_1>
+		<txt_2 basePath="yellowPanel">Rock Material</txt_2>
+		<txt_3 basePath="yellowPanel">Sand</txt_3>
+		<txt_4 basePath="yellowPanel">Clay</txt_4>
+		<txt_5 basePath="yellowPanel">Silt</txt_5>
+		<txt_6 basePath="yellowPanel">The water holding capacity of soil is called porosity.</txt_6>
+		<txt_7 basePath="yellowPanel">The rate at which water moves through the soil is known as permeability.</txt_7>
+		<txt_8 basePath="yellowPanel">Sand</txt_8>
+		<txt_9 basePath="yellowPanel">Clay</txt_9>
+		<txt_10 basePath="yellowPanel">Silt</txt_10>
+		<txt_11 basePath="yellowPanel">Water holding capacity of soil or porosity of the soil depends on the number and size of the pores.</txt_11>
+		<txt_12 basePath="yellowPanel">Clay has low permeability because of low porosity.</txt_12>
+		<txt_13 basePath="yellowPanel">Sand has a high permeability because of high porosity.</txt_13>
+		<txt_14 basePath="yellowPanel">The porosity and permeability of silt is intermediate. </txt_14>
+		<txt_15 basePath="yellowPanel">Soil that is best for growing crops is called loam. It has clay, silt and sand in the ratio of 20:40:40.</txt_15>
+		<txt_16 basePath="yellowPanel"><content>The colour of the soil is dependent on the colour of the rock and the proportion in<br/>which the rock materials are present.</content></txt_16>
+		<txt_17 basePath="yellowPanel"><content><alignL>The proportion of rock material determines the water holding capacity<br/>of the soil and also the rate at which water moves through the soil.</alignL></content></txt_17>
+	</screen>
+	<screen>
+    <index>7</index>
+    <subHeading>Organic Matter in Soil</subHeading>
+    <transcript>
+	<tr syncSteps="0">Do you know what happens to plants and animals when they die?</tr>
+	<tr syncSteps="1">Dead plants and animals start to rot or decay.</tr>
+	<tr syncSteps="2">As they are eaten by many bacteria and small animals like earthworms and snails.</tr>
+	<tr syncSteps="3">This partially rotten plant and animal remains is called humus</tr>
+	<tr syncSteps="4">which forms the top layer of soil.</tr>
+	<tr syncSteps="5">The waste matter of earthworms and snails collects in the soil. </tr>
+	<tr syncSteps="6">This waste matter in turn helps plants to grow.</tr>
+	<tr syncSteps="7">Earthworms thrive on soil.</tr>
+	<tr syncSteps="8">They help keep the soil pores by their movement, and their waste matter helps keep the soil fertile. </tr>
+	<tr syncSteps="9">No wonder earthworms are called farmers’ friends!</tr>
+	</transcript>
+	<txt_1 basePath="yellowPanel">Earthworms are called farmers’ friends!</txt_1>
+	 </screen>
+	<screen>
+    <index>8</index>
+    <subHeading>Soil Supports Life on Earth</subHeading>
+	<transcript>
+	<tr syncSteps="0">Soil is useful to all living organisms, including man.</tr>
+	<tr syncSteps="1">Soil forms the home for many animals.</tr>
+	<tr syncSteps="2">Rabbits and mice dig their burrows and holes in soil.</tr>
+	<tr syncSteps="3">Other animals like snakes, slugs, earthworms, snails, ants, centipedes and beetles also live in the soil.</tr>
+	<tr syncSteps="4">Animals such as snakes, insects and frogs sleep or rest inside their holes under the soil for many months in winter. </tr>
+	<tr syncSteps="5">This is called hibernation or winter sleep.</tr>
+	<tr syncSteps="6">Animals like the earthworm keep themselves moist and cool by living under the soil.</tr>
+	<tr syncSteps="7">Soil provides nutrition to plants. These plants in turn are food for other animals.</tr>
+	<tr syncSteps="8">The roots of plants grow and spread within the soil and get nutrients from the soil for the plants to grow.  </tr>
+	<tr syncSteps="9">Roots help to hold the soil together. </tr>
+	<tr syncSteps="10">So you see how soil is important for both plants and animals to live.</tr>
+	</transcript>
+    <txt_1 basePath="yellowPanel">Soil is useful to all living organisms, including man.</txt_1>
+    <txt_2 basePath="yellowPanel">Rabbits and mice dig their burrows and holes in soil.</txt_2>
+    <txt_3 basePath="yellowPanel">Snakes, slugs, earthworms, snails, ants, centipedes and beetles also live in the soil.</txt_3>
+    <txt_4 basePath="yellowPanel"><alignL>Animals such as snakes, insects and frogs sleep or rest inside<br/>their holes under the soil for many months in winter.</alignL></txt_4>
+    <txt_5 basePath="yellowPanel">This is called hibernation or winter sleep.</txt_5>
+  </screen>
+  	<screen>
+    <index>9</index>
+    <subHeading>Soil – More Uses</subHeading>
+	<transcript>
+	<tr syncSteps="0">Let’s take a look at this chart to understand some important uses of soil.</tr>
+	<tr syncSteps="1">Many everyday items of life come directly or indirectly from soil:</tr>
+	<tr syncSteps="2">food, clothing, furniture, paper, pencils and building materials.</tr>
+	<tr syncSteps="3">Glass is made using sand. Sand is used in building construction.</tr>
+	<tr syncSteps="4">We use bricks, roofing tiles and flower pots in our homes. They are all made of clay.</tr>
+	<tr syncSteps="5">Many bacteria live in soil. They help in decomposing garbage that we dispose.</tr>
+	</transcript>
+	   	<txt_1 basePath="yellowPanel">Soil</txt_1>
+		<txt_2>Food</txt_2>
+		<txt_3>Cloth</txt_3>
+		<txt_4>Furniture</txt_4>
+		<txt_5>Paper</txt_5>
+		<txt_6>Pencil</txt_6>
+		<txt_7>Building materials</txt_7>
+		<txt_8>Glass</txt_8>
+		<txt_9>Building construction</txt_9>
+		<txt_10>Brick </txt_10>
+		<txt_11>Roofing tile</txt_11>
+		<txt_12>Flower pot</txt_12>
+		<txt_13>Bacteria</txt_13>
+   	  </screen>
+	  
+	  <screen>
+		<index>10</index>
+		<subHeading>Snakes and Ladders</subHeading>
+		<transcript>
+	<tr syncSteps="0">Let’s play a game of snakes and ladders.</tr>
+	<tr syncSteps="1">Instructions</tr>
+	<tr syncSteps="2">Press start when you are ready.</tr>
+	<tr syncSteps="3">Roll the die and answer the question that gets displayed.</tr>
+	<tr syncSteps="4">If you answer incorrectly, you go back to the square where you came from.</tr>
+	<tr syncSteps="5">If you land on the foot of a LADDER and you answer correctly you go up the ladder.</tr>
+	<tr syncSteps="6">If you land on the top of a SNAKE and you answer incorrectly you go down the snake.</tr>
+	<tr syncSteps="7">If you land on one of the HOTSPOTS (Sun or Snake) and you answer correctly you get another turn,</tr>
+	<tr syncSteps="8">but if you answer incorrectly you go back to SQUARE 1.</tr>
+	<tr syncSteps="9">You win the game when you reach SQUARE 25 and answer the question correctly. Good luck!</tr>
+	</transcript>
+		<objectives>
+			<page width="600">
+				<content style="instrBullet"><alignL>Press start when you are ready.</alignL></content>
+				<content style="instrBullet"><alignL>Roll the die and answer the question that gets displayed.</alignL></content>
+				<content style="instrBullet"><alignL>If you answer incorrectly, you go back to the square where you came from.</alignL></content>
+				<content style="instrBullet"><alignL>If you land on the foot of a LADDER and you answer correctly you go up the ladder.</alignL></content>
+				<content style="instrBullet"><alignL>If you land on the top of a SNAKE and you answer incorrectly you go down the snake.</alignL></content>
+				<content style="instrBullet"><alignL>If you land on one of the HOTSPOTS (Sun or Snake)<br/>and you answer correctly you get another turn,<br/>but if you answer incorrectly you go back to SQUARE 1.</alignL></content>
+				<content style="instrBullet"><alignL>You win the game when you reach SQUARE 25 and answer the question correctly.</alignL></content>
+			</page>
+		</objectives>
+		<txt_1><h1>Instructions</h1></txt_1>
+		<txt_2 basePath='yellowPanel'><alignL>Let’s play a game of snakes and ladders.</alignL></txt_2>
+		<txt_3><font color="#FFFFFF">Start</font></txt_3>
+		<txt_4><font color="#FFFFFF">Roll The Die</font></txt_4>
+		<txt_5><font color="#FFFFFF">Instructions</font></txt_5>
+		<txt_6><font color="#FFFFFF">Click on Start to begin</font></txt_6>
+	</screen>
+	
+  	<screen>
+    <index>11</index>
+     <subHeading>Let's Sum Up</subHeading>
+		<txt_1 >Soil</txt_1>
+		<txt_2>Origin</txt_2>
+		<txt_3>Rocks</txt_3>
+		<txt_4>Erosion of rocks</txt_4>
+		<txt_5>Formation of soil</txt_5>
+		<txt_6>Composition</txt_6>
+		<txt_7>Organic</txt_7>
+		<txt_8>Humus</txt_8>
+		<txt_9>Inorganic</txt_9>
+		<txt_10><alignL>Sand</alignL></txt_10>
+		<txt_11><alignL>Loam</alignL></txt_11>
+		<txt_12><alignL>Clay</alignL></txt_12>
+		<txt_13>Uses</txt_13>
+		<txt_14>Home for animals</txt_14>
+		<txt_15>Supports plant life</txt_15>
+		<txt_16><f1>Raw material for glass</f1></txt_16>
+		<txt_17><f1>Source of minerals</f1></txt_17>
+  </screen>
+	</module>

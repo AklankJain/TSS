@@ -1,0 +1,43 @@
+<animFlow>
+		<animAssets>
+			<template>
+				<path>template/edurite_digitally_global_2009-10.swf</path>
+				<target>mcTemplate</target>
+			</template>
+			<bgMusic>
+				<path>template/bgmusic.swf</path>
+				<target>mcBgMusic</target>
+			</bgMusic>
+			<extTxt>
+				<path>lang/English/a13422_ecplps_cele_dnce_sci5_mcq_texts_en.xml</path>
+				<target>xmlVars</target>
+			</extTxt>
+			<cssSheet>
+				<path>lang/English/a13422_ecplps_cele_dnce_sci5_mcq_style_en.css</path>
+				<target>cssStyles</target>
+			</cssSheet>
+			<applicationProperty>
+				<path>skin/appProperty.xml</path>
+				<target>appProperty</target>
+			</applicationProperty>
+		</animAssets>
+		<animInfo>
+			<Class>Class 5</Class>
+			<Subject>Science</Subject>
+			<Title>Quick Quiz</Title>
+		</animInfo>
+		<animOrder>
+			<main><file>a13422_ecplps_cele_dnce_sci5_mcq_main.swf</file></main>
+			<scenes>
+				<scene name="assets" endOfSubTopic="false">
+					<file>a13422_ecplps_cele_dnce_sci5_mcq_01.swf</file>
+					<syncs clip="stage">
+						<sync>2,3</sync>
+						<sync>4,30</sync>
+					</syncs>
+					<activityZone><zone/></activityZone>
+				</scene>
+				<!--audio name="audio"><VO><file>quick_quiz_01_vo.swf</file><syncs clip="soundclip_1"><sync>2,12</sync><sync>13,28</sync><sync>29,182</sync></syncs></VO></audio-->
+			</scenes>
+		</animOrder>
+	</animFlow>
