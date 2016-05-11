@@ -12,6 +12,7 @@ namespace CMS
 {
     public partial class Page2UI : Form
     {
+        public static string name;
         public Page2UI()
         {
             InitializeComponent();
@@ -22,7 +23,8 @@ namespace CMS
         private void button1_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Page3UI_a pg3a = new Page3UI_a();
+            name = textBox1.Text;
+            Page6UI pg3a = new Page6UI();
             pg3a.Show();
         }
     }

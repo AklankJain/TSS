@@ -72,6 +72,12 @@
     <Compile Include="Page6UI.Designer.cs">
       <DependentUpon>Page6UI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page7UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page7UI.Designer.cs">
+      <DependentUpon>Page7UI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page8UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,7 +85,6 @@
       <DependentUpon>Page8UI.cs</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="Page0UI.cs">
       <SubType>Form</SubType>
@@ -123,15 +128,8 @@
     <Compile Include="Page5UI.Designer.cs">
       <DependentUpon>Page5UI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Page7UI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Page7UI.Designer.cs">
-      <DependentUpon>Page7UI.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
     <EmbeddedResource Include="Content3env.resx">
       <DependentUpon>Content3env.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Page6UI.resx">
       <DependentUpon>Page6UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page7UI.resx">
+      <DependentUpon>Page7UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page8UI.resx">
       <DependentUpon>Page8UI.cs</DependentUpon>
@@ -167,9 +168,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Page5UI.resx">
       <DependentUpon>Page5UI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Page7UI.resx">
-      <DependentUpon>Page7UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -18,17 +18,16 @@ namespace CMS
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
-
         private void Page6UI_Load(object sender, EventArgs e)
         {
 
         }
-
-        private Page2UI page2 = new Page2UI();
-        private Page7UI page7 = new Page7UI();
         private void button1_Click(object sender, EventArgs e)
         {
-            page7.label1.Text = page2.textBox1.Text;
+            this.Visible = false;
+            Page7UI page7 = new Page7UI();
+            page7.label1.Text = Page2UI.name;
+            page7.Show();
         }
     }
 }
