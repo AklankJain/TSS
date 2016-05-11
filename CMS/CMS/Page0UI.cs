@@ -54,8 +54,9 @@ namespace CMS
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            
+           
         }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -67,6 +68,10 @@ namespace CMS
                     else{
                         if (string.IsNullOrEmpty(textBox3.Text))
                             MessageBox.Show("Enter contact no.");
+                        else if(textBox3.TextLength<10)
+                        {
+                            MessageBox.Show("Enter valid contact no.");
+                        }
                         else
                         {
                             this.Visible = false;

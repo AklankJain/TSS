@@ -28,7 +28,9 @@ namespace CMS
         private Page7UI page7 = new Page7UI();
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            this.Visible = false;
+            Page7UI pg7 = new Page7UI();
+            pg7.Show();
         }
     }
 }
