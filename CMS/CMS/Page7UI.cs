@@ -28,7 +28,9 @@ namespace CMS
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Page8UI pg8 = new Page8UI();
+            pg8.Show();
         }
        /*bool IsValidEmail(string email)
         {

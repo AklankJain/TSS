@@ -20,5 +20,12 @@ namespace CMS
             axShockwaveFlash1.Movie = Application.StartupPath + @"\..\..\78\Math\1\main.swf";
             axShockwaveFlash1.Play();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Content7Math_2 c7m2 = new Content7Math_2();
+            c7m2.Show();
+        }
     }
 }
