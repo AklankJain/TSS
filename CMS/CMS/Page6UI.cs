@@ -23,5 +23,12 @@ namespace CMS
         {
 
         }
+
+        private Page2UI page2 = new Page2UI();
+        private Page7UI page7 = new Page7UI();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            page7.label1.Text = page2.textBox1.Text;
+        }
     }
 }
