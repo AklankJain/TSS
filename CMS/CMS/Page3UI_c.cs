@@ -18,5 +18,10 @@ namespace CMS
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

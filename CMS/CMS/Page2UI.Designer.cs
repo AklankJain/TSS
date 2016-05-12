@@ -88,11 +88,9 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 26);
             this.comboBox1.TabIndex = 4;
-
             this.comboBox1.ValueMember = "cb1,cb2,cb3";
-
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
+
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -134,11 +132,12 @@
 
         }
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.TextBox textBox1;
     }
 }

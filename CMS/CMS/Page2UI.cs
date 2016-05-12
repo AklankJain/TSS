@@ -12,6 +12,7 @@ namespace CMS
 {
     public partial class Page2UI : Form
     {
+        public static string name;
         public Page2UI()
         {
             InitializeComponent();
@@ -41,7 +42,7 @@ namespace CMS
                             
                                 MessageBox.Show("Enter your class");
                             {
-                                
+                                name = textBox1.Text;
                                 if (comboBox1.SelectedItem == "4th and below")
                                 {
                                     this.Visible = false;
@@ -77,7 +78,10 @@ namespace CMS
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            name = textBox1.Text;
+            Page3UI_a pg3a = new Page3UI_a();
+            pg3a.Show();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
