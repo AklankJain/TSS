@@ -29,49 +29,48 @@ namespace CMS
                     MessageBox.Show("Enter school name");
                 else
                 {
-                    if (string.IsNullOrEmpty(textBox3.Text))
-                        MessageBox.Show("Enter email id");
-                    else if (IsValidEmail(textBox3.Text) == false)
+                    if (comboBox1.SelectedItem == null)
+                        MessageBox.Show("Enter your class");
+
+                    else if (comboBox1.SelectedItem == "4th and below")
                     {
-                        MessageBox.Show("Enter valid email id");
+                        this.Visible = false;
+                        Page3UI_c pg3c = new Page3UI_c();
+                        pg3c.Show();
+                    }
+                    else if (comboBox1.SelectedItem == "5th and 6th")
+                    {
+                        this.Visible = false;
+                        Page3UI_b pg3b = new Page3UI_b();
+                        pg3b.Show();
+                    }
+                    else if (comboBox1.SelectedItem == "7th and above")
+                    {
+                        this.Visible = false;
+                        Page3UI_a pg3a = new Page3UI_a();
+                        pg3a.Show();
                     }
                     else
                     {
-                        if (string.IsNullOrEmpty(textBox4.Text))
-                            MessageBox.Show("Enter contact no.");
-                        else if (textBox4.TextLength < 10)
+                        if (string.IsNullOrEmpty(textBox3.Text))
+                            MessageBox.Show("Enter email id");
+                        else if (IsValidEmail(textBox3.Text) == false)
                         {
-                            MessageBox.Show("Enter valid contact no.");
+                            MessageBox.Show("Enter valid email id");
                         }
                         else
                         {
-                            if (comboBox1.SelectedItem == null)
-                                MessageBox.Show("Enter your class");
+                            if (string.IsNullOrEmpty(textBox4.Text))
+                                MessageBox.Show("Enter contact no.");
+                            else if (textBox4.TextLength < 10)
                             {
-                                name = textBox1.Text;
-                                if (comboBox1.SelectedItem == "4th and below")
-                                {
-                                    this.Visible = false;
-                                    Page3UI_c pg3c = new Page3UI_c();
-                                    pg3c.Show();
-                                }
-                                if (comboBox1.SelectedItem == "5th and 6th")
-                                {
-                                    this.Visible = false;
-                                    Page3UI_b pg3b = new Page3UI_b();
-                                    pg3b.Show();
-                                }
-                                if (comboBox1.SelectedItem == "7th and above")
-                                {
-                                    this.Visible = false;
-                                    Page3UI_a pg3a = new Page3UI_a();
-                                    pg3a.Show();
-                                }
+                                MessageBox.Show("Enter valid contact no.");
                             }
                         }
                     }
                 }
             }
+            name = textBox1.Text;
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -82,7 +81,23 @@ namespace CMS
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
         }
+<<<<<<< HEAD
 
+=======
+      
+       /* bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }*/
+>>>>>>> e0b9d34e34d1a1e708dabc27368ca9c1da715e9a
         bool IsValidEmail(string email)
         {
             bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
