@@ -64,6 +64,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe Marker", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(161, 825);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(122, 611);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(290, 28);
             this.label2.TabIndex = 2;
@@ -76,6 +77,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe Marker", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(635, 825);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(473, 611);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 28);
             this.label3.TabIndex = 4;
@@ -85,8 +87,10 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe Marker", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.textBox1.Location = new System.Drawing.Point(745, 821);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Location = new System.Drawing.Point(560, 612);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(329, 29);
             this.textBox1.TabIndex = 5;
@@ -104,6 +108,7 @@
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(41)))), ((int)(((byte)(103)))));
             this.button3.Location = new System.Drawing.Point(1219, 857);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(914, 640);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 107);
             this.button3.TabIndex = 7;
@@ -123,6 +128,7 @@
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(41)))), ((int)(((byte)(103)))));
             this.button2.Location = new System.Drawing.Point(1097, 805);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(814, 599);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 62);
             this.button2.TabIndex = 6;
@@ -142,6 +148,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(491, 799);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(360, 587);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 62);
             this.button1.TabIndex = 3;
@@ -155,6 +162,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(193, 213);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(147, 131);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(933, 511);
             this.pictureBox1.TabIndex = 0;

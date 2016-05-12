@@ -21,15 +21,23 @@ namespace CMS
             WindowState = FormWindowState.Maximized;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void  button1_Click(object sender, EventArgs e)
         {
             
             Page2UI pg2 = new Page2UI();
             pg2.Show();
+            Delayed(10000);
             this.Visible = false;
            
         }
-        
+        public void Delayed(int delay)
+        {
+            Timer timer = new Timer();
+            timer.Interval = delay;
+            timer.Start();
+        }
+
+          
         
     }
 }
