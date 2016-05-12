@@ -38,9 +38,10 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe Marker", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(495, 276);
+            this.textBox1.Location = new System.Drawing.Point(660, 340);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 25);
+            this.textBox1.Size = new System.Drawing.Size(212, 29);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -48,31 +49,45 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox2.Font = new System.Drawing.Font("Segoe Marker", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(702, 280);
+            this.textBox2.Location = new System.Drawing.Point(936, 345);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(190, 25);
+            this.textBox2.Size = new System.Drawing.Size(252, 29);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox3.Font = new System.Drawing.Font("Segoe Marker", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(704, 350);
+            this.textBox3.Location = new System.Drawing.Point(939, 431);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(190, 25);
+<<<<<<< HEAD
+            this.textBox3.Size = new System.Drawing.Size(252, 29);
             this.textBox3.TabIndex = 2;
+=======
+            this.textBox3.Size = new System.Drawing.Size(190, 25);
+            this.textBox3.TabIndex = 3;
+>>>>>>> e0b9d34e34d1a1e708dabc27368ca9c1da715e9a
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox4.Font = new System.Drawing.Font("Segoe Marker", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(788, 421);
+            this.textBox4.Location = new System.Drawing.Point(1051, 518);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.MaxLength = 10;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(168, 25);
+<<<<<<< HEAD
+            this.textBox4.Size = new System.Drawing.Size(223, 29);
             this.textBox4.TabIndex = 3;
+=======
+            this.textBox4.Size = new System.Drawing.Size(168, 25);
+            this.textBox4.TabIndex = 4;
+>>>>>>> e0b9d34e34d1a1e708dabc27368ca9c1da715e9a
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // comboBox1
@@ -86,10 +101,16 @@
             "4th and below",
             "5th and 6th",
             "7th and above"});
-            this.comboBox1.Location = new System.Drawing.Point(495, 349);
+            this.comboBox1.Location = new System.Drawing.Point(660, 430);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 26);
+<<<<<<< HEAD
+            this.comboBox1.Size = new System.Drawing.Size(212, 30);
             this.comboBox1.TabIndex = 4;
+=======
+            this.comboBox1.Size = new System.Drawing.Size(160, 26);
+            this.comboBox1.TabIndex = 2;
+>>>>>>> e0b9d34e34d1a1e708dabc27368ca9c1da715e9a
             this.comboBox1.ValueMember = "cb1,cb2,cb3";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -105,29 +126,31 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(900, 650);
+            this.button1.Location = new System.Drawing.Point(1200, 800);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 80);
+            this.button1.Size = new System.Drawing.Size(112, 98);
             this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Page2UI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::CMS.Properties.Resources.without_icon_02;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1344, 897);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Page2UI";
             this.Text = "Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

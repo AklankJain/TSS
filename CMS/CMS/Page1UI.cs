@@ -14,18 +14,30 @@ namespace CMS
     {
         public Page1UI()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Page1UI));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void  button1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            
             Page2UI pg2 = new Page2UI();
             pg2.Show();
+            Delayed(10000);
+            this.Visible = false;
+           
         }
-        
+        public void Delayed(int delay)
+        {
+            Timer timer = new Timer();
+            timer.Interval = delay;
+            timer.Start();
+        }
+
+          
         
     }
 }

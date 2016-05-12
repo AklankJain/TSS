@@ -27,5 +27,10 @@ namespace CMS
             Page5UI pg5 = new Page5UI();
             pg5.Show();
         }
+
+        private void Content5_2Math_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
