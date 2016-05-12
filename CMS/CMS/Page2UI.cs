@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 namespace CMS
 {
     public partial class Page2UI : Form
@@ -30,7 +31,7 @@ namespace CMS
                 {
                     if (string.IsNullOrEmpty(textBox3.Text))
                         MessageBox.Show("Enter email id");
-                    else if(IsValidEmail(textBox3.Text)==false)
+                    else if (IsValidEmail(textBox3.Text) == false)
                     {
                         MessageBox.Show("Enter valid email id");
                     }
@@ -38,14 +39,13 @@ namespace CMS
                     {
                         if (string.IsNullOrEmpty(textBox4.Text))
                             MessageBox.Show("Enter contact no.");
-                        else if(textBox4.TextLength<10)
+                        else if (textBox4.TextLength < 10)
                         {
                             MessageBox.Show("Enter valid contact no.");
                         }
                         else
                         {
                             if (comboBox1.SelectedItem == null)
-
                                 MessageBox.Show("Enter your class");
                             {
                                 name = textBox1.Text;
@@ -67,51 +67,48 @@ namespace CMS
                                     Page3UI_a pg3a = new Page3UI_a();
                                     pg3a.Show();
                                 }
-
                             }
                         }
                     }
-
                 }
             }
-
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
         }
+        /* bool IsValidEmail(string email)
+         {
+             try
+             {
+                 var addr = new System.Net.Mail.MailAddress(email);
+                 return true;
+             }
+             catch
+             {
+                 return false;
+             }
+         }*/
         bool IsValidEmail(string email)
         {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
+            return isEmail;
         }
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-    
+
         }
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(textBox4.Text, "[^0-9]"))
             {
                 MessageBox.Show("Please enter only numbers.");
-                textBox4.Text = textBox4.Text.Remove((textBox4.Text.Length - 1),1);
+                textBox4.Text = textBox4.Text.Remove((textBox4.Text.Length - 1), 1);
             }
         }
     }
