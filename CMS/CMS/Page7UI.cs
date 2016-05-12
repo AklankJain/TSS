@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Net;
+using System.Net.Mail;
 
 namespace CMS
 {
@@ -75,6 +77,42 @@ namespace CMS
             {
                 MessageBox.Show("Enter valid email id");
             }
+            else
+            {
+                try
+                {
+                    MailMessage message = new MailMessage();
+                    SmtpClient smtp = new SmtpClient();
+
+                    message.From = new MailAddress("from@gmail.com");
+                    message.To.Add(new MailAddress(textBox1.Text));
+                    message.Subject = "Test";
+                    message.Body = "Content";
+
+                    smtp.Port = 587;
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.EnableSsl = true;
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new NetworkCredential("from@gmail.com", "password");
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.Send(message);
+                    MessageBox.Show("Mail send");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("err: " + ex.Message);
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           /* string imageUrl = Request.Form["image_url"];
+            Dictionary<string, string> data = new Dictionary<string, string>();
+            data.Add("link", imageUrl);
+            data.Add("picture", imageUrl);
+            FaceBookConnect.Post(Session["Code"].ToString(), "me/feed", data);
+            ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Image has been shared.');", true);*/
         }
 
     }
