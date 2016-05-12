@@ -18,5 +18,19 @@ namespace CMS
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Content7Math c7m = new Content7Math();
+            c7m.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Content7Science c7s = new Content7Science();
+            c7s.Show();
+        }
     }
 }

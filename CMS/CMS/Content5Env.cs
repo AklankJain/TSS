@@ -25,5 +25,12 @@ namespace CMS
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Page5UI pg5 = new Page5UI();
+            pg5.Show();
+        }
     }
 }
