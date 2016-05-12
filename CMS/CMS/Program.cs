@@ -16,14 +16,10 @@ namespace CMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-
-            Application.Run(new Page0UI());
 
 
-=======
-            Application.Run(new Content3math());
->>>>>>> origin
+
+            Application.Run(new Page2UI());
         }
     }
 }
