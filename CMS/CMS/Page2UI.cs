@@ -81,6 +81,15 @@ namespace CMS
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+      
+=======
+>>>>>>> 8be2d5baea22a644c59b1ea2832b390d5abab34d
 
         /* bool IsValidEmail(string email)
          {
@@ -94,6 +103,11 @@ namespace CMS
                  return false;
              }
          }*/
+<<<<<<< HEAD
+=======
+
+>>>>>>> partha
+>>>>>>> 8be2d5baea22a644c59b1ea2832b390d5abab34d
        /* bool IsValidEmail(string email)
         {
             try
