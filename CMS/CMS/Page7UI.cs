@@ -27,6 +27,12 @@ namespace CMS
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
+
+            // Set Form's Transperancy 100 %
+            this.Opacity = 0;
+
+            // Start the Timer To Animate Form
+            timer1.Enabled = true;
      
            
             label1.Text = Page2UI.name;
@@ -111,6 +117,11 @@ namespace CMS
               }
                 }
             }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Opacity += 0.07;
+        }
         }
 
        
