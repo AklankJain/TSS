@@ -47,12 +47,9 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
             this.label1.Font = new System.Drawing.Font("Segoe Marker", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(119)))), ((int)(((byte)(33)))));
-<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(636, 455);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-=======
             this.label1.Location = new System.Drawing.Point(477, 328);
->>>>>>> e0b9d34e34d1a1e708dabc27368ca9c1da715e9a
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(0, 22);
@@ -110,14 +107,11 @@
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(41)))), ((int)(((byte)(103)))));
-<<<<<<< HEAD
             this.button3.Location = new System.Drawing.Point(1219, 857);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Location = new System.Drawing.Point(914, 640);
-=======
             this.button3.Location = new System.Drawing.Point(914, 630);
             this.button3.Location = new System.Drawing.Point(914, 696);
->>>>>>> partha
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 107);
             this.button3.TabIndex = 7;
