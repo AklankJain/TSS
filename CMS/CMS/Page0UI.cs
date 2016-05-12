@@ -54,13 +54,10 @@ namespace CMS
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            foreach (char c in textBox3.Text)
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox3.Text, "[^0-9]"))
             {
-                if (c < 48 || c > 57)
-                {
-                    MessageBox.Show("Enter digits");
-                    
-                }
+                MessageBox.Show("Please enter only numbers.");
+                textBox3.Text = textBox3.Text.Remove((textBox3.Text.Length - 1), 1);
             }
         }
        
