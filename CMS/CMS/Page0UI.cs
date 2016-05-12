@@ -54,7 +54,14 @@ namespace CMS
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-           
+            foreach (char c in textBox3.Text)
+            {
+                if (c < 48 || c > 57)
+                {
+                    MessageBox.Show("Enter digits");
+                    
+                }
+            }
         }
        
 
