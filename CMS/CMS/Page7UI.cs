@@ -27,23 +27,23 @@ namespace CMS
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-     
-           
+
+
             label1.Text = Page2UI.name;
             Bitmap bitimg = new System.Drawing.Bitmap(this.pictureBox1.BackgroundImage);
             Graphics graphicimg = Graphics.FromImage(bitimg);
 
             graphicimg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-            graphicimg.DrawString(label1.Text , new Font("Arial" , 50 , FontStyle.Bold ), new SolidBrush(Color.DarkOrange)
-              , new Point(2200 , 1320));
+            graphicimg.DrawString(label1.Text, new Font("Arial", 50, FontStyle.Bold), new SolidBrush(Color.DarkOrange)
+              , new Point(2200, 1320));
 
             //graphicimg.ContentType = "image/jpeg";
             bitimg.Save(Application.StartupPath + @"/../../Certificate/" + label1.Text + ".jpg", ImageFormat.Jpeg);
 
             graphicimg.Dispose();
             bitimg.Dispose();
-    
+
 
         }
 
@@ -55,24 +55,12 @@ namespace CMS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
             Page8UI pg8 = new Page8UI();
             pg8.Show();
             Thread.Sleep(1000);
             this.Visible = false;
         }
-       /*bool IsValidEmail(string email)
-        {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }*/
         bool IsValidEmail(string email)
         {
             bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
@@ -86,33 +74,40 @@ namespace CMS
             }
             else
             {
-                 try
+                try
                 {
-                  MailMessage message = new MailMessage();
-                  SmtpClient smtp = new SmtpClient();
+                    MailMessage message = new MailMessage();
+                    SmtpClient smtp = new SmtpClient();
 
-                  message.From = new MailAddress("from@gmail.com");
-                  message.To.Add(new MailAddress(textBox1.Text));
-                  message.Subject = "Test";
-                  message.Body = "Content";
+                    message.From = new MailAddress("delledufun@gmail.com");
+                    message.To.Add(new MailAddress(textBox1.Text));
+                    message.To.Add(new MailAddress("delledufun@gmail.com"));
+                    message.Subject = "DELL EDUFun – Appreciation Certificate";
+                    message.Body = "Dear " + label1.Text + "," + System.Environment.NewLine + System.Environment.NewLine +
+                        "Thank you for participating in Dell \"Fun with Education Program\" at Dell Exclusive Brand Store."
+                        + System.Environment.NewLine + System.Environment.NewLine + "Please find attached your exclusive Dell-certificate of appreciation." +
+                         System.Environment.NewLine + System.Environment.NewLine + "Thank You," + System.Environment.NewLine + "DELL EDUFun";
+                    var filename = @"C:/Users/Piyush/Documents/GitHub/TSS/CMS/CMS/Certificate/" + label1.Text + ".jpg";
+                    Attachment attachment = new Attachment(filename);
+                    attachment.Name = label1.Text + ".jpg";
+                    message.Attachments.Add(attachment);
 
-                  smtp.Port = 587;
-                  smtp.Host = "smtp.gmail.com";
-                  smtp.EnableSsl = true;
-                  smtp.UseDefaultCredentials = false;
-                  smtp.Credentials = new NetworkCredential("from@gmail.com", "password");
-                  smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                  smtp.Send(message);
-                  MessageBox.Show("Mail send");
-              }
-              catch (Exception ex)
-              {
-                  MessageBox.Show("err: " + ex.Message);
-              }
+                    smtp.Port = 587;
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.EnableSsl = true;
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new NetworkCredential("delledufun@gmail.com", "delledufun0501");
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.Send(message);
+                    MessageBox.Show("Mail send");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("err: " + ex.Message);
                 }
             }
         }
 
-       
+    } 
 
     }
