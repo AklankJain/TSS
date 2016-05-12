@@ -87,7 +87,7 @@ namespace CMS
                         "Thank you for participating in Dell \"Fun with Education Program\" at Dell Exclusive Brand Store."
                         + System.Environment.NewLine + System.Environment.NewLine + "Please find attached your exclusive Dell-certificate of appreciation." +
                          System.Environment.NewLine + System.Environment.NewLine + "Thank You," + System.Environment.NewLine + "DELL EDUFun";
-                    var filename = @"C:/Users/Piyush/Documents/GitHub/TSS/CMS/CMS/Certificate/" + label1.Text + ".jpg";
+                    var filename =Application.StartupPath +  @"/../../Certificate/" + label1.Text + ".jpg";
                     Attachment attachment = new Attachment(filename);
                     attachment.Name = label1.Text + ".jpg";
                     message.Attachments.Add(attachment);
