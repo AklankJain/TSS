@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -28,9 +29,11 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            
             Page5UI pg5 = new Page5UI();
             pg5.Show();
+            Thread.Sleep(1000);
+            this.Visible = false;
         }
     }
 }

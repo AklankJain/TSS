@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,10 +27,12 @@ namespace CMS
         private void button1_Click(object sender, EventArgs e)
         {
             button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Visible = false;
+            
             Page7UI page7 = new Page7UI();
             page7.label1.Text = Page2UI.name;
             page7.Show();
+            Thread.Sleep(1000);
+            this.Visible = false;
         }
     }
 }

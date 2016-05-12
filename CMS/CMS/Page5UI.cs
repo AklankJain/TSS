@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,9 +27,11 @@ namespace CMS
             count = 1;
             if(count==1 && count1==1)
             {
-                this.Visible=false;
+                
                 Page6UI p6 = new Page6UI();
                 p6.Show();
+                Thread.Sleep(1000);
+                this.Visible = false;
             }
         }
 
@@ -40,9 +43,11 @@ namespace CMS
             if(count==1 && count1==1)
             {
                 //for (int i = 0; i < 100000000; i++) ;
-                this.Visible=false;
+               
                 Page6UI p6 = new Page6UI();
                 p6.Show();
+                Thread.Sleep(1000);
+                this.Visible = false;
             }
         }
 
@@ -57,9 +62,11 @@ namespace CMS
                 if (count == 1 && count1 == 1)
                 {
                  //   for (int i = 0; i < 100000000; i++) ;
-                    this.Visible = false;
+                    
                     Page6UI p6 = new Page6UI();
                     p6.Show();
+                    Thread.Sleep(1000);
+                    this.Visible = false;
                 }
         }
 
@@ -74,9 +81,11 @@ namespace CMS
             if(count==1 && count1==1)
             {
                // for (int i = 0; i < 100000000; i++) ;
-                this.Visible=false;
+               
                 Page6UI p6 = new Page6UI();
                 p6.Show();
+                Thread.Sleep(1000);
+                this.Visible = false;
             }
         }
     }

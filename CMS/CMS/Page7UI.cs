@@ -16,6 +16,7 @@ using System.Net.Mail;
 //using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.Threading;
 
 namespace CMS
 {
@@ -26,22 +27,8 @@ namespace CMS
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-            this.pictureBox1.BackgroundImage.Save(@"D:/name.jpg", ImageFormat.Jpeg);
-            //this.pictureBox1.BackgroundImage.Dispose();
-
-           /* this.pictureBox1.Paint += new PaintEventHandler((sender, e) =>
-            {
-                e.Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-
-                string text = "Text";
-
-                SizeF textSize = e.Graphics.MeasureString(text, Font);
-                PointF locationToDraw = new PointF();
-                locationToDraw.X = (this.pictureBox1.Width / 2) - (textSize.Width / 2);
-                locationToDraw.Y = (this.pictureBox1.Height / 2) - (textSize.Height / 2);
-
-                e.Graphics.DrawString(text, Font, Brushes.Black, locationToDraw);
-            });*/
+     
+           
             label1.Text = Page2UI.name;
             Bitmap bitimg = new System.Drawing.Bitmap(this.pictureBox1.BackgroundImage);
             Graphics graphicimg = Graphics.FromImage(bitimg);
@@ -68,9 +55,11 @@ namespace CMS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            
             Page8UI pg8 = new Page8UI();
             pg8.Show();
+            Thread.Sleep(1000);
+            this.Visible = false;
         }
        /*bool IsValidEmail(string email)
         {
@@ -97,41 +86,33 @@ namespace CMS
             }
             else
             {
-                try
+                 try
                 {
-                    MailMessage message = new MailMessage();
-                    SmtpClient smtp = new SmtpClient();
+                  MailMessage message = new MailMessage();
+                  SmtpClient smtp = new SmtpClient();
 
-                    message.From = new MailAddress("from@gmail.com");
-                    message.To.Add(new MailAddress(textBox1.Text));
-                    message.Subject = "Test";
-                    message.Body = "Content";
+                  message.From = new MailAddress("from@gmail.com");
+                  message.To.Add(new MailAddress(textBox1.Text));
+                  message.Subject = "Test";
+                  message.Body = "Content";
 
-                    smtp.Port = 587;
-                    smtp.Host = "smtp.gmail.com";
-                    smtp.EnableSsl = true;
-                    smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = new NetworkCredential("from@gmail.com", "password");
-                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                    smtp.Send(message);
-                    MessageBox.Show("Mail send");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("err: " + ex.Message);
+                  smtp.Port = 587;
+                  smtp.Host = "smtp.gmail.com";
+                  smtp.EnableSsl = true;
+                  smtp.UseDefaultCredentials = false;
+                  smtp.Credentials = new NetworkCredential("from@gmail.com", "password");
+                  smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                  smtp.Send(message);
+                  MessageBox.Show("Mail send");
+              }
+              catch (Exception ex)
+              {
+                  MessageBox.Show("err: " + ex.Message);
+              }
                 }
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           /* string imageUrl = Request.Form["image_url"];
-            Dictionary<string, string> data = new Dictionary<string, string>();
-            data.Add("link", imageUrl);
-            data.Add("picture", imageUrl);
-            FaceBookConnect.Post(Session["Code"].ToString(), "me/feed", data);
-            ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Image has been shared.');", true);*/
-        }
+       
 
     }
-}

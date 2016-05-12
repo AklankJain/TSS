@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,16 +27,13 @@ namespace CMS
             
             Page2UI pg2 = new Page2UI();
             pg2.Show();
-            Delayed(10000);
+
+            Thread.Sleep(1000);
             this.Visible = false;
            
+
         }
-        public void Delayed(int delay)
-        {
-            Timer timer = new Timer();
-            timer.Interval = delay;
-            timer.Start();
-        }
+       
 
           
         

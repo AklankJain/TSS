@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Threading;
 namespace CMS
 {
     public partial class Page2UI : Form
@@ -34,21 +35,27 @@ namespace CMS
 
                     else if (comboBox1.SelectedItem == "4th and below")
                     {
-                        this.Visible = false;
+                        
                         Page3UI_c pg3c = new Page3UI_c();
                         pg3c.Show();
+                        Thread.Sleep(2000);
+                        this.Visible = false;
                     }
                     else if (comboBox1.SelectedItem == "5th and 6th")
                     {
-                        this.Visible = false;
+                        
                         Page3UI_b pg3b = new Page3UI_b();
                         pg3b.Show();
+                        Thread.Sleep(2000);
+                        this.Visible = false;
                     }
                     else if (comboBox1.SelectedItem == "7th and above")
                     {
-                        this.Visible = false;
+                        
                         Page3UI_a pg3a = new Page3UI_a();
                         pg3a.Show();
+                        Thread.Sleep(2000);
+                        this.Visible = false;
                     }
                     else
                     {
@@ -81,9 +88,6 @@ namespace CMS
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
         }
-<<<<<<< HEAD
-
-=======
       
        /* bool IsValidEmail(string email)
         {
@@ -97,7 +101,6 @@ namespace CMS
                 return false;
             }
         }*/
->>>>>>> e0b9d34e34d1a1e708dabc27368ca9c1da715e9a
         bool IsValidEmail(string email)
         {
             bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
