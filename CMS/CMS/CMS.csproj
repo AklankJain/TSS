@@ -349,6 +349,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="56\Math\1\main.swf" />
+    <None Include="Resources\fbshare.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
