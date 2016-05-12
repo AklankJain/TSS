@@ -24,11 +24,11 @@ namespace CMS
 
         private void  button1_Click(object sender, EventArgs e)
         {
-            
+            Cursor.Current = Cursors.WaitCursor;
             Page2UI pg2 = new Page2UI();
             pg2.Show();
-
-            Thread.Sleep(1000);
+            for (int i = 0; i < 80000000; i++) ;
+            Cursor.Current = Cursors.Default;
             this.Visible = false;
            
 

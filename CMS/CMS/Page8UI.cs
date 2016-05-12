@@ -19,18 +19,16 @@ namespace CMS
             WindowState = FormWindowState.Maximized;
             // Set Form's Transperancy 100 %
             this.Opacity = 100;
-            Page1UI p1 = new Page1UI();
-            p1.Opacity = 0;
 
             // Start the Timer To Animate Form
             timer1.Enabled = true;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        public void timer1_Tick(object sender, EventArgs e)
         {
-            Page1UI p1 = new Page1UI();
+            
             this.Opacity -= 0.07;
-            p1.Opacity += 0.07;
+            
 
         }
     }

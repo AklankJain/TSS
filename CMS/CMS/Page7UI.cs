@@ -28,7 +28,11 @@ namespace CMS
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
 
+            // Set Form's Transperancy 100 %
+            this.Opacity = 0;
 
+            // Start the Timer To Animate Form
+            timer1.Enabled = true;
             label1.Text = Page2UI.name;
             Bitmap bitimg = new System.Drawing.Bitmap(this.pictureBox1.BackgroundImage);
             Graphics graphicimg = Graphics.FromImage(bitimg);
@@ -106,8 +110,14 @@ namespace CMS
                     MessageBox.Show("err: " + ex.Message);
                 }
             }
+            }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Opacity += 0.07;
+        }
         }
 
     } 
 
-    }
+ 

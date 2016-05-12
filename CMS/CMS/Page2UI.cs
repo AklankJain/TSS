@@ -19,6 +19,11 @@ namespace CMS
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
+            // Set Form's Transperancy 100 %
+            this.Opacity = 0;
+
+            // Start the Timer To Animate Form
+            timer1.Enabled = true;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -102,6 +107,16 @@ namespace CMS
                 MessageBox.Show("Please enter only numbers.");
                 textBox4.Text = textBox4.Text.Remove((textBox4.Text.Length - 1), 1);
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Opacity += 4;
+        }
+
+        private void Page2UI_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

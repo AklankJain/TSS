@@ -27,11 +27,12 @@ namespace CMS
         private void button1_Click(object sender, EventArgs e)
         {
             button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            
+            Cursor.Current = Cursors.WaitCursor;
             Page7UI page7 = new Page7UI();
             page7.label1.Text = Page2UI.name;
             page7.Show();
-            Thread.Sleep(1000);
+            for (int i = 0; i < 100000000; i++) ;
+                Cursor.Current = Cursors.Default;
             this.Visible = false;
         }
     }

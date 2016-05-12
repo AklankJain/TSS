@@ -18,6 +18,8 @@ namespace CMS
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
+            this.Opacity = 0;
+            timer1.Enabled = true;
         }
         public int count = 0,count1 = 0;
         private void button1_Click(object sender, EventArgs e)
@@ -87,6 +89,11 @@ namespace CMS
                 Thread.Sleep(1000);
                 this.Visible = false;
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Opacity += 5;
         }
     }
 }
