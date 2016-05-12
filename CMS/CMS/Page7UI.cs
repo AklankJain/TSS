@@ -9,6 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using System.Drawing;
+//using System.Drawing.Imaging;
+using System.Drawing.Drawing2D;
+using System.Drawing.Text;
 
 namespace CMS
 {
@@ -22,7 +26,7 @@ namespace CMS
             this.pictureBox1.BackgroundImage.Save(@"D:/name.jpg", ImageFormat.Jpeg);
             //this.pictureBox1.BackgroundImage.Dispose();
 
-            this.pictureBox1.Paint += new PaintEventHandler((sender, e) =>
+           /* this.pictureBox1.Paint += new PaintEventHandler((sender, e) =>
             {
                 e.Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
@@ -34,8 +38,22 @@ namespace CMS
                 locationToDraw.Y = (this.pictureBox1.Height / 2) - (textSize.Height / 2);
 
                 e.Graphics.DrawString(text, Font, Brushes.Black, locationToDraw);
-            });
-           
+            });*/
+
+            Bitmap bitimg = new System.Drawing.Bitmap(this.pictureBox1.BackgroundImage);
+            Graphics graphicimg = Graphics.FromImage(bitimg);
+
+            graphicimg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            graphicimg.DrawString(label1.Text , new Font("Arial" , 50 , FontStyle.Bold ), new SolidBrush(Color.DarkOrange)
+              , new Point(2200 , 1320));
+
+            //graphicimg.ContentType = "image/jpeg";
+            bitimg.Save(Application.StartupPath + @"/../../Certificate/" + label1.Text + ".jpg", ImageFormat.Jpeg);
+
+            graphicimg.Dispose();
+            bitimg.Dispose();
+    
 
         }
 
