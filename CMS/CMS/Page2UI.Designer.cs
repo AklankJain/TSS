@@ -68,6 +68,7 @@
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox4.Font = new System.Drawing.Font("Segoe Marker", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(788, 421);
+            this.textBox4.MaxLength = 10;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(168, 25);
             this.textBox4.TabIndex = 3;
@@ -90,7 +91,7 @@
             this.comboBox1.TabIndex = 4;
             this.comboBox1.ValueMember = "cb1,cb2,cb3";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-
+            // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
