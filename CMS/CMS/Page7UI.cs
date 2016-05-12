@@ -42,7 +42,7 @@ namespace CMS
 
                 e.Graphics.DrawString(text, Font, Brushes.Black, locationToDraw);
             });*/
-
+            label1.Text = Page2UI.name;
             Bitmap bitimg = new System.Drawing.Bitmap(this.pictureBox1.BackgroundImage);
             Graphics graphicimg = Graphics.FromImage(bitimg);
 
