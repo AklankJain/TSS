@@ -14,6 +14,8 @@ namespace CMS
     {
         public Page1UI()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Page1UI));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
@@ -21,9 +23,11 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            
             Page2UI pg2 = new Page2UI();
             pg2.Show();
+            this.Visible = false;
+           
         }
         
         

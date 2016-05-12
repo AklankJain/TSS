@@ -82,22 +82,8 @@ namespace CMS
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
         }
-<<<<<<< HEAD
-        /* bool IsValidEmail(string email)
-         {
-             try
-             {
-                 var addr = new System.Net.Mail.MailAddress(email);
-                 return true;
-             }
-             catch
-             {
-                 return false;
-             }
-         }*/
-        bool IsValidEmail(string email)
-        {
-=======
+
+
        /* bool IsValidEmail(string email)
         {
             try
@@ -112,7 +98,6 @@ namespace CMS
         }*/
         bool IsValidEmail(string email)
         {
->>>>>>> dff2c2c3df0ca8b42fcd4ea04f325e4f2224a642
             bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
             return isEmail;
         }
