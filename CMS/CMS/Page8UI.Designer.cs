@@ -46,6 +46,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.DoubleBuffered = true;
             this.Name = "Page8UI";
             this.Text = "Form1";
             this.ResumeLayout(false);

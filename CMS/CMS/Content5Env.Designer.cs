@@ -71,6 +71,7 @@
             this.ClientSize = new System.Drawing.Size(1221, 721);
             this.Controls.Add(this.axShockwaveFlash1);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Content5Env";
             this.Text = "Form2";

@@ -21,9 +21,11 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            
             Page2UI pg2 = new Page2UI();
             pg2.Show();
+            
+            this.Visible = false;
         }
         
         
