@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +20,24 @@ namespace CMS
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
+            this.pictureBox1.BackgroundImage.Save(@"D:/name.jpg", ImageFormat.Jpeg);
+            //this.pictureBox1.BackgroundImage.Dispose();
+
+            this.pictureBox1.Paint += new PaintEventHandler((sender, e) =>
+            {
+                e.Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+
+                string text = "Text";
+
+                SizeF textSize = e.Graphics.MeasureString(text, Font);
+                PointF locationToDraw = new PointF();
+                locationToDraw.X = (this.pictureBox1.Width / 2) - (textSize.Width / 2);
+                locationToDraw.Y = (this.pictureBox1.Height / 2) - (textSize.Height / 2);
+
+                e.Graphics.DrawString(text, Font, Brushes.Black, locationToDraw);
+            });
+           
+
         }
 
 
@@ -56,5 +76,6 @@ namespace CMS
                 MessageBox.Show("Enter valid email id");
             }
         }
+
     }
 }
