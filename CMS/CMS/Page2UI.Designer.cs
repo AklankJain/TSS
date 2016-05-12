@@ -64,13 +64,10 @@
             this.textBox3.Location = new System.Drawing.Point(939, 431);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-<<<<<<< HEAD
             this.textBox3.Size = new System.Drawing.Size(252, 29);
             this.textBox3.TabIndex = 2;
-=======
             this.textBox3.Size = new System.Drawing.Size(190, 25);
             this.textBox3.TabIndex = 3;
->>>>>>> e0b9d34e34d1a1e708dabc27368ca9c1da715e9a
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
@@ -81,13 +78,10 @@
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.MaxLength = 10;
             this.textBox4.Name = "textBox4";
-<<<<<<< HEAD
             this.textBox4.Size = new System.Drawing.Size(223, 29);
             this.textBox4.TabIndex = 3;
-=======
             this.textBox4.Size = new System.Drawing.Size(168, 25);
             this.textBox4.TabIndex = 4;
->>>>>>> e0b9d34e34d1a1e708dabc27368ca9c1da715e9a
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // comboBox1
@@ -104,13 +98,10 @@
             this.comboBox1.Location = new System.Drawing.Point(660, 430);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-<<<<<<< HEAD
             this.comboBox1.Size = new System.Drawing.Size(212, 30);
             this.comboBox1.TabIndex = 4;
-=======
             this.comboBox1.Size = new System.Drawing.Size(160, 26);
             this.comboBox1.TabIndex = 2;
->>>>>>> e0b9d34e34d1a1e708dabc27368ca9c1da715e9a
             this.comboBox1.ValueMember = "cb1,cb2,cb3";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 

@@ -107,28 +107,19 @@
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(41)))), ((int)(((byte)(103)))));
-<<<<<<< HEAD
-            this.button3.Location = new System.Drawing.Point(914, 630);
-            this.button3.Location = new System.Drawing.Point(914, 696);
-            this.button3.Location = new System.Drawing.Point(1219, 857);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Location = new System.Drawing.Point(914, 640);
-=======
             this.button3.Location = new System.Drawing.Point(1219, 857);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Location = new System.Drawing.Point(914, 640);
             this.button3.Location = new System.Drawing.Point(914, 630);
             this.button3.Location = new System.Drawing.Point(914, 696);
->>>>>>> 8be2d5baea22a644c59b1ea2832b390d5abab34d
-            this.button3.Name = "button3";
+            this.button3.Name = "button3";    
             this.button3.Size = new System.Drawing.Size(109, 107);
             this.button3.TabIndex = 7;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+           this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button2.BackgroundImage = global::CMS.Properties.Resources.email;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
