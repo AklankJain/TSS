@@ -38,9 +38,10 @@
             // 
             this.axShockwaveFlash1.Enabled = true;
             this.axShockwaveFlash1.Location = new System.Drawing.Point(73, 21);
+            this.axShockwaveFlash1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.axShockwaveFlash1.Name = "axShockwaveFlash1";
             this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
-            this.axShockwaveFlash1.Size = new System.Drawing.Size(1063, 800);
+            this.axShockwaveFlash1.Size = new System.Drawing.Size(100, 100);
             this.axShockwaveFlash1.TabIndex = 1;
             this.axShockwaveFlash1.Enter += new System.EventHandler(this.axShockwaveFlash1_Enter);
             // 
@@ -52,20 +53,23 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1220, 700);
+            this.button1.Location = new System.Drawing.Point(100, 100);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 150);
+            this.button1.Size = new System.Drawing.Size(150, 122);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Content5Env
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1222, 721);
+            this.ClientSize = new System.Drawing.Size(916, 586);
             this.Controls.Add(this.axShockwaveFlash1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Content5Env";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();

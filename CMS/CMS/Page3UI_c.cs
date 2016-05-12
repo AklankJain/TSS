@@ -21,7 +21,23 @@ namespace CMS
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
+            Content3env c3e = new Content3env();
+            c3e.Show();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Content3math c3m = new Content3math();
+            c3m.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Content3science c3s = new Content3science();
+            c3s.Show();
         }
     }
 }
