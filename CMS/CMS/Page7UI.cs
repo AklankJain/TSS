@@ -16,6 +16,7 @@ using System.Net.Mail;
 //using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
+using System.Threading;
 
 namespace CMS
 {
@@ -26,37 +27,23 @@ namespace CMS
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-            this.pictureBox1.BackgroundImage.Save(@"D:/name.jpg", ImageFormat.Jpeg);
-            //this.pictureBox1.BackgroundImage.Dispose();
 
-           /* this.pictureBox1.Paint += new PaintEventHandler((sender, e) =>
-            {
-                e.Graphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
 
-                string text = "Text";
-
-                SizeF textSize = e.Graphics.MeasureString(text, Font);
-                PointF locationToDraw = new PointF();
-                locationToDraw.X = (this.pictureBox1.Width / 2) - (textSize.Width / 2);
-                locationToDraw.Y = (this.pictureBox1.Height / 2) - (textSize.Height / 2);
-
-                e.Graphics.DrawString(text, Font, Brushes.Black, locationToDraw);
-            });*/
             label1.Text = Page2UI.name;
             Bitmap bitimg = new System.Drawing.Bitmap(this.pictureBox1.BackgroundImage);
             Graphics graphicimg = Graphics.FromImage(bitimg);
 
             graphicimg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-            graphicimg.DrawString(label1.Text , new Font("Arial" , 50 , FontStyle.Bold ), new SolidBrush(Color.DarkOrange)
-              , new Point(2200 , 1320));
+            graphicimg.DrawString(label1.Text, new Font("Arial", 50, FontStyle.Bold), new SolidBrush(Color.DarkOrange)
+              , new Point(2200, 1320));
 
             //graphicimg.ContentType = "image/jpeg";
             bitimg.Save(Application.StartupPath + @"/../../Certificate/" + label1.Text + ".jpg", ImageFormat.Jpeg);
 
             graphicimg.Dispose();
             bitimg.Dispose();
-    
+
 
         }
 
@@ -68,22 +55,12 @@ namespace CMS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+
             Page8UI pg8 = new Page8UI();
             pg8.Show();
+            Thread.Sleep(1000);
+            this.Visible = false;
         }
-       /*bool IsValidEmail(string email)
-        {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }*/
         bool IsValidEmail(string email)
         {
             bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
@@ -102,16 +79,24 @@ namespace CMS
                     MailMessage message = new MailMessage();
                     SmtpClient smtp = new SmtpClient();
 
-                    message.From = new MailAddress("from@gmail.com");
+                    message.From = new MailAddress("delledufun@gmail.com");
                     message.To.Add(new MailAddress(textBox1.Text));
-                    message.Subject = "Test";
-                    message.Body = "Content";
+                    message.To.Add(new MailAddress("delledufun@gmail.com"));
+                    message.Subject = "DELL EDUFun – Appreciation Certificate";
+                    message.Body = "Dear " + label1.Text + "," + System.Environment.NewLine + System.Environment.NewLine +
+                        "Thank you for participating in Dell \"Fun with Education Program\" at Dell Exclusive Brand Store."
+                        + System.Environment.NewLine + System.Environment.NewLine + "Please find attached your exclusive Dell-certificate of appreciation." +
+                         System.Environment.NewLine + System.Environment.NewLine + "Thank You," + System.Environment.NewLine + "DELL EDUFun";
+                    var filename = @"C:/Users/Piyush/Documents/GitHub/TSS/CMS/CMS/Certificate/" + label1.Text + ".jpg";
+                    Attachment attachment = new Attachment(filename);
+                    attachment.Name = label1.Text + ".jpg";
+                    message.Attachments.Add(attachment);
 
                     smtp.Port = 587;
                     smtp.Host = "smtp.gmail.com";
                     smtp.EnableSsl = true;
                     smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = new NetworkCredential("from@gmail.com", "password");
+                    smtp.Credentials = new NetworkCredential("delledufun@gmail.com", "delledufun0501");
                     smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                     smtp.Send(message);
                     MessageBox.Show("Mail send");
@@ -123,15 +108,6 @@ namespace CMS
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           /* string imageUrl = Request.Form["image_url"];
-            Dictionary<string, string> data = new Dictionary<string, string>();
-            data.Add("link", imageUrl);
-            data.Add("picture", imageUrl);
-            FaceBookConnect.Post(Session["Code"].ToString(), "me/feed", data);
-            ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Image has been shared.');", true);*/
-        }
+    } 
 
     }
-}

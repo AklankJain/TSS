@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Threading;
 namespace CMS
 {
     public partial class Page2UI : Form
@@ -31,24 +32,29 @@ namespace CMS
                 {
                     if (comboBox1.SelectedItem == null)
                         MessageBox.Show("Enter your class");
-
                     else if (comboBox1.SelectedItem == "4th and below")
                     {
-                        this.Visible = false;
+
                         Page3UI_c pg3c = new Page3UI_c();
                         pg3c.Show();
+                        Thread.Sleep(2000);
+                        this.Visible = false;
                     }
                     else if (comboBox1.SelectedItem == "5th and 6th")
                     {
-                        this.Visible = false;
+
                         Page3UI_b pg3b = new Page3UI_b();
                         pg3b.Show();
+                        Thread.Sleep(2000);
+                        this.Visible = false;
                     }
                     else if (comboBox1.SelectedItem == "7th and above")
                     {
-                        this.Visible = false;
+
                         Page3UI_a pg3a = new Page3UI_a();
                         pg3a.Show();
+                        Thread.Sleep(2000);
+                        this.Visible = false;
                     }
                     else
                     {
@@ -81,31 +87,6 @@ namespace CMS
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
         }
-        /* bool IsValidEmail(string email)
-         {
-             try
-             {
-                 var addr = new System.Net.Mail.MailAddress(email);
-                 return true;
-             }
-             catch
-             {
-                 return false;
-             }
-         }*/
-
-       /* bool IsValidEmail(string email)
-        {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }*/
         bool IsValidEmail(string email)
         {
             bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
@@ -113,7 +94,6 @@ namespace CMS
         }
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
         }
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
