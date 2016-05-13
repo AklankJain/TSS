@@ -68,36 +68,43 @@ namespace CMS
         {
             if (string.IsNullOrEmpty(textBox1.Text))
                 MessageBox.Show("Enter Store ID");
-                else{
-                    if (string.IsNullOrEmpty(textBox2.Text))
+            else
+            {
+                if (string.IsNullOrEmpty(textBox2.Text))
                     MessageBox.Show("Enter valid ISP");
-                    else{
-                        if (string.IsNullOrEmpty(textBox3.Text))
-                            MessageBox.Show("Enter contact no.");
-                        else if(textBox3.TextLength<10)
-                        {
-                            MessageBox.Show("Enter valid contact no.");
-                        }
+                else
+                {
+                    if (string.IsNullOrEmpty(textBox4.Text))
+                        MessageBox.Show("Enter address");
+                    else
+                    {
+                        if (string.IsNullOrEmpty(textBox5.Text))
+                            MessageBox.Show("Enter city");
                         else
                         {
-                            
-                            Page1UI pg1 = new Page1UI();
-                            pg1.Show();
-                          /*  var delay = Task.Run(async () =>
+                            if (string.IsNullOrEmpty(textBox3.Text))
+                                MessageBox.Show("Enter contact no.");
+                            else if (textBox3.TextLength < 10)
                             {
-                                Stopwatch sw = Stopwatch.StartNew();
-                                await Task.Delay(2500);
-                                sw.Stop();
-                                return sw.ElapsedMilliseconds;
-                            });*/
-                            Thread.Sleep(1000);
-                            this.Visible = false;
-                        }
-                       
-                    }
+                                MessageBox.Show("Enter valid contact no.");
+                            }
+                            else
+                            {
 
-                    
+                                Page1UI pg1 = new Page1UI();
+                                pg1.Show();
+                                Thread.Sleep(1000);
+                                this.Visible = false;
+                            }
+                        }
+                    }
                 }
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
