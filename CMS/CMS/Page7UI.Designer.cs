@@ -82,8 +82,8 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBox1.Font = new System.Drawing.Font("Segoe Marker", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Location = new System.Drawing.Point(514, 469);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(248, 25);
             this.textBox1.TabIndex = 5;
@@ -100,7 +100,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(41)))), ((int)(((byte)(103)))));
             this.button3.Location = new System.Drawing.Point(788, 552);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(82, 87);
             this.button3.TabIndex = 7;
@@ -118,8 +118,8 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(41)))), ((int)(((byte)(103)))));
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Location = new System.Drawing.Point(768, 456);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(64, 50);
             this.button2.TabIndex = 6;
@@ -137,20 +137,21 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Location = new System.Drawing.Point(314, 444);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 50);
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Location = new System.Drawing.Point(101, 131);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(700, 415);
             this.pictureBox1.TabIndex = 0;
@@ -177,13 +178,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Page7UI";
             this.Text = "Page7UI";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
         #endregion
         public System.Windows.Forms.PictureBox pictureBox1;

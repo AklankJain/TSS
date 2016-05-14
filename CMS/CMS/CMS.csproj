@@ -36,8 +36,14 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -132,6 +138,12 @@
     </Compile>
     <Compile Include="Page8UI.Designer.cs">
       <DependentUpon>Page8UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="webbrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="webbrowser.Designer.cs">
+      <DependentUpon>webbrowser.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -252,8 +264,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="webbrowser.resx">
+      <DependentUpon>webbrowser.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
