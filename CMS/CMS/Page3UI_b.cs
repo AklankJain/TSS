@@ -25,8 +25,9 @@ namespace CMS
            
             Content5math c5m = new Content5math();
             c5m.Show();
-            Thread.Sleep(2000);
+            
             this.Visible = false;
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,8 +35,9 @@ namespace CMS
            
             Content5Science c5s = new Content5Science();
             c5s.Show();
-            Thread.Sleep(2000);
+          
             this.Visible = false;
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -43,8 +45,9 @@ namespace CMS
             
             Content5Env c5e = new Content5Env();
             c5e.Show();
-            Thread.Sleep(2000);
+            
             this.Visible = false;
+            this.Close();
         }
     }
 }

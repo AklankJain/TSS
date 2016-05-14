@@ -54,9 +54,9 @@ namespace CMS
             Page7UI page7 = new Page7UI();
             page7.label1.Text = Page2UI.name;
             page7.Show();
-            for (int i = 0; i < 100000000; i++) ;
-                Cursor.Current = Cursors.Default;
+           
             this.Visible = false;
+            this.Close();
         }
         public void SaveExcel()
         {
@@ -66,6 +66,19 @@ namespace CMS
             excelApp.ActiveWorkbook.Save();
             excelApp.Workbooks.Close();
             excelApp.Quit();
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
+            System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("Excel");
+            foreach (System.Diagnostics.Process p in process)
+            {
+                if (!string.IsNullOrEmpty(p.ProcessName))
+                {
+                    try
+                    {
+                        p.Kill();
+                    }
+                    catch { }
+                }
+            }
         }
     }
 }

@@ -57,6 +57,7 @@ namespace CMS
                 p6.Show();
                 //Thread.Sleep(1000);
                 this.Visible = false;
+                this.Close();
             }
         }
 
@@ -74,6 +75,7 @@ namespace CMS
                 p6.Show();
                 //Thread.Sleep(1000);
                 this.Visible = false;
+                this.Close();
             }
         }
 
@@ -92,8 +94,9 @@ namespace CMS
                     SaveExcel();
                     Page6UI p6 = new Page6UI();
                     p6.Show();
-                    Thread.Sleep(1000);
+                    //Thread.Sleep(1000);
                     this.Visible = false;
+                    this.Close();
                 }
         }
 
@@ -112,8 +115,9 @@ namespace CMS
                 SaveExcel();
                 Page6UI p6 = new Page6UI();
                 p6.Show();
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
                 this.Visible = false;
+                this.Close();
             }
         }
 
@@ -129,6 +133,19 @@ namespace CMS
             excelApp.ActiveWorkbook.Save();
             excelApp.Workbooks.Close();
             excelApp.Quit();
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
+            System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("Excel");
+            foreach (System.Diagnostics.Process p in process)
+            {
+                if (!string.IsNullOrEmpty(p.ProcessName))
+                {
+                    try
+                    {
+                        p.Kill();
+                    }
+                    catch { }
+                }
+            }
         }
     }
 }

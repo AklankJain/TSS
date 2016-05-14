@@ -25,8 +25,9 @@ namespace CMS
             
             Content3env c3e = new Content3env();
             c3e.Show();
-            Thread.Sleep(2000);
+           
             this.Visible = false;
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,16 +35,20 @@ namespace CMS
             
             Content3math c3m = new Content3math();
             c3m.Show();
-            Thread.Sleep(2000);
+            
             this.Visible = false;
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            
             Content3science c3s = new Content3science();
             c3s.Show();
-            Thread.Sleep(2000);
+            this.Visible = false;
+            this.Close();
+
+            
         }
     }
 }

@@ -27,8 +27,9 @@ namespace CMS
             axShockwaveFlash1.Dispose();
             Page5UI pg5 = new Page5UI();
             pg5.Show();
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
             this.Visible = false;
+            this.Close();
         }
     }
 }

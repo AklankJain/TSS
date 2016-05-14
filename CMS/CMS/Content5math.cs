@@ -28,8 +28,9 @@ namespace CMS
             axShockwaveFlash1.Dispose();
             Content5_2Math c52m = new Content5_2Math();
             c52m.Show();
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
             this.Visible = false;
+            this.Close();
         }
     }
 }

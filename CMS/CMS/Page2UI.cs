@@ -22,10 +22,8 @@ namespace CMS
 
     public partial class Page2UI : Form
     {
-<<<<<<< HEAD
+
         public static string name, email_id;
-=======
-<<<<<<< HEAD
         public static Excel.Workbook MyBook = null;
         public static Excel.Application MyApp = null;
         public static Excel.Worksheet MySheet = null;
@@ -33,8 +31,6 @@ namespace CMS
         public int lastRow = 0;
         
         
-        public static string name;
-        public static string name, email_id;
         public Page2UI()
         {
             InitializeComponent();
@@ -59,12 +55,6 @@ namespace CMS
                 wb = excelApp.Workbooks.Open(myPath);
             }
             timer1.Enabled = true;
-           // var MyApp = (Microsoft.Office.Interop.Excel.Application)System.Runtime.InteropServices.Marshal.GetActiveObject("Excel.Application");
-            //if (MyApp == null)
-             //   MyApp = new Microsoft.Office.Interop.Excel.Application();
-            //MyApp = new Microsoft.Office.Interop.Excel.Application();
-            //MyApp.Visible = false;
-           // MyBook = excelApp.Workbooks.Open(myPath);
             MySheet = (Microsoft.Office.Interop.Excel.Worksheet)wb.Sheets[1]; // Explicit cast is not required here
             lastRow = MySheet.Cells.SpecialCells(Microsoft.Office.Interop.Excel.XlCellType.xlCellTypeLastCell).Row; 
         }
@@ -83,28 +73,6 @@ namespace CMS
                     else if (IsValidEmail(textBox3.Text) == false)
                     {
                         MessageBox.Show("Enter valid email id");
-                        SaveExcel();
-                        Page3UI_c pg3c = new Page3UI_c();
-                        pg3c.Show();
-                        Thread.Sleep(2000);
-                        this.Visible = false;
-                    }
-                    else if (comboBox1.SelectedItem == "5th and 6th")
-                    {
-                        SaveExcel();
-                        Page3UI_b pg3b = new Page3UI_b();
-                        pg3b.Show();
-                        Thread.Sleep(2000);
-                        this.Visible = false;
-                    }
-                    else if (comboBox1.SelectedItem == "7th and above")
-                    {
-                        SaveExcel();
-                        Page3UI_a pg3a = new Page3UI_a();
-                        pg3a.Show();
-                        Thread.Sleep(2000);
-                        this.Visible = false;
-                        MessageBox.Show("Enter valid email id");
                     }
                     else
                     {
@@ -120,27 +88,33 @@ namespace CMS
                                 MessageBox.Show("Enter your class");
                             else if (comboBox1.SelectedItem == "4th and below")
                             {
+                                SaveExcel();
                                 Page3UI_c pg3c = new Page3UI_c();
                                 pg3c.Show();
-                                Thread.Sleep(2000);
+                                
                                 this.Visible = false;
+                                this.Close();
                             }
                             else if (comboBox1.SelectedItem == "5th and 6th")
                             {
+                                SaveExcel();
                                 Page3UI_b pg3b = new Page3UI_b();
                                 pg3b.Show();
-                                Thread.Sleep(2000);
+                                
                                 this.Visible = false;
+                                this.Close();
                             }
                             else if (comboBox1.SelectedItem == "7th and above")
                             {
+                                SaveExcel();
                                 Page3UI_a pg3a = new Page3UI_a();
                                 pg3a.Show();
-                                Thread.Sleep(2000);
+                                
                                 this.Visible = false;
+                                this.Close();
                             }
                         }
-                    }   
+                    }
                 }
             }
             name = textBox1.Text;
@@ -206,6 +180,19 @@ namespace CMS
             excelApp.ActiveWorkbook.Save();
             excelApp.Workbooks.Close();
             excelApp.Quit();
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
+            System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("Excel");
+            foreach (System.Diagnostics.Process p in process)
+            {
+                if (!string.IsNullOrEmpty(p.ProcessName))
+                {
+                    try
+                    {
+                        p.Kill();
+                    }
+                    catch { }
+                }
+            }
         }
         public string GetMACAddress()
         {

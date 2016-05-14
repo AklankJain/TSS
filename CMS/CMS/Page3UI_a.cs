@@ -25,8 +25,9 @@ namespace CMS
             
             Content7Math c7m = new Content7Math();
             c7m.Show();
-            Thread.Sleep(2000);
+   
             this.Visible = false;
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,8 +35,9 @@ namespace CMS
             
             Content7Science c7s = new Content7Science();
             c7s.Show();
-            Thread.Sleep(2000);
+           
             this.Visible = false;
+            this.Close();
         }
     }
 }

@@ -119,15 +119,17 @@ namespace CMS
                             SaveExcel();
                             Page1UI pg1 = new Page1UI();
                             pg1.Show();
-                          /*  var delay = Task.Run(async () =>
->>>>>>> a328cadf86f978205e1cb6d61f714740f862e4b2
+                            this.Visible = false;
+                            //this.Close();
+
+                       /*     var delay = Task.Run(async () =>
                             {
 
                                 Page1UI pg1 = new Page1UI();
                                 pg1.Show();
                                 Thread.Sleep(1000);
                                 this.Visible = false;
-                            }
+                            }*/
                         }
                     }
                 }
@@ -148,7 +150,7 @@ namespace CMS
             }
         }
         public void SaveExcel()
-        {
+            {
             
             lastRow += 1;
             MySheet.Cells[lastRow, 1] = lastRow - 1;
@@ -158,9 +160,20 @@ namespace CMS
         //    MySheet.Cells[lastRow, 5] = textBox4.Text;
         //    MySheet.Cells[lastRow, 6] = textBox5.Text;
             excelApp.ActiveWorkbook.Save();
-            excelApp.Workbooks.Close();
-            excelApp.Quit();
-        }
+            System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("Excel");
+            foreach (System.Diagnostics.Process p in process)
+            {
+                if (!string.IsNullOrEmpty(p.ProcessName))
+                {
+                    try
+                    {
+                        p.Kill();
+                    }
+                    catch { }
+                }
+            }
+     
+          }
         public int getlastRow()
         {
             return lastRow;

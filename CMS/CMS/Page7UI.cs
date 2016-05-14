@@ -17,15 +17,12 @@ using System.Net.Mail;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Threading;
-<<<<<<< HEAD
 using Excel = Microsoft.Office.Interop.Excel;
-=======
 using Facebook;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Dynamic;
->>>>>>> piyush
 
 namespace CMS
 {
@@ -92,8 +89,9 @@ namespace CMS
             SaveExcel();
             Page8UI pg8 = new Page8UI();
             pg8.Show();
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
             this.Visible = false;
+            this.Close();
         }
         bool IsValidEmail(string email)
         {
@@ -147,7 +145,6 @@ namespace CMS
         {
             this.Opacity += 0.07;
         }
-<<<<<<< HEAD
         public void SaveExcel()
         {
 
@@ -157,7 +154,9 @@ namespace CMS
             excelApp.ActiveWorkbook.Save();
             excelApp.Workbooks.Close();
             excelApp.Quit();
-=======
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -193,10 +192,9 @@ namespace CMS
            fb.Post("https://graph.facebook.com/me/photos?access_token=" + fb.AccessToken + "&message=" + name);//, "POST", path);
            */
         }
->>>>>>> piyush
         }
        }
 
-    } 
+     
 
  

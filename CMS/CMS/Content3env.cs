@@ -30,8 +30,9 @@ namespace CMS
             //axShockwaveFlash1.StopPlay();
             Page5UI pg5 = new Page5UI();
             pg5.Show();
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
             this.Visible = false;
+            this.Close();
             //axShockwaveFlash1.StopPlay();
             //axShockwaveFlash1.Stop();
         }
