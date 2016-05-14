@@ -9,21 +9,59 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Reflection;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Management;
+using System.Net;
+using System.Net.NetworkInformation; 
+
+
 namespace CMS
 {
+
+
     public partial class Page2UI : Form
     {
+        public static Excel.Workbook MyBook = null;
+        public static Excel.Application MyApp = null;
+        public static Excel.Worksheet MySheet = null;
+        public static Excel.Application excelApp = null;
+        public int lastRow = 0;
+        
+        
         public static string name;
         public Page2UI()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
+            
             // Set Form's Transperancy 100 %
+            string myPath = @"C:\Users\DELL\TSS\CMS\CMS\Excel\Try.xlsx";
             this.Opacity = 0;
-
+           // var excelApp = (Excel.Application) System.Runtime.InteropServices.Marshal.GetActiveObject("Excel.Application");
+            //if(excelApp==null)
+             //   excelApp = new Excel.Application();
             // Start the Timer To Animate Form
+            excelApp = new Excel.Application();
+            Excel.Workbook wb;
+            try
+            {
+             wb = excelApp.Workbooks[System.IO.Path.GetFileName(myPath)];
+            }
+            catch
+            {
+                wb = excelApp.Workbooks.Open(myPath);
+            }
             timer1.Enabled = true;
+           // var MyApp = (Microsoft.Office.Interop.Excel.Application)System.Runtime.InteropServices.Marshal.GetActiveObject("Excel.Application");
+            //if (MyApp == null)
+             //   MyApp = new Microsoft.Office.Interop.Excel.Application();
+            //MyApp = new Microsoft.Office.Interop.Excel.Application();
+            //MyApp.Visible = false;
+           // MyBook = excelApp.Workbooks.Open(myPath);
+            MySheet = (Microsoft.Office.Interop.Excel.Worksheet)wb.Sheets[1]; // Explicit cast is not required here
+            lastRow = MySheet.Cells.SpecialCells(Microsoft.Office.Interop.Excel.XlCellType.xlCellTypeLastCell).Row; 
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -39,7 +77,7 @@ namespace CMS
                         MessageBox.Show("Enter your class");
                     else if (comboBox1.SelectedItem == "4th and below")
                     {
-
+                        SaveExcel();
                         Page3UI_c pg3c = new Page3UI_c();
                         pg3c.Show();
                         Thread.Sleep(2000);
@@ -47,7 +85,7 @@ namespace CMS
                     }
                     else if (comboBox1.SelectedItem == "5th and 6th")
                     {
-
+                        SaveExcel();
                         Page3UI_b pg3b = new Page3UI_b();
                         pg3b.Show();
                         Thread.Sleep(2000);
@@ -55,7 +93,7 @@ namespace CMS
                     }
                     else if (comboBox1.SelectedItem == "7th and above")
                     {
-
+                        SaveExcel();
                         Page3UI_a pg3a = new Page3UI_a();
                         pg3a.Show();
                         Thread.Sleep(2000);
@@ -117,6 +155,36 @@ namespace CMS
         private void Page2UI_Load(object sender, EventArgs e)
         {
 
+        }
+        public void SaveExcel()
+        {
+            string mac = GetMACAddress();
+            
+            MySheet.Cells[lastRow, 8] = textBox1.Text;
+            MySheet.Cells[lastRow, 9] = textBox4.Text;
+            MySheet.Cells[lastRow, 10] = comboBox1.Text;
+            MySheet.Cells[lastRow, 11] = textBox2.Text;
+            MySheet.Cells[lastRow, 12] = textBox3.Text;
+            MySheet.Cells[lastRow, 7] = mac;
+            MySheet.Cells[lastRow, 13] = DateTime.Now.ToLongTimeString();
+          //  MySheet.Cells[lastRow, 15] = DateTime.Now.ToLongTimeString();
+          //  MySheet.Cells[lastRow, 16] = DateTime.Now.ToLongTimeString();
+            excelApp.ActiveWorkbook.Save();
+            excelApp.Workbooks.Close();
+            excelApp.Quit();
+        }
+        public string GetMACAddress()
+        {
+            NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
+            String sMacAddress = string.Empty;
+            foreach (NetworkInterface adapter in nics)
+            {
+                if (sMacAddress == String.Empty)// only return MAC Address from first card  
+                {
+                    IPInterfaceProperties properties = adapter.GetIPProperties();
+                    sMacAddress = adapter.GetPhysicalAddress().ToString();
+                }
+            } return sMacAddress;
         }
     }
 }

@@ -29,7 +29,7 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            axShockwaveFlash1.Stop();
             Content5Science_2 c5s2 = new Content5Science_2();
             c5s2.Show();
             Thread.Sleep(1000);

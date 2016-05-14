@@ -17,13 +17,34 @@ using System.Net.Mail;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Threading;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace CMS
 {
     public partial class Page7UI : Form
     {
+        public static Excel.Workbook MyBook = null;
+        public static Excel.Application MyApp = null;
+        public static Excel.Worksheet MySheet = null;
+        public static Excel.Application excelApp = null;
+        public int lastRow = 0;
+
         public Page7UI()
         {
+            string myPath = @"C:\Users\DELL\TSS\CMS\CMS\Excel\Try.xlsx";
+            excelApp = new Excel.Application();
+            Excel.Workbook wb;
+            try
+            {
+                wb = excelApp.Workbooks[System.IO.Path.GetFileName(myPath)];
+            }
+            catch
+            {
+                wb = excelApp.Workbooks.Open(myPath);
+            }
+            MySheet = (Microsoft.Office.Interop.Excel.Worksheet)wb.Sheets[1]; // Explicit cast is not required here
+            lastRow = MySheet.Cells.SpecialCells(Microsoft.Office.Interop.Excel.XlCellType.xlCellTypeLastCell).Row;
+
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
@@ -59,7 +80,7 @@ namespace CMS
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            SaveExcel();
             Page8UI pg8 = new Page8UI();
             pg8.Show();
             Thread.Sleep(1000);
@@ -104,6 +125,7 @@ namespace CMS
                     smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                     smtp.Send(message);
                     MessageBox.Show("Mail send");
+                    MySheet.Cells[lastRow, 22] = "Y";
                 }
                 catch (Exception ex)
                 {
@@ -116,7 +138,17 @@ namespace CMS
         {
             this.Opacity += 0.07;
         }
+        public void SaveExcel()
+        {
+
+            // lastRow = 1;
+            MySheet.Cells[lastRow, 21] = "Y";
+            MySheet.Cells[lastRow, 20] = DateTime.Now.ToLongTimeString();
+            excelApp.ActiveWorkbook.Save();
+            excelApp.Workbooks.Close();
+            excelApp.Quit();
         }
+       }
 
     } 
 

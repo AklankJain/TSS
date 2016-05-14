@@ -60,7 +60,8 @@
             this.ClientSize = new System.Drawing.Size(1344, 897);
             this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Page6UI";
             this.Text = "Generate Certificate";
             this.Load += new System.EventHandler(this.Page6UI_Load);
