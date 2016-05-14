@@ -22,6 +22,7 @@ namespace CMS
 
     public partial class Page2UI : Form
     {
+<<<<<<< HEAD
         public static Excel.Workbook MyBook = null;
         public static Excel.Application MyApp = null;
         public static Excel.Worksheet MySheet = null;
@@ -30,6 +31,9 @@ namespace CMS
         
         
         public static string name;
+=======
+        public static string name, email_id;
+>>>>>>> piyush
         public Page2UI()
         {
             InitializeComponent();
@@ -73,10 +77,11 @@ namespace CMS
                     MessageBox.Show("Enter school name");
                 else
                 {
-                    if (comboBox1.SelectedItem == null)
-                        MessageBox.Show("Enter your class");
-                    else if (comboBox1.SelectedItem == "4th and below")
+                    if (string.IsNullOrEmpty(textBox3.Text))
+                        MessageBox.Show("Enter email id");
+                    else if (IsValidEmail(textBox3.Text) == false)
                     {
+<<<<<<< HEAD
                         SaveExcel();
                         Page3UI_c pg3c = new Page3UI_c();
                         pg3c.Show();
@@ -98,28 +103,52 @@ namespace CMS
                         pg3a.Show();
                         Thread.Sleep(2000);
                         this.Visible = false;
+=======
+                        MessageBox.Show("Enter valid email id");
+>>>>>>> piyush
                     }
                     else
                     {
-                        if (string.IsNullOrEmpty(textBox3.Text))
-                            MessageBox.Show("Enter email id");
-                        else if (IsValidEmail(textBox3.Text) == false)
+                        if (string.IsNullOrEmpty(textBox4.Text))
+                            MessageBox.Show("Enter contact no.");
+                        else if (textBox4.TextLength < 10)
                         {
-                            MessageBox.Show("Enter valid email id");
+                            MessageBox.Show("Enter valid contact no.");
                         }
                         else
                         {
-                            if (string.IsNullOrEmpty(textBox4.Text))
-                                MessageBox.Show("Enter contact no.");
-                            else if (textBox4.TextLength < 10)
+                            if (comboBox1.SelectedItem == null)
+                                MessageBox.Show("Enter your class");
+                            else if (comboBox1.SelectedItem == "4th and below")
                             {
-                                MessageBox.Show("Enter valid contact no.");
+
+                                Page3UI_c pg3c = new Page3UI_c();
+                                pg3c.Show();
+                                Thread.Sleep(2000);
+                                this.Visible = false;
+                            }
+                            else if (comboBox1.SelectedItem == "5th and 6th")
+                            {
+
+                                Page3UI_b pg3b = new Page3UI_b();
+                                pg3b.Show();
+                                Thread.Sleep(2000);
+                                this.Visible = false;
+                            }
+                            else if (comboBox1.SelectedItem == "7th and above")
+                            {
+
+                                Page3UI_a pg3a = new Page3UI_a();
+                                pg3a.Show();
+                                Thread.Sleep(2000);
+                                this.Visible = false;
                             }
                         }
-                    }
+                    }   
                 }
             }
             name = textBox1.Text;
+            email_id = textBox3.Text;
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
