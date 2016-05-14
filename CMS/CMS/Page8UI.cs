@@ -17,11 +17,16 @@ namespace CMS
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
+            
+            this.Visible = false;
+            Page1UI p1 = new Page1UI();
+
             // Set Form's Transperancy 100 %
             this.Opacity = 100;
-            Page1UI p1 = new Page1UI();
-            p1.Opacity = 0;
 
+            p1.Opacity = 50;
+            p1.Visible = true;
+            //p1.Show();
             // Start the Timer To Animate Form
             timer1.Enabled = true;
         }
@@ -30,7 +35,8 @@ namespace CMS
         {
             Page1UI p1 = new Page1UI();
             this.Opacity -= 0.07;
-            p1.Opacity += 0.07;
+            p1.Opacity += .7;
+            this.Opacity -= 0.07;
 
         }
     }

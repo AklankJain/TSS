@@ -13,12 +13,16 @@ namespace CMS
 {
     public partial class Page2UI : Form
     {
-        public static string name;
+        public static string name, email_id;
         public Page2UI()
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
+            // Set Form's Transperancy 100 %
+            this.Opacity = 0;
+            // Start the Timer To Animate Form
+            timer1.Enabled = true;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -30,62 +34,70 @@ namespace CMS
                     MessageBox.Show("Enter school name");
                 else
                 {
-                    if (comboBox1.SelectedItem == null)
-                        MessageBox.Show("Enter your class");
-                    else if (comboBox1.SelectedItem == "4th and below")
+                    if (string.IsNullOrEmpty(textBox3.Text))
+                        MessageBox.Show("Enter email id");
+                    else if (IsValidEmail(textBox3.Text) == false)
                     {
-
-                        Page3UI_c pg3c = new Page3UI_c();
-                        pg3c.Show();
-                        Thread.Sleep(2000);
-                        this.Visible = false;
-                    }
-                    else if (comboBox1.SelectedItem == "5th and 6th")
-                    {
-
-                        Page3UI_b pg3b = new Page3UI_b();
-                        pg3b.Show();
-                        Thread.Sleep(2000);
-                        this.Visible = false;
-                    }
-                    else if (comboBox1.SelectedItem == "7th and above")
-                    {
-
-                        Page3UI_a pg3a = new Page3UI_a();
-                        pg3a.Show();
-                        Thread.Sleep(2000);
-                        this.Visible = false;
+                        MessageBox.Show("Enter valid email id");
                     }
                     else
                     {
-                        if (string.IsNullOrEmpty(textBox3.Text))
-                            MessageBox.Show("Enter email id");
-                        else if (IsValidEmail(textBox3.Text) == false)
+                        if (string.IsNullOrEmpty(textBox4.Text))
+                            MessageBox.Show("Enter contact no.");
+                        else if (textBox4.TextLength < 10)
                         {
-                            MessageBox.Show("Enter valid email id");
+                            MessageBox.Show("Enter valid contact no.");
                         }
                         else
                         {
-                            if (string.IsNullOrEmpty(textBox4.Text))
-                                MessageBox.Show("Enter contact no.");
-                            else if (textBox4.TextLength < 10)
+                            if (comboBox1.SelectedItem == null)
+                                MessageBox.Show("Enter your class");
+                            else if (comboBox1.SelectedItem == "4th and below")
                             {
-                                MessageBox.Show("Enter valid contact no.");
+                                Page3UI_c pg3c = new Page3UI_c();
+                                pg3c.Show();
+                                Thread.Sleep(2000);
+                                this.Visible = false;
+                            }
+                            else if (comboBox1.SelectedItem == "5th and 6th")
+                            {
+                                Page3UI_b pg3b = new Page3UI_b();
+                                pg3b.Show();
+                                Thread.Sleep(2000);
+                                this.Visible = false;
+                            }
+                            else if (comboBox1.SelectedItem == "7th and above")
+                            {
+                                Page3UI_a pg3a = new Page3UI_a();
+                                pg3a.Show();
+                                Thread.Sleep(2000);
+                                this.Visible = false;
                             }
                         }
                     }
                 }
             }
             name = textBox1.Text;
+            email_id = textBox3.Text;
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[0-9]"))
+            {
+                MessageBox.Show("Please enter only alphabet");
+                textBox1.Text = textBox1.Text.Remove((textBox1.Text.Length - 1), 1);
+            }
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox2.Text, "[0-9]"))
+            {
+                MessageBox.Show("Please enter only alphabet");
+                textBox2.Text = textBox2.Text.Remove((textBox2.Text.Length - 1), 1);
+            }
         }
         bool IsValidEmail(string email)
         {
@@ -102,6 +114,13 @@ namespace CMS
                 MessageBox.Show("Please enter only numbers.");
                 textBox4.Text = textBox4.Text.Remove((textBox4.Text.Length - 1), 1);
             }
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Opacity += 4;
+        }
+        private void Page2UI_Load(object sender, EventArgs e)
+        {
         }
     }
 }

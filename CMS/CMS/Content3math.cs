@@ -32,7 +32,7 @@ namespace CMS
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-           
+            axShockwaveFlash1.Dispose();
             Page5UI pg5 = new Page5UI();
             pg5.Show();
             Thread.Sleep(1000);

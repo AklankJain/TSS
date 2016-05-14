@@ -95,7 +95,7 @@
             this.textBox2.Location = new System.Drawing.Point(137, 134);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(135, 27);
-            this.textBox2.TabIndex = 4;
+            this.textBox2.TabIndex = 1;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label4
@@ -118,7 +118,7 @@
             this.textBox3.MaxLength = 10;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(132, 27);
-            this.textBox3.TabIndex = 6;
+            this.textBox3.TabIndex = 4;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button1
@@ -150,7 +150,7 @@
             this.textBox4.Location = new System.Drawing.Point(137, 192);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(132, 27);
-            this.textBox4.TabIndex = 9;
+            this.textBox4.TabIndex = 2;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label5
@@ -171,7 +171,8 @@
             this.textBox5.Location = new System.Drawing.Point(139, 251);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(132, 27);
-            this.textBox5.TabIndex = 11;
+            this.textBox5.TabIndex = 3;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // Page0UI
             // 
@@ -194,6 +195,7 @@
             this.DoubleBuffered = true;
             this.Name = "Page0UI";
             this.Text = "Store Info";
+            this.Load += new System.EventHandler(this.textBox5_TextChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
