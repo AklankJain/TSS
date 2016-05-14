@@ -8,13 +8,35 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace CMS
 {
     public partial class Page5UI : Form
     {
+        public static Excel.Workbook MyBook = null;
+        public static Excel.Application MyApp = null;
+        public static Excel.Worksheet MySheet = null;
+        public static Excel.Application excelApp = null;
+        public int lastRow = 0;
+
         public Page5UI()
         {
+
+            string myPath = @"C:\Users\DELL\TSS\CMS\CMS\Excel\Try.xlsx";
+            excelApp = new Excel.Application();
+            Excel.Workbook wb;
+            try
+            {
+                wb = excelApp.Workbooks[System.IO.Path.GetFileName(myPath)];
+            }
+            catch
+            {
+                wb = excelApp.Workbooks.Open(myPath);
+            }
+            MySheet = (Microsoft.Office.Interop.Excel.Worksheet)wb.Sheets[1]; // Explicit cast is not required here
+            lastRow = MySheet.Cells.SpecialCells(Microsoft.Office.Interop.Excel.XlCellType.xlCellTypeLastCell).Row;
+            MySheet.Cells[lastRow, 15] = DateTime.Now.ToLongTimeString();
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
@@ -29,10 +51,11 @@ namespace CMS
             count = 1;
             if(count==1 && count1==1)
             {
-                
+                MySheet.Cells[lastRow, 18] = "Y";
+                SaveExcel();
                 Page6UI p6 = new Page6UI();
                 p6.Show();
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
                 this.Visible = false;
             }
         }
@@ -45,10 +68,11 @@ namespace CMS
             if(count==1 && count1==1)
             {
                 //for (int i = 0; i < 100000000; i++) ;
-               
+                MySheet.Cells[lastRow, 18] = "N";
+                SaveExcel();
                 Page6UI p6 = new Page6UI();
                 p6.Show();
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
                 this.Visible = false;
             }
         }
@@ -64,7 +88,8 @@ namespace CMS
                 if (count == 1 && count1 == 1)
                 {
                  //   for (int i = 0; i < 100000000; i++) ;
-                    
+                    MySheet.Cells[lastRow, 19] = "Y";
+                    SaveExcel();
                     Page6UI p6 = new Page6UI();
                     p6.Show();
                     Thread.Sleep(1000);
@@ -83,7 +108,8 @@ namespace CMS
             if(count==1 && count1==1)
             {
                // for (int i = 0; i < 100000000; i++) ;
-               
+                MySheet.Cells[lastRow, 19] = "N";
+                SaveExcel();
                 Page6UI p6 = new Page6UI();
                 p6.Show();
                 Thread.Sleep(1000);
@@ -94,6 +120,15 @@ namespace CMS
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.Opacity += 5;
+        }
+        public void SaveExcel()
+        {
+            
+           // lastRow = 1;
+            MySheet.Cells[lastRow, 16] = DateTime.Now.ToLongTimeString();
+            excelApp.ActiveWorkbook.Save();
+            excelApp.Workbooks.Close();
+            excelApp.Quit();
         }
     }
 }

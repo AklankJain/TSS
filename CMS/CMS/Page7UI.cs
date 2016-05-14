@@ -17,13 +17,42 @@ using System.Net.Mail;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Threading;
+<<<<<<< HEAD
+using Excel = Microsoft.Office.Interop.Excel;
+=======
+using Facebook;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Dynamic;
+>>>>>>> piyush
 
 namespace CMS
 {
     public partial class Page7UI : Form
     {
+        public static Excel.Workbook MyBook = null;
+        public static Excel.Application MyApp = null;
+        public static Excel.Worksheet MySheet = null;
+        public static Excel.Application excelApp = null;
+        public int lastRow = 0;
+
         public Page7UI()
         {
+            string myPath = @"C:\Users\DELL\TSS\CMS\CMS\Excel\Try.xlsx";
+            excelApp = new Excel.Application();
+            Excel.Workbook wb;
+            try
+            {
+                wb = excelApp.Workbooks[System.IO.Path.GetFileName(myPath)];
+            }
+            catch
+            {
+                wb = excelApp.Workbooks.Open(myPath);
+            }
+            MySheet = (Microsoft.Office.Interop.Excel.Worksheet)wb.Sheets[1]; // Explicit cast is not required here
+            lastRow = MySheet.Cells.SpecialCells(Microsoft.Office.Interop.Excel.XlCellType.xlCellTypeLastCell).Row;
+
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
@@ -34,6 +63,7 @@ namespace CMS
             // Start the Timer To Animate Form
             timer1.Enabled = true;
             label1.Text = Page2UI.name;
+            textBox1.Text = Page2UI.email_id;
             Bitmap bitimg = new System.Drawing.Bitmap(this.pictureBox1.BackgroundImage);
             Graphics graphicimg = Graphics.FromImage(bitimg);
 
@@ -59,7 +89,7 @@ namespace CMS
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            SaveExcel();
             Page8UI pg8 = new Page8UI();
             pg8.Show();
             Thread.Sleep(1000);
@@ -104,6 +134,7 @@ namespace CMS
                     smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                     smtp.Send(message);
                     MessageBox.Show("Mail send");
+                    MySheet.Cells[lastRow, 22] = "Y";
                 }
                 catch (Exception ex)
                 {
@@ -116,7 +147,55 @@ namespace CMS
         {
             this.Opacity += 0.07;
         }
+<<<<<<< HEAD
+        public void SaveExcel()
+        {
+
+            // lastRow = 1;
+            MySheet.Cells[lastRow, 21] = "Y";
+            MySheet.Cells[lastRow, 20] = DateTime.Now.ToLongTimeString();
+            excelApp.ActiveWorkbook.Save();
+            excelApp.Workbooks.Close();
+            excelApp.Quit();
+=======
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           /* string app_id = "1736060363278700";
+            string app_secret="f6b94b039cd26fa9ae4f9852496aaecd";
+            string scope = "publish_stream,manage_pages";
+            string AuthUrl = "https://graph.facebook.com/oauth/authorize?client_id={0}&redirect_uri={1}&display=popup&scope=publish_stream&response_type=code%20token";
+            string AppCallbackUrl = "https://www.facebook.com/connect/login_success.html";
+            
+            string url = string.Format(AuthUrl, app_id, AppCallbackUrl);
+            webBrowser1.Navigate(url);*/
+            /*WebClient client = new WebClient();
+            string path = @"C:\Users\Piyush\Documents\GitHub\TSS\CMS\CMS\Certificate\aklank.jpg";
+            string accessToken = "EAACEdEose0cBANXZBfqTNAkZAV6RGTRFbidOdhJRDD89LRpKvpdAWb41jZBg9RkJrsUmNPkuzfVF1IdPTdo7ncLtOlkNaLMWuLt4pKJCvLz3OLrd0CZCZChVZBafXXLGAUUoYhkwT1SQEV3Sw3wAoryFn8PZB9RHbb8j4vRZC5LAEgZDZD";
+            string name = "certificate";
+            client.UploadFile("https://graph.facebook.com/me/photos?access_token=" + accessToken + "&message=" + name, "POST", path);
+            MessageBox.Show("shared");
+            */
+           // string name = "certificate";
+            string path =   Application.StartupPath + @"\..\..\Certificate\sdd.jpg";
+            //System.Diagnostics.Process.Start("http://www.facebook.com/me/#/upload="+ path);
+            System.Diagnostics.Process.Start("https://graph.facebook.com/ALBUM_ID/photos/"+path);
+            /*/var fb = new FacebookClient(this.AccessToken);
+            //dynamic result = fb.Post("me/feed", new { message = "My second wall post using Facebook C# SDK" });
+           var fb = new FacebookClient();
+            dynamic result = fb.Get("oauth/access_token", new
+            {
+                client_id = "1736060363278700",
+                client_secret = "f6b94b039cd26fa9ae4f9852496aaecd",
+                //grant_type = "client_credentials"
+            });
+            fb.AccessToken = result.access_token;
+           fb.Post("https://graph.facebook.com/me/photos?access_token=" + fb.AccessToken + "&message=" + name);//, "POST", path);
+           */
         }
+>>>>>>> piyush
+        }
+       }
 
     } 
 

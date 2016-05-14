@@ -10,14 +10,36 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace CMS
 {
     public partial class Page0UI : Form
     {
+        public static Excel.Workbook MyBook = null;
+        public static Excel.Application MyApp = null;
+        public static Excel.Worksheet MySheet = null;
+        public static Excel.Application excelApp = null;
+        int lastRow = 0;
+
         public Page0UI()
         {
+            
+
             InitializeComponent();
+            string myPath = @"C:\Users\DELL\TSS\CMS\CMS\Excel\Try.xlsx";
+            excelApp = new Excel.Application();
+            Excel.Workbook wb;
+            try
+            {
+                wb = excelApp.Workbooks[System.IO.Path.GetFileName(myPath)];
+            }
+            catch
+            {
+                wb = excelApp.Workbooks.Open(myPath);
+            }
+            MySheet = (Microsoft.Office.Interop.Excel.Worksheet)wb.Sheets[1]; // Explicit cast is not required here
+            lastRow = MySheet.Cells.SpecialCells(Microsoft.Office.Interop.Excel.XlCellType.xlCellTypeLastCell).Row;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -94,6 +116,11 @@ namespace CMS
                                 MessageBox.Show("Enter valid contact no.");
                             }
                             else
+                            SaveExcel();
+                            Page1UI pg1 = new Page1UI();
+                            pg1.Show();
+                          /*  var delay = Task.Run(async () =>
+>>>>>>> a328cadf86f978205e1cb6d61f714740f862e4b2
                             {
 
                                 Page1UI pg1 = new Page1UI();
@@ -119,6 +146,24 @@ namespace CMS
                 MessageBox.Show("Please enter only alphabet");
                 textBox5.Text = textBox5.Text.Remove((textBox5.Text.Length - 1), 1);
             }
+        }
+        public void SaveExcel()
+        {
+            
+            lastRow += 1;
+            MySheet.Cells[lastRow, 1] = lastRow - 1;
+            MySheet.Cells[lastRow, 2] = textBox1.Text;
+            MySheet.Cells[lastRow, 3] = textBox2.Text;
+            MySheet.Cells[lastRow, 4] = textBox3.Text;
+        //    MySheet.Cells[lastRow, 5] = textBox4.Text;
+        //    MySheet.Cells[lastRow, 6] = textBox5.Text;
+            excelApp.ActiveWorkbook.Save();
+            excelApp.Workbooks.Close();
+            excelApp.Quit();
+        }
+        public int getlastRow()
+        {
+            return lastRow;
         }
     }
 }
