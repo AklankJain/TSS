@@ -25,7 +25,7 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            axShockwaveFlash1.Dispose();
             Content5_2Math c52m = new Content5_2Math();
             c52m.Show();
             Thread.Sleep(1000);

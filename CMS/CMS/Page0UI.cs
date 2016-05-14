@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -46,7 +47,11 @@ namespace CMS
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox2.Text, "[0-9]"))
+            {
+                MessageBox.Show("Please enter only alphabet");
+                textBox2.Text = textBox2.Text.Remove((textBox2.Text.Length - 1), 1);
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -58,7 +63,7 @@ namespace CMS
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(textBox3.Text, "[^0-9]"))
             {
-                MessageBox.Show("Please enter only numbers.");
+                MessageBox.Show("Please enter only numbers");
                 textBox3.Text = textBox3.Text.Remove((textBox3.Text.Length - 1), 1);
             }
         }
@@ -68,36 +73,52 @@ namespace CMS
         {
             if (string.IsNullOrEmpty(textBox1.Text))
                 MessageBox.Show("Enter Store ID");
-                else{
-                    if (string.IsNullOrEmpty(textBox2.Text))
+            else
+            {
+                if (string.IsNullOrEmpty(textBox2.Text))
                     MessageBox.Show("Enter valid ISP");
-                    else{
-                        if (string.IsNullOrEmpty(textBox3.Text))
-                            MessageBox.Show("Enter contact no.");
-                        else if(textBox3.TextLength<10)
-                        {
-                            MessageBox.Show("Enter valid contact no.");
-                        }
+                else
+                {
+                    if (string.IsNullOrEmpty(textBox4.Text))
+                        MessageBox.Show("Enter address");
+                    else
+                    {
+                        if (string.IsNullOrEmpty(textBox5.Text))
+                            MessageBox.Show("Enter city");
                         else
                         {
-                            
-                            Page1UI pg1 = new Page1UI();
-                            pg1.Show();
-                          /*  var delay = Task.Run(async () =>
+                            if (string.IsNullOrEmpty(textBox3.Text))
+                                MessageBox.Show("Enter contact no.");
+                            else if (textBox3.TextLength < 10)
                             {
-                                Stopwatch sw = Stopwatch.StartNew();
-                                await Task.Delay(2500);
-                                sw.Stop();
-                                return sw.ElapsedMilliseconds;
-                            });*/
-                            Thread.Sleep(1000);
-                            this.Visible = false;
-                        }
-                       
-                    }
+                                MessageBox.Show("Enter valid contact no.");
+                            }
+                            else
+                            {
 
-                    
+                                Page1UI pg1 = new Page1UI();
+                                pg1.Show();
+                                Thread.Sleep(1000);
+                                this.Visible = false;
+                            }
+                        }
+                    }
                 }
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox5.Text, "[0-9]"))
+            {
+                MessageBox.Show("Please enter only alphabet");
+                textBox5.Text = textBox5.Text.Remove((textBox5.Text.Length - 1), 1);
+            }
         }
     }
 }

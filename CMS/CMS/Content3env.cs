@@ -24,11 +24,16 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            //axShockwaveFlash1.Movie = Application.StartupPath + @"\..\..\34\Env\1\main.swf";
+            //axShockwaveFlash1.StopPlay();
+            axShockwaveFlash1.Dispose();
+            //axShockwaveFlash1.StopPlay();
             Page5UI pg5 = new Page5UI();
             pg5.Show();
             Thread.Sleep(1000);
             this.Visible = false;
+            //axShockwaveFlash1.StopPlay();
+            //axShockwaveFlash1.Stop();
         }
     }
 }
