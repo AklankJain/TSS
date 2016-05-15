@@ -86,10 +86,12 @@ namespace CMS
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             SaveExcel();
             Page8UI pg8 = new Page8UI();
             pg8.Show();
             //Thread.Sleep(1000);
+            Cursor.Current = Cursors.Default;
             this.Visible = false;
             this.Close();
         }

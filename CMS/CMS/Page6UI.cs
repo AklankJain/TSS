@@ -48,13 +48,13 @@ namespace CMS
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             SaveExcel();
-            Cursor.Current = Cursors.WaitCursor;
             Page7UI page7 = new Page7UI();
             page7.label1.Text = Page2UI.name;
             page7.Show();
-           
+            Cursor.Current = Cursors.Default;
             this.Visible = false;
             this.Close();
         }

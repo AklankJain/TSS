@@ -24,10 +24,12 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             axShockwaveFlash1.Dispose();
             Content7Math_2 c7m2 = new Content7Math_2();
             c7m2.Show();
            // Thread.Sleep(1000);
+            Cursor.Current = Cursors.Default;
             this.Visible = false;
             this.Close();
         }

@@ -22,20 +22,20 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Cursor.Current = Cursors.WaitCursor;
             Content7Math c7m = new Content7Math();
             c7m.Show();
-   
+            Cursor.Current = Cursors.Default;
             this.Visible = false;
             this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            Cursor.Current = Cursors.WaitCursor;
             Content7Science c7s = new Content7Science();
             c7s.Show();
-           
+            Cursor.Current = Cursors.Default;
             this.Visible = false;
             this.Close();
         }

@@ -22,29 +22,30 @@ namespace CMS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            Cursor.Current = Cursors.WaitCursor;
             Content3env c3e = new Content3env();
             c3e.Show();
-           
+            Cursor.Current = Cursors.Default;
             this.Visible = false;
             this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Cursor.Current = Cursors.WaitCursor;
             Content3math c3m = new Content3math();
             c3m.Show();
-            
+            Cursor.Current = Cursors.Default;
             this.Visible = false;
             this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            Cursor.Current = Cursors.WaitCursor;
             Content3science c3s = new Content3science();
             c3s.Show();
+            Cursor.Current = Cursors.Default;
             this.Visible = false;
             this.Close();
 

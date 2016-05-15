@@ -51,11 +51,13 @@ namespace CMS
             count = 1;
             if(count==1 && count1==1)
             {
+                Cursor.Current = Cursors.WaitCursor;
                 MySheet.Cells[lastRow, 18] = "Y";
                 SaveExcel();
                 Page6UI p6 = new Page6UI();
                 p6.Show();
                 //Thread.Sleep(1000);
+                Cursor.Current = Cursors.Default;
                 this.Visible = false;
                 this.Close();
             }
@@ -69,11 +71,13 @@ namespace CMS
             if(count==1 && count1==1)
             {
                 //for (int i = 0; i < 100000000; i++) ;
+                Cursor.Current = Cursors.WaitCursor;
                 MySheet.Cells[lastRow, 18] = "N";
-                SaveExcel();
+                SaveExcel();              
                 Page6UI p6 = new Page6UI();
                 p6.Show();
                 //Thread.Sleep(1000);
+                Cursor.Current = Cursors.Default;
                 this.Visible = false;
                 this.Close();
             }
@@ -90,11 +94,13 @@ namespace CMS
                 if (count == 1 && count1 == 1)
                 {
                  //   for (int i = 0; i < 100000000; i++) ;
+                    Cursor.Current = Cursors.WaitCursor;
                     MySheet.Cells[lastRow, 19] = "Y";
-                    SaveExcel();
+                    SaveExcel();               
                     Page6UI p6 = new Page6UI();
                     p6.Show();
                     //Thread.Sleep(1000);
+                    Cursor.Current = Cursors.Default;
                     this.Visible = false;
                     this.Close();
                 }
@@ -111,11 +117,13 @@ namespace CMS
             if(count==1 && count1==1)
             {
                // for (int i = 0; i < 100000000; i++) ;
+                Cursor.Current = Cursors.WaitCursor;
                 MySheet.Cells[lastRow, 19] = "N";
                 SaveExcel();
                 Page6UI p6 = new Page6UI();
                 p6.Show();
                 //Thread.Sleep(1000);
+                Cursor.Current = Cursors.Default;
                 this.Visible = false;
                 this.Close();
             }

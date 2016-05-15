@@ -88,28 +88,37 @@ namespace CMS
                                 MessageBox.Show("Enter your class");
                             else if (comboBox1.SelectedItem == "4th and below")
                             {
-                                SaveExcel();
+                                Cursor.Current = Cursors.WaitCursor;
+                                SaveExcel();                              
                                 Page3UI_c pg3c = new Page3UI_c();
                                 pg3c.Show();
-                                
+                                name = textBox1.Text;
+                                email_id = textBox3.Text;
+                                Cursor.Current = Cursors.Default;
                                 this.Visible = false;
                                 this.Close();
                             }
                             else if (comboBox1.SelectedItem == "5th and 6th")
                             {
+                                Cursor.Current = Cursors.WaitCursor;
                                 SaveExcel();
                                 Page3UI_b pg3b = new Page3UI_b();
                                 pg3b.Show();
-                                
+                                name = textBox1.Text;
+                                email_id = textBox3.Text;
+                                Cursor.Current = Cursors.Default;
                                 this.Visible = false;
                                 this.Close();
                             }
                             else if (comboBox1.SelectedItem == "7th and above")
                             {
-                                SaveExcel();
+                                Cursor.Current = Cursors.WaitCursor;
+                                SaveExcel();                              
                                 Page3UI_a pg3a = new Page3UI_a();
                                 pg3a.Show();
-                                
+                                name = textBox1.Text;
+                                email_id = textBox3.Text;
+                                Cursor.Current = Cursors.Default;
                                 this.Visible = false;
                                 this.Close();
                             }
@@ -117,8 +126,7 @@ namespace CMS
                     }
                 }
             }
-            name = textBox1.Text;
-            email_id = textBox3.Text;
+            
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
