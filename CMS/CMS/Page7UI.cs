@@ -36,7 +36,7 @@ namespace CMS
 
         public Page7UI()
         {
-            string myPath = @"C:\Users\DELL\TSS\CMS\CMS\Excel\Try.xlsx";
+            string myPath = Application.StartupPath + @"\..\..\Excel\Try.xlsx";
             excelApp = new Excel.Application();
             Excel.Workbook wb;
             try
@@ -158,44 +158,31 @@ namespace CMS
             excelApp.Quit();
             System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
         }
+            
+        
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-           /* string app_id = "1736060363278700";
+            /*string app_id = "1736060363278700";
             string app_secret="f6b94b039cd26fa9ae4f9852496aaecd";
             string scope = "publish_stream,manage_pages";
             string AuthUrl = "https://graph.facebook.com/oauth/authorize?client_id={0}&redirect_uri={1}&display=popup&scope=publish_stream&response_type=code%20token";
             string AppCallbackUrl = "https://www.facebook.com/connect/login_success.html";
             
             string url = string.Format(AuthUrl, app_id, AppCallbackUrl);
-            webBrowser1.Navigate(url);*/
-            /*WebClient client = new WebClient();
+            WebClient client = new WebClient();
             string path = @"C:\Users\Piyush\Documents\GitHub\TSS\CMS\CMS\Certificate\aklank.jpg";
             string accessToken = "EAACEdEose0cBANXZBfqTNAkZAV6RGTRFbidOdhJRDD89LRpKvpdAWb41jZBg9RkJrsUmNPkuzfVF1IdPTdo7ncLtOlkNaLMWuLt4pKJCvLz3OLrd0CZCZChVZBafXXLGAUUoYhkwT1SQEV3Sw3wAoryFn8PZB9RHbb8j4vRZC5LAEgZDZD";
             string name = "certificate";
-            client.UploadFile("https://graph.facebook.com/me/photos?access_token=" + accessToken + "&message=" + name, "POST", path);
-            MessageBox.Show("shared");
-            */
-           // string name = "certificate";
-            string path =   Application.StartupPath + @"\..\..\Certificate\sdd.jpg";
-            //System.Diagnostics.Process.Start("http://www.facebook.com/me/#/upload="+ path);
-            System.Diagnostics.Process.Start("https://graph.facebook.com/ALBUM_ID/photos/"+path);
-            /*/var fb = new FacebookClient(this.AccessToken);
-            //dynamic result = fb.Post("me/feed", new { message = "My second wall post using Facebook C# SDK" });
-           var fb = new FacebookClient();
-            dynamic result = fb.Get("oauth/access_token", new
-            {
-                client_id = "1736060363278700",
-                client_secret = "f6b94b039cd26fa9ae4f9852496aaecd",
-                //grant_type = "client_credentials"
-            });
-            fb.AccessToken = result.access_token;
-           fb.Post("https://graph.facebook.com/me/photos?access_token=" + fb.AccessToken + "&message=" + name);//, "POST", path);
-           */
+            //client.UploadFile("https://graph.facebook.com/me/photos?access_token=" + accessToken + "&message=" + name, "POST", path);
+            MessageBox.Show("shared");*/
+           
         }
+
         }
-       }
+       
+}
 
      
 

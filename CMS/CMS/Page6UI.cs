@@ -25,7 +25,7 @@ namespace CMS
 
         public Page6UI()
         {
-            string myPath = @"C:\Users\DELL\TSS\CMS\CMS\Excel\Try.xlsx";
+            string myPath = Application.StartupPath + @"\..\..\Excel\Try.xlsx";
             excelApp = new Excel.Application();
             Excel.Workbook wb;
             try
@@ -52,7 +52,7 @@ namespace CMS
             button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             SaveExcel();
             Page7UI page7 = new Page7UI();
-            page7.label1.Text = Page2UI.name;
+            //page7.label1.Text = Page2UI.name;
             page7.Show();
             Cursor.Current = Cursors.Default;
             this.Visible = false;

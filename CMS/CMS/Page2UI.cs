@@ -23,7 +23,6 @@ namespace CMS
     public partial class Page2UI : Form
     {
 
-        public static string name, email_id;
         public static Excel.Workbook MyBook = null;
         public static Excel.Application MyApp = null;
         public static Excel.Worksheet MySheet = null;
@@ -31,6 +30,9 @@ namespace CMS
         public int lastRow = 0;
         
         
+
+        public static string name, email_id;
+
         public Page2UI()
         {
             InitializeComponent();
@@ -38,7 +40,7 @@ namespace CMS
             WindowState = FormWindowState.Maximized;
             
             // Set Form's Transperancy 100 %
-            string myPath = @"C:\Users\DELL\TSS\CMS\CMS\Excel\Try.xlsx";
+            string myPath = Application.StartupPath + @"\..\..\Excel\Try.xlsx";
             this.Opacity = 0;
            // var excelApp = (Excel.Application) System.Runtime.InteropServices.Marshal.GetActiveObject("Excel.Application");
             //if(excelApp==null)

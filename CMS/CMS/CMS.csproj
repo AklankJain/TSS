@@ -146,12 +146,7 @@
     <Compile Include="Page8UI.Designer.cs">
       <DependentUpon>Page8UI.cs</DependentUpon>
     </Compile>
-    <Compile Include="webbrowser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="webbrowser.Designer.cs">
-      <DependentUpon>webbrowser.cs</DependentUpon>
-    </Compile>
+
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Page0UI.cs">
@@ -271,9 +266,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="webbrowser.resx">
-      <DependentUpon>webbrowser.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
     <None Include="packages.config" />

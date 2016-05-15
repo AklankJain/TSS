@@ -23,7 +23,7 @@ namespace CMS
         public Page5UI()
         {
 
-            string myPath = @"C:\Users\DELL\TSS\CMS\CMS\Excel\Try.xlsx";
+            string myPath = Application.StartupPath + @"\..\..\Excel\Try.xlsx";
             excelApp = new Excel.Application();
             Excel.Workbook wb;
             try
