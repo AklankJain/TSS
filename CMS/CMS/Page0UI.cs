@@ -26,7 +26,7 @@ namespace CMS
             
 
             InitializeComponent();
-            string myPath = @"C:\Users\DELL\TSS\CMS\CMS\Excel\Try.xlsx";
+            string myPath = Application.StartupPath + @"\..\..\Excel\Try.xlsx";
             excelApp = new Excel.Application();
             Excel.Workbook wb;
             try
@@ -129,8 +129,8 @@ namespace CMS
             MySheet.Cells[lastRow, 2] = textBox1.Text;
             MySheet.Cells[lastRow, 3] = textBox2.Text;
             MySheet.Cells[lastRow, 4] = textBox3.Text;
-        //    MySheet.Cells[lastRow, 5] = textBox4.Text;
-        //    MySheet.Cells[lastRow, 6] = textBox5.Text;
+        //  MySheet.Cells[lastRow, 5] = textBox4.Text;
+        //  MySheet.Cells[lastRow, 6] = textBox5.Text;
             excelApp.ActiveWorkbook.Save();
             excelApp.Workbooks.Close();
             excelApp.Quit();
