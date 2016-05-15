@@ -22,6 +22,11 @@ namespace CMS
 
     public partial class Page2UI : Form
     {
+<<<<<<< HEAD
+=======
+
+        public static string name, email_id;
+>>>>>>> fd418334c8186322a18bc979df99ceb5f9cb18ec
         public static Excel.Workbook MyBook = null;
         public static Excel.Application MyApp = null;
         public static Excel.Worksheet MySheet = null;
@@ -29,7 +34,10 @@ namespace CMS
         public int lastRow = 0;
         
         
+<<<<<<< HEAD
         public static string name, email_id;
+=======
+>>>>>>> fd418334c8186322a18bc979df99ceb5f9cb18ec
         public Page2UI()
         {
             InitializeComponent();
@@ -54,12 +62,6 @@ namespace CMS
                 wb = excelApp.Workbooks.Open(myPath);
             }
             timer1.Enabled = true;
-           // var MyApp = (Microsoft.Office.Interop.Excel.Application)System.Runtime.InteropServices.Marshal.GetActiveObject("Excel.Application");
-            //if (MyApp == null)
-             //   MyApp = new Microsoft.Office.Interop.Excel.Application();
-            //MyApp = new Microsoft.Office.Interop.Excel.Application();
-            //MyApp.Visible = false;
-           // MyBook = excelApp.Workbooks.Open(myPath);
             MySheet = (Microsoft.Office.Interop.Excel.Worksheet)wb.Sheets[1]; // Explicit cast is not required here
             lastRow = MySheet.Cells.SpecialCells(Microsoft.Office.Interop.Excel.XlCellType.xlCellTypeLastCell).Row; 
         }
@@ -96,27 +98,30 @@ namespace CMS
                                 SaveExcel();
                                 Page3UI_c pg3c = new Page3UI_c();
                                 pg3c.Show();
-                                Thread.Sleep(2000);
+                                
                                 this.Visible = false;
+                                this.Close();
                             }
                             else if (comboBox1.SelectedItem == "5th and 6th")
                             {
                                 SaveExcel();
                                 Page3UI_b pg3b = new Page3UI_b();
                                 pg3b.Show();
-                                Thread.Sleep(2000);
+                                
                                 this.Visible = false;
+                                this.Close();
                             }
                             else if (comboBox1.SelectedItem == "7th and above")
                             {
                                 SaveExcel();
                                 Page3UI_a pg3a = new Page3UI_a();
                                 pg3a.Show();
-                                Thread.Sleep(2000);
+                                
                                 this.Visible = false;
+                                this.Close();
                             }
                         }
-                    }   
+                    }
                 }
             }
             name = textBox1.Text;
@@ -124,12 +129,22 @@ namespace CMS
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text, "[0-9]"))
+            {
+                MessageBox.Show("Please enter only alphabet");
+                textBox1.Text = textBox1.Text.Remove((textBox1.Text.Length - 1), 1);
+            }
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox2.Text, "[0-9]"))
+            {
+                MessageBox.Show("Please enter only alphabet");
+                textBox2.Text = textBox2.Text.Remove((textBox2.Text.Length - 1), 1);
+            }
         }
         bool IsValidEmail(string email)
         {
@@ -147,7 +162,6 @@ namespace CMS
                 textBox4.Text = textBox4.Text.Remove((textBox4.Text.Length - 1), 1);
             }
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.Opacity += 4;
@@ -173,6 +187,19 @@ namespace CMS
             excelApp.ActiveWorkbook.Save();
             excelApp.Workbooks.Close();
             excelApp.Quit();
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
+            System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("Excel");
+            foreach (System.Diagnostics.Process p in process)
+            {
+                if (!string.IsNullOrEmpty(p.ProcessName))
+                {
+                    try
+                    {
+                        p.Kill();
+                    }
+                    catch { }
+                }
+            }
         }
         public string GetMACAddress()
         {

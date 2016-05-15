@@ -89,8 +89,9 @@ namespace CMS
             SaveExcel();
             Page8UI pg8 = new Page8UI();
             pg8.Show();
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
             this.Visible = false;
+            this.Close();
         }
         bool IsValidEmail(string email)
         {
@@ -153,7 +154,11 @@ namespace CMS
             excelApp.ActiveWorkbook.Save();
             excelApp.Workbooks.Close();
             excelApp.Quit();
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
         }
+            
+        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -174,8 +179,9 @@ namespace CMS
         }
 
         }
-       }
+       
+}
 
-  
+     
 
  

@@ -30,6 +30,7 @@ namespace CMS
             for (int i = 0; i < 80000000; i++) ;
             Cursor.Current = Cursors.Default;
             this.Visible = false;
+            this.Close();
            
 
         }

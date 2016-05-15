@@ -24,11 +24,12 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            axShockwaveFlash1.Stop();
+            axShockwaveFlash1.Dispose();
             Page5UI pg5 = new Page5UI();
             pg5.Show();
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
             this.Visible = false;
+            this.Close();
         }
 
         private void Content5_2Math_Load(object sender, EventArgs e)
