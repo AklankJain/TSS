@@ -2,6 +2,34 @@
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E811F338E30B466B503F2316ABA4DB3AEC7FA85B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CMS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -128,6 +156,12 @@
     <Compile Include="Content7Science.Designer.cs">
       <DependentUpon>Content7Science.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page6UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,7 +180,6 @@
     <Compile Include="Page8UI.Designer.cs">
       <DependentUpon>Page8UI.cs</DependentUpon>
     </Compile>
-
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Page0UI.cs">
@@ -226,6 +259,9 @@
     <EmbeddedResource Include="Content7Science.resx">
       <DependentUpon>Content7Science.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Page6UI.resx">
       <DependentUpon>Page6UI.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +304,7 @@
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
+    <None Include="CMS_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -339,6 +376,15 @@
       <WrapperTool>aximp</WrapperTool>
       <Isolated>False</Isolated>
     </COMReference>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
     <COMReference Include="ShockwaveFlashObjects">
       <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -363,8 +409,45 @@
     <None Include="Resources\click.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="56\Math\1\main.swf" />
+    <Content Include="Resources\1.jpg" />
+    <Content Include="Resources\chagedone.jpg" />
+    <Content Include="Resources\click.png" />
+    <Content Include="Resources\clickonthemostboringsubject.png" />
+    <None Include="slide.jpg" />
+    <None Include="Resources\maths 1.png" />
+    <None Include="Resources\science 1.png" />
+    <None Include="Resources\environment.png" />
+    <None Include="Resources\science 2.png" />
+    <None Include="Resources\environment 2.png" />
+    <None Include="Resources\maths 2.png" />
+    <None Include="Resources\no.png" />
+    <None Include="Resources\slide 22.png" />
+    <Content Include="Resources\slide ctc-01.jpg" />
+    <None Include="Resources\slide ctc-09.jpg" />
+    <Content Include="Resources\startpage.gif" />
+    <None Include="Resources\without icon-03.jpg" />
+    <None Include="startpage.gif" />
     <None Include="Resources\fbshare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />

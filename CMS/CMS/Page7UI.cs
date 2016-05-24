@@ -24,6 +24,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Dynamic;
 
+
 namespace CMS
 {
     public partial class Page7UI : Form
@@ -33,9 +34,10 @@ namespace CMS
         public static Excel.Worksheet MySheet = null;
         public static Excel.Application excelApp = null;
         public int lastRow = 0;
-
+        
         public Page7UI()
         {
+           
             string myPath = Application.StartupPath + @"\..\..\Excel\Try.xlsx";
             excelApp = new Excel.Application();
             Excel.Workbook wb;
@@ -88,11 +90,12 @@ namespace CMS
         {
             Cursor.Current = Cursors.WaitCursor;
             SaveExcel();
-            Page8UI pg8 = new Page8UI();
+           Page8UI pg8 = new Page8UI();
             pg8.Show();
             //Thread.Sleep(1000);
             Cursor.Current = Cursors.Default;
             this.Visible = false;
+            
             this.Close();
         }
         bool IsValidEmail(string email)
@@ -110,6 +113,7 @@ namespace CMS
             {
                 try
                 {
+                    Cursor.Current = Cursors.WaitCursor;
                     MailMessage message = new MailMessage();
                     SmtpClient smtp = new SmtpClient();
 
@@ -135,6 +139,7 @@ namespace CMS
                     smtp.Send(message);
                     MessageBox.Show("Mail send");
                     MySheet.Cells[lastRow, 22] = "Y";
+                    Cursor.Current = Cursors.Default;
                 }
                 catch (Exception ex)
                 {
@@ -145,7 +150,7 @@ namespace CMS
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.Opacity += 0.07;
+            this.Opacity += 4;
         }
         public void SaveExcel()
         {
@@ -164,20 +169,11 @@ namespace CMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*string app_id = "1736060363278700";
-            string app_secret="f6b94b039cd26fa9ae4f9852496aaecd";
-            string scope = "publish_stream,manage_pages";
-            string AuthUrl = "https://graph.facebook.com/oauth/authorize?client_id={0}&redirect_uri={1}&display=popup&scope=publish_stream&response_type=code%20token";
-            string AppCallbackUrl = "https://www.facebook.com/connect/login_success.html";
-            
-            string url = string.Format(AuthUrl, app_id, AppCallbackUrl);
-            WebClient client = new WebClient();
-            string path = @"C:\Users\Piyush\Documents\GitHub\TSS\CMS\CMS\Certificate\aklank.jpg";
-            string accessToken = "EAACEdEose0cBANXZBfqTNAkZAV6RGTRFbidOdhJRDD89LRpKvpdAWb41jZBg9RkJrsUmNPkuzfVF1IdPTdo7ncLtOlkNaLMWuLt4pKJCvLz3OLrd0CZCZChVZBafXXLGAUUoYhkwT1SQEV3Sw3wAoryFn8PZB9RHbb8j4vRZC5LAEgZDZD";
-            string name = "certificate";
-            //client.UploadFile("https://graph.facebook.com/me/photos?access_token=" + accessToken + "&message=" + name, "POST", path);
-            MessageBox.Show("shared");*/
-           
+            Cursor.Current = Cursors.WaitCursor;
+            Form1 fr1 = new Form1();
+            fr1.Show();
+            //System.Diagnostics.Process.Start("www.facebook.com");
+            Cursor.Current = Cursors.Default;
         }
 
         }

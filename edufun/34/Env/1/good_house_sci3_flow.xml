@@ -1,0 +1,253 @@
+<animFlow>
+	<animAssets>
+		<template>
+			<path>template_v3.swf</path>
+			<target>mcTemplate</target>
+		</template>
+		<bgMusic>
+			<path>bgmusic_v3.swf</path>
+			<target>mcBgMusic</target>
+		</bgMusic>
+		<extTxt>
+			<path>lang/English/good_house_sci3_texts.xml</path>
+			<target>xmlVars</target>
+		</extTxt>
+		<cssSheet>
+			<path>lang/English/good_house_sci3_style.css</path>
+			<target>cssStyles</target>
+		</cssSheet>
+		<applicationProperty>
+			<path>skin/appProperty.xml</path>
+			<target>appProperty</target>
+		</applicationProperty>
+	</animAssets>
+	<animInfo>
+		<Class>Class 3</Class>
+		<Subject>Creative Science</Subject>
+		<Title>A Healthy Home</Title>
+	</animInfo>
+	<animOrder>
+		<main>
+			<file>good_house_sci3_main.swf</file>
+		</main>
+		<scenes>
+			<scene name="assets" endOfSubTopic="false">
+					<file>good_house_sci3_01.swf</file>
+					<syncs clip="stage">
+					<sync>2,54</sync>
+				</syncs>
+					<activityZone>
+						<zone></zone>
+					</activityZone>
+					<tsSync>
+					<sync>2,42</sync>
+				</tsSync>
+			</scene>
+				<!--audio name="audio">
+					<VO>
+						<file>good_house_sci3_01_vo.swf</file>
+						<syncs clip="soundclip_1">
+							<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+						</syncs>
+					</VO>
+				</audio-->
+		</scenes>
+	<scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>good_house_sci3_02.swf</file>
+				<syncs clip="stage">
+					<sync>2,88</sync><sync>89,152</sync><sync>153,229</sync><sync>230,299</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>2,86</sync><sync>87,149</sync><sync>150,227</sync><sync>228,296</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>good_house_sci3_02_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes>
+			<scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>good_house_sci3_03.swf</file>
+				<syncs clip="stage">
+					<sync>2,43</sync><sync>44,73</sync><sync>74,112</sync><sync>113,158</sync><sync>159,201</sync><sync>202,247</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>2,44</sync><sync>45,73</sync><sync>74,114</sync><sync>115,159</sync><sync>160,202</sync><sync>203,246</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>good_house_sci3_03_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+			
+			</scenes>
+			<scenes>
+				<scene name="assets" endOfSubTopic="false">
+					<file>good_house_sci3_04.swf</file>
+					<syncs clip="stage">
+					<sync>2,51</sync><sync>52,170</sync><sync>171,250</sync><sync>251,315</sync>
+				</syncs>
+					<activityZone>
+						<zone></zone>
+					</activityZone>
+					<tsSync>
+					<sync>2,51</sync><sync>52,170</sync><sync>171,250</sync><sync>251,314</sync>
+				</tsSync>
+			</scene>
+				<!--audio name="audio">
+				<VO>
+					<file>good_house_sci3_03_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes>
+		<scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>good_house_sci3_05.swf</file>
+				<syncs clip="stage">
+					<sync>2,65</sync><sync>66,182</sync><sync>183,251</sync><sync>252,317</sync><sync>318,333</sync><sync>334,403</sync><sync>404,466</sync><sync>467,563</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>2,65</sync><sync>66,182</sync><sync>183,251</sync><sync>252,317</sync><sync>318,333</sync><sync>334,403</sync><sync>404,466</sync><sync>467,562</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>good_house_sci3_03_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+			</scenes>
+			<scenes>	
+			<scene name="assets" endOfSubTopic="false">
+				<file>good_house_sci3_06.swf</file>
+				<syncs clip="stage">
+					<sync>2,57</sync><sync>58,134</sync><sync>135,192</sync><sync>193,210</sync>
+				</syncs>
+				<activityZone>
+					<zone>3</zone>
+				</activityZone>
+				<tsSync>
+					<sync>2,57</sync><sync>58,134</sync><sync>135,192</sync><sync>193,209</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>good_house_sci3_03_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+			</scenes><scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>good_house_sci3_07.swf</file>
+				<syncs clip="stage">
+					<sync>2,50</sync><sync>51,117</sync><sync>118,229</sync><sync>230,306</sync><sync>307,358</sync><sync>359,472</sync><sync>473,553</sync><sync>554,633</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>2,50</sync><sync>51,117</sync><sync>118,229</sync><sync>230,306</sync><sync>307,358</sync><sync>359,472</sync><sync>473,553</sync><sync>554,633</sync><sync>634,652</sync><sync>653,728</sync><sync>729,810</sync><sync>811,896</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>good_house_sci3_03_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+			</scenes><scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>good_house_sci3_08.swf</file>
+				<syncs clip="stage">
+					<sync>2,56</sync><sync>57,137</sync><sync>138,181</sync><sync>182,263</sync><sync>264,335</sync><sync>336,396</sync><sync>397,485</sync><sync>486,581</sync><sync>582,644</sync><sync>645,687</sync><sync>688,782</sync><sync>783,802</sync><sync>803,880</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>6,56</sync><sync>57,137</sync><sync>138,181</sync><sync>182,263</sync><sync>264,335</sync><sync>336,396</sync><sync>397,485</sync><sync>486,581</sync><sync>582,644</sync><sync>645,687</sync><sync>688,782</sync><sync>783,802</sync><sync>803,879</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>good_house_sci3_03_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+			
+			</scenes>
+				
+			<scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>good_house_sci3_09.swf</file>
+				<syncs clip="stage">
+					<sync>2,69</sync><sync>70,114</sync><sync>115,169</sync><sync>170,239</sync><sync>240,320</sync><sync>321,363</sync><sync>364,420</sync>
+				</syncs>
+				<activityZone>
+					<zone>6</zone>
+				</activityZone>
+				<tsSync>
+					<sync>8,71</sync><sync>72,114</sync><sync>115,169</sync><sync>170,239</sync><sync>240,322</sync><sync>323,363</sync><sync>364,419</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>good_house_sci3_09_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes><scenes>
+			<scene name="assets" endOfSubTopic="false">
+				<file>good_house_sci3_10.swf</file>
+				<syncs clip="stage">
+					<sync>2,56</sync><sync>57,105</sync>
+				</syncs>
+				<activityZone>
+					<zone></zone>
+				</activityZone>
+				<tsSync>
+					<sync>2,56</sync><sync>57,104</sync>
+				</tsSync>
+			</scene>
+			<!--audio name="audio">
+				<VO>
+					<file>good_house_sci3_10_vo.swf</file>
+					<syncs clip="soundclip_1">
+						<sync>2,12</sync><sync>13,28</sync><sync>29,182</sync>
+					</syncs>
+				</VO>
+			</audio-->
+		</scenes></animOrder>
+</animFlow>

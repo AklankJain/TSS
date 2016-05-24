@@ -22,7 +22,7 @@ namespace CMS
 
         public Page5UI()
         {
-
+           
             string myPath = Application.StartupPath + @"\..\..\Excel\Try.xlsx";
             excelApp = new Excel.Application();
             Excel.Workbook wb;
@@ -59,6 +59,7 @@ namespace CMS
                 //Thread.Sleep(1000);
                 Cursor.Current = Cursors.Default;
                 this.Visible = false;
+               
                 this.Close();
             }
         }
@@ -79,6 +80,7 @@ namespace CMS
                 //Thread.Sleep(1000);
                 Cursor.Current = Cursors.Default;
                 this.Visible = false;
+               
                 this.Close();
             }
         }
@@ -102,6 +104,7 @@ namespace CMS
                     //Thread.Sleep(1000);
                     Cursor.Current = Cursors.Default;
                     this.Visible = false;
+                    
                     this.Close();
                 }
         }
@@ -118,20 +121,21 @@ namespace CMS
             {
                // for (int i = 0; i < 100000000; i++) ;
                 Cursor.Current = Cursors.WaitCursor;
-                MySheet.Cells[lastRow, 19] = "N";
-                SaveExcel();
+             //   MySheet.Cells[lastRow, 19] = "N";
+             //   SaveExcel();
                 Page6UI p6 = new Page6UI();
-                p6.Show();
+               p6.Show();
                 //Thread.Sleep(1000);
                 Cursor.Current = Cursors.Default;
                 this.Visible = false;
+               
                 this.Close();
             }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.Opacity += 5;
+            this.Opacity += 4;
         }
         public void SaveExcel()
         {

@@ -22,9 +22,10 @@ namespace CMS
         public static Excel.Worksheet MySheet = null;
         public static Excel.Application excelApp = null;
         public int lastRow = 0;
-
+       
         public Page6UI()
         {
+           
             string myPath = Application.StartupPath + @"\..\..\Excel\Try.xlsx";
             excelApp = new Excel.Application();
             Excel.Workbook wb;
@@ -39,6 +40,8 @@ namespace CMS
             MySheet = (Microsoft.Office.Interop.Excel.Worksheet)wb.Sheets[1]; // Explicit cast is not required here
             lastRow = MySheet.Cells.SpecialCells(Microsoft.Office.Interop.Excel.XlCellType.xlCellTypeLastCell).Row;
             InitializeComponent();
+            this.Opacity = 0;
+            timer1.Enabled = true;
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
@@ -56,6 +59,7 @@ namespace CMS
             page7.Show();
             Cursor.Current = Cursors.Default;
             this.Visible = false;
+            
             this.Close();
         }
         public void SaveExcel()
@@ -79,6 +83,11 @@ namespace CMS
                     catch { }
                 }
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Opacity += 4;
         }
     }
 }

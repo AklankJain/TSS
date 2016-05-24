@@ -36,12 +36,25 @@ namespace CMS
         public Page2UI()
         {
             InitializeComponent();
+
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-            
             // Set Form's Transperancy 100 %
             string myPath = Application.StartupPath + @"\..\..\Excel\Try.xlsx";
             this.Opacity = 0;
+            string anotherPath = "C:\\edufun\\secondary.xlsx"
+            anotherApp = new Excel.Application();
+            Excel.Workbook wa;
+            try
+            {
+                wa = anotherApp.Workbooks[System.IO.Path.GetFileName(anotherPath)];
+            }
+            catch
+            {
+                wa = anotherApp.Workbooks.Open(anotherPath);
+            }
+            ASheet = (Microsoft.Office.Interop.Excel.Worksheet)wa.Sheets[1];
+
            // var excelApp = (Excel.Application) System.Runtime.InteropServices.Marshal.GetActiveObject("Excel.Application");
             //if(excelApp==null)
              //   excelApp = new Excel.Application();
@@ -128,7 +141,7 @@ namespace CMS
                     }
                 }
             }
-            
+            //button1.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -167,7 +180,7 @@ namespace CMS
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.Opacity += 4;
+            this.Opacity += .5;
         }
 
         private void Page2UI_Load(object sender, EventArgs e)
@@ -177,7 +190,12 @@ namespace CMS
         public void SaveExcel()
         {
             string mac = GetMACAddress();
-            
+           // MySheet.Cells[lastRow , 2] = ASheet.Cells[3,2];
+            MySheet.Cells[lastRow , 3] = ASheet.Cells[3,3];
+            MySheet.Cells[lastRow , 4] = ASheet.Cells[3,4];
+            MySheet.Cells[lastRow , 5] = ASheet.Cells[3,5];
+            MySheet.Cells[lastRow , 6] = ASheet.Cells[3,6];
+            MySheet.Cells[lastRow , 7] = ASheet.Cells[3,7];
             MySheet.Cells[lastRow, 8] = textBox1.Text;
             MySheet.Cells[lastRow, 9] = textBox4.Text;
             MySheet.Cells[lastRow, 10] = comboBox1.Text;
@@ -190,6 +208,9 @@ namespace CMS
             excelApp.ActiveWorkbook.Save();
             excelApp.Workbooks.Close();
             excelApp.Quit();
+            anotherApp.ActiveWorkbook.Save();
+            anotherApp.Workbooks.Close();
+            anotherApp.Quit();
             System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
             System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("Excel");
             foreach (System.Diagnostics.Process p in process)

@@ -1,0 +1,17 @@
+<snake_ladder>
+	<type number_of_question="0" random_question="1" random_option="1"/><!--0=all question, 1,2,3,=number of question 0=No, 1=Yes-->
+	<snake>
+		<point>12,10</point>
+		<point>14,5</point>
+		<point>24,18</point>
+		<point>16,1</point>
+	</snake>
+	<ladder>
+		<point>3,13</point>
+		<point>11,21</point>
+	</ladder>
+	<hotSpot>
+		<point>16</point>
+		<point>19</point>
+	</hotSpot>
+</snake_ladder>

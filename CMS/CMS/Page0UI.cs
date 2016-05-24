@@ -24,21 +24,46 @@ namespace CMS
 
         public Page0UI()
         {
-            
+            string anotherPath = "C:\\edufun\\secondary.xlsx"
+            anotherApp = new Excel.Application();
+            Excel.Workbook wa;
+            try
+            {
+                wa = anotherApp.Workbooks[System.IO.Path.GetFileName(anotherPath)];
+            }
+            catch
+            {
+                wa = anotherApp.Workbooks.Open(anotherPath);
+            }
+            ASheet = (Microsoft.Office.Interop.Excel.Worksheet)wa.Sheets[1];
+
+            if(ASheet.Cells[3 , 2] != 'null')
+            {
+                Page1UI pg1 = new Page1UI();
+                pg1.Show();
+                this.Visible = false;
+                this.Close()
+            }
 
             InitializeComponent();
             string myPath = Application.StartupPath + @"\..\..\Excel\Try.xlsx";
+            
             excelApp = new Excel.Application();
+            
             Excel.Workbook wb;
+            
             try
             {
                 wb = excelApp.Workbooks[System.IO.Path.GetFileName(myPath)];
+               
             }
             catch
             {
                 wb = excelApp.Workbooks.Open(myPath);
+                
             }
             MySheet = (Microsoft.Office.Interop.Excel.Worksheet)wb.Sheets[1]; // Explicit cast is not required here
+            
             lastRow = MySheet.Cells.SpecialCells(Microsoft.Office.Interop.Excel.XlCellType.xlCellTypeLastCell).Row;
         }
 
@@ -152,13 +177,19 @@ namespace CMS
         public void SaveExcel()
             {
             
-            lastRow += 1;
-            MySheet.Cells[lastRow, 1] = lastRow - 1;
-            MySheet.Cells[lastRow, 2] = textBox1.Text;
-            MySheet.Cells[lastRow, 3] = textBox2.Text;
-            MySheet.Cells[lastRow, 4] = textBox3.Text;
+            //lastRow += 1;
+            ASheet.Cells[3 , 2] = textBox1.Text
+            ASheet.Cells[3 , 3] = textBox2.Text
+            ASheet.Cells[3 , 4] = textBox3.Text
+            ASheet.Cells[3 , 5] = textBox4.Text
+            ASheet.Cells[3 , 6] = textBox5.Text
+           // MySheet.Cells[lastRow, 1] = lastRow - 1;
+          //  MySheet.Cells[lastRow, 2] = textBox1.Text;
+         //   MySheet.Cells[lastRow, 3] = textBox2.Text;
+         //   MySheet.Cells[lastRow, 4] = textBox3.Text;
         //  MySheet.Cells[lastRow, 5] = textBox4.Text;
         //  MySheet.Cells[lastRow, 6] = textBox5.Text;
+            anotherApp.ActiveWorkbook.Save();
             excelApp.ActiveWorkbook.Save();
             System.Diagnostics.Process[] process = System.Diagnostics.Process.GetProcessesByName("Excel");
             foreach (System.Diagnostics.Process p in process)
